@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:padding="25px">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <include
+                layout="@layout/CircleLayout" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <TextView
+                android:text="Nutrition"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_weight="75" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/nutritionSpinner"
+                android:layout_weight="25"
+                android:layout_gravity="right"
+                android:gravity="right" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <TextView
+                android:text="Workout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="75"
+                android:gravity="center_vertical" />
+            <Switch
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/workout_switch"
+                android:textOff="No"
+                android:textOn="Yes"
+                android:checked="true"
+                android:layout_weight="25" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <TextView
+                android:text="Mobilize"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="75"
+                android:gravity="center_vertical" />
+            <Switch
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/mobilize_switch"
+                android:textOff="No"
+                android:textOn="Yes"
+                android:checked="true"
+                android:layout_weight="25" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <TextView
+                android:text="Supplement"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="75"
+                android:gravity="center_vertical" />
+            <Switch
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/supplement_switch"
+                android:textOff="No"
+                android:textOn="Yes"
+                android:checked="true"
+                android:layout_weight="25" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100">
+            <TextView
+                android:text="Lifestyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="75"
+                android:gravity="center_vertical" />
+            <Switch
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/lifestyle_switch"
+                android:textOff="No"
+                android:textOn="Yes"
+                android:checked="true"
+                android:layout_weight="25" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
