@@ -10,4 +10,11 @@
         <item>1</item>
         <item>0</item>
     </string-array>
+	<string name="rules_id">content-complete-game-rules-whole-life-challenge</string>
+    <string name="welcome_message">Welcome, %1$s</string>
+	<string name="parse_application_id">yiQg1uGDQLaoFdhpebcRgLZVYiROJ8LgaEC18hAo</string>
+    <string name="parse_client_key">rqGZe71Gx5w5y6dPhyZhMyx91N8wd3Tj90oC6df9</string>
+    <string name="device_offline_message">"Your device appears to be offline. Some content may be unavailable."</string>
+	<string name="login_tagline">The game the changes your whole life</string>
+    <string name="privacy_policy">By logging in, you agree to our \n <a href="https://m.facebook.com/terms">Terms</a> and <a href="https://m.facebook.com/policy">Privacy Policy</a> \n \n <a href="https://gist.github.com/beardouglas/11349951">About</a></string>
 </resources>

@@ -1,18 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <resources>
 	<!-- Application Theme -->
-	<style name="WlcTheme" parent="@android:style/Theme.Holo">
+	<style name="WlcTheme" parent="@style/Theme.AppCompat.Light">
 		<item name="android:windowActionBarOverlay">true</item>
 		<item name="android:actionBarStyle">@style/WlcTheme.ActionBar</item>
 		<item name="android:windowContentOverlay">@null</item>
 		<item name="android:windowBackground">@color/white</item>
-		<item name="android:windowTranslucentNavigation">false</item>
-	    <item name="android:windowTranslucentStatus">false</item>
 	</style>
 
-	<style name="WlcTheme.ActionBar" parent="android:Widget.Holo.ActionBar">
-		<item name="android:background">@android:color/transparent</item>
-		<item name="android:backgroundStacked">@android:color/transparent</item>
+	<style name="WlcTheme.ActionBar" parent="android:Widget.Holo.ActionBar">		
 		<item name="android:displayOptions">showTitle</item>
 	 	<item name="android:titleTextStyle">@style/WlcTheme.ActionBar.TitleTextStyle</item>
   	</style>
@@ -22,6 +18,18 @@
     	<item name="android:textSize">20sp</item>
   	</style>
 
-	<style name="ThemeActionBar" parent="@android:style/Theme.Holo.Light"></style>
+ 	<style name="WlcTheme.login" parent="@style/Theme.AppCompat">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 
+	<style name="button_text" >
+	    <item name="android:layout_width" >fill_parent</item>
+	    <item name="android:layout_height" >wrap_content</item>
+	    <item name="android:textColor" >#ffffff</item>
+	    <item name="android:gravity" >center</item>
+	    <item name="android:layout_margin" >3dp</item>
+	    <item name="android:fontFamily">sans-serif-light</item>
+	    <item name="android:textSize" >24dp</item>
+	  </style>
 </resources>

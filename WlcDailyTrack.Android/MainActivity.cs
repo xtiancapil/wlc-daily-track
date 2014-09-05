@@ -8,13 +8,12 @@ using Android.Widget;
 using Android.OS;
 
 using WlcDailyTracker.Core;
-using ReactiveUI.Android;
 using ReactiveUI;
 
 
 namespace WlcDailyTrackAndroid
 {
-	[Activity (Label = "WlcDailyTrack.Android", MainLauncher = true, Theme = "@style/WlcTheme")]
+	[Activity (Label = "WlcDailyTrack.Android", Theme = "@style/WlcTheme")]
 	public class MainActivity : ReactiveActivity<MainViewModel>
 	{
 		TextView pointsView;

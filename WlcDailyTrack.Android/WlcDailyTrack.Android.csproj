@@ -9,13 +9,13 @@
     <RootNamespace>WlcDailyTrackAndroid</RootNamespace>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AssemblyName>WlcDailyTrack.Android</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,35 +42,51 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="ReactiveUI">
-      <HintPath>..\packages\reactiveui-core.5.5.1\lib\Monoandroid\ReactiveUI.dll</HintPath>
-    </Reference>
-    <Reference Include="ReactiveUI.Android">
-      <HintPath>..\packages\reactiveui-platforms.5.5.1\lib\Monoandroid\ReactiveUI.Android.dll</HintPath>
-    </Reference>
-    <Reference Include="ReactiveUI.Mobile">
-      <HintPath>..\packages\reactiveui-mobile.5.5.1\lib\Monoandroid\ReactiveUI.Mobile.dll</HintPath>
-    </Reference>
-    <Reference Include="Xamarin.Mobile">
-      <HintPath>..\packages\reactiveui-mobile.5.5.1\lib\Monoandroid\Xamarin.Mobile.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reactive.Interfaces">
-      <HintPath>..\packages\Rx-Interfaces.2.2.4\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reactive.Core">
-      <HintPath>..\packages\Rx-Core.2.2.4\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reactive.Linq">
-      <HintPath>..\packages\Rx-Linq.2.2.4\lib\portable-windows8+net45+wp8\System.Reactive.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Reactive.PlatformServices">
-      <HintPath>..\packages\Rx-PlatformServices.2.2.4\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="Parse.Android">
       <HintPath>..\Components\parse-1.2.14\lib\android\Parse.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\packages\Rx-PlatformServices.2.2.5\lib\portable-windows8+net45+wp8\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.4.2.1\lib\monoandroid\Splat.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI">
+      <HintPath>..\packages\reactiveui-core.6.0.6\lib\Monoandroid\ReactiveUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\xamandroidsupportv7appcompat-20.0.0\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactiveUI.AndroidSupport">
+      <HintPath>..\packages\reactiveui-androidsupport.6.0.6\lib\Monoandroid\ReactiveUI.AndroidSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\Components\xamandroidsupportv7appcompat-20.0.0\lib\android\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="ModernHttpClient">
+      <HintPath>..\packages\modernhttpclient.2.0.1\lib\MonoAndroid\ModernHttpClient.dll</HintPath>
+    </Reference>
+    <Reference Include="OkHttp">
+      <HintPath>..\packages\modernhttpclient.2.0.1\lib\MonoAndroid\OkHttp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="MobileHtmlAgilityPack">
+      <HintPath>..\ext\MobileHtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.MonoDroid">
+      <HintPath>..\Components\restsharp-104.4.0\lib\android\RestSharp.MonoDroid.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -78,12 +94,27 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="Views\DispatchActivity.cs" />
+    <Compile Include="Views\ScoreActivity.cs" />
+    <Compile Include="Views\SignInActivity.cs" />
+    <Compile Include="Views\BaseActivity.cs" />
+    <Compile Include="Views\DashboardFragment.cs" />
+    <Compile Include="Views\StatsFragment.cs" />
+    <Compile Include="Views\WebViewFragment.cs" />
+    <Compile Include="StatsHtml.cs">
+      <DependentUpon>StatsHtml.cshtml</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\StatsListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="packages.config" />
+    <None Include="StatsHtml.cshtml">
+      <Generator>RazorTemplatePreprocessor</Generator>
+      <LastGenOutput>StatsHtml.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -93,6 +124,97 @@
     <AndroidResource Include="Resources\drawable\circle.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values\color.xml" />
+    <AndroidResource Include="Resources\layout\activity_login.axml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\login_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-hdpi\wlc_badge.png" />
+    <AndroidResource Include="Resources\drawable-ldpi\login_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-ldpi\wlc_badge.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\login_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-mdpi\wlc_badge.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\login_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-xhdpi\wlc_badge.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\login_bg.jpg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\wlc_badge.png" />
+    <AndroidResource Include="Resources\drawable\button_wlc.xml" />
+    <AndroidResource Include="Resources\drawable\button_default.xml" />
+    <AndroidResource Include="Resources\drawable\button_pressed.xml" />
+    <AndroidResource Include="Resources\drawable\button_focused.xml" />
+    <AndroidResource Include="Resources\menu\main.xml" />
+    <AndroidResource Include="Resources\layout\activity_score.axml" />
+    <AndroidResource Include="Resources\layout\fragment_dashboard.axml" />
+    <AndroidResource Include="Resources\values-v14\styles.xml" />
+    <AndroidResource Include="Resources\layout\fragment_stats.axml" />
+    <AndroidResource Include="Resources\layout\fragment_webview.axml" />
+    <AndroidResource Include="Resources\layout\list_item_stat.axml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_bar_chart_256.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_home_256.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_trophy_256.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_bar_chart_256.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_home_256.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_trophy_256.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_bar_chart_256.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_home_256.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_trophy_256.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_bar_chart_256.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_home_256.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_trophy_256.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bonus.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\lifestyle.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\mobilize.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\nutrition.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\supplement.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\water.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\workout.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bonus.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\lifestyle.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\mobilize.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\nutrition.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\supplement.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\water.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\workout.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bonus.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\lifestyle.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\mobilize.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\nutrition.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\supplement.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\water.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\workout.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bonus.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\lifestyle.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\mobilize.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\nutrition.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\supplement.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\water.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\workout.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\bonus_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\lifestyle_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\mobilize_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\nutrition_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\supplement_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\water_light.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\workout_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\bonus_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\lifestyle_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\mobilize_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\nutrition_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\supplement_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\water_light.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\workout_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\bonus_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\lifestyle_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\mobilize_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\nutrition_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\supplement_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\water_light.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\workout_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\bonus_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\lifestyle_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\mobilize_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\nutrition_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\supplement_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\water_light.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\workout_light.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -103,10 +225,26 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-ldpi\" />
+    <Folder Include="Resources\drawable-mdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
+    <Folder Include="Resources\drawable-xxhdpi\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\values-v14\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="parse">
       <Version>1.2.14</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="xamandroidsupportv7appcompat">
+      <Version>20.0.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+    <XamarinComponentReference Include="restsharp">
+      <Version>104.4.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>

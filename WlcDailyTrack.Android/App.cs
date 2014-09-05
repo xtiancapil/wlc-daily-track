@@ -18,8 +18,8 @@ namespace WlcDailyTrackAndroid
 
 			// Initialize the parse client with your Application ID and .NET Key found on
 			// your Parse dashboard
-			ParseClient.Initialize("yiQg1uGDQLaoFdhpebcRgLZVYiROJ8LgaEC18hAo",
-				"rqGZe71Gx5w5y6dPhyZhMyx91N8wd3Tj90oC6df9");
+			ParseClient.Initialize( GetString(Resource.String.parse_application_id),
+				GetString(Resource.String.parse_client_key));
 		}
 	}
 }

@@ -51,9 +51,9 @@ namespace WlcDailyTracker.Core
 
 		public MainViewModel()
 		{
-			this.WhenAny (x => x.Workout, x => x.Mobilize, x => x.Supplement, x => x.Lifestyle, x => x.Nutrition,
-				(workout, mobilize, supplement, lifestyle, nutrition) => (workout.Value? 2:0) + (mobilize.Value? 2:0) + (supplement.Value? 1:0) + (lifestyle.Value? 1:0) + nutrition.Value
-			).Subscribe( x => { Points = x; });				
+//			this.WhenAny (x => x.Workout, x => x.Mobilize, x => x.Supplement, x => x.Lifestyle, x => x.Nutrition,
+//				(workout, mobilize, supplement, lifestyle, nutrition) => (workout.Value? 2:0) + (mobilize.Value? 2:0) + (supplement.Value? 1:0) + (lifestyle.Value? 1:0) + nutrition.Value
+//			).Subscribe( x => { Points = x; });				
 		}
 	}
 }
