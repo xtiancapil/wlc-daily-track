@@ -51,9 +51,6 @@ namespace WlcDailyTrackAndroid
 			emailField = FindViewById <EditText> (Resource.Id.emailField);
 			passwordField = FindViewById <EditText> (Resource.Id.passwordField);
 
-			emailField.Text = "christian.capil@gmail.com";
-			passwordField.Text = "lakers";
-
 			TextView tos = FindViewById <TextView> (Resource.Id.tos);
 			tos.MovementMethod = Android.Text.Method.LinkMovementMethod.Instance;
 		}
