@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace WlcDailyTrackAndroid
 {
-	[Activity (Label = ".views.DispatchActivity", MainLauncher = true, NoHistory = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]			
+	[Activity (MainLauncher = true, NoHistory = true, ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]			
 	public class DispatchActivity : Activity
 	{
 		protected override void OnCreate (Bundle bundle)

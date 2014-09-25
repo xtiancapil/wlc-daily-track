@@ -33,8 +33,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MainViewModel.cs" />
     <Compile Include="Challenge.cs" />
-    <Compile Include="Stat.cs" />
     <Compile Include="WlcCredentials.cs" />
+    <Compile Include="WlcObjects.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.0.6186\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10\Xamarin.Forms.targets" />

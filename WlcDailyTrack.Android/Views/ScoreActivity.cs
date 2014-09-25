@@ -92,6 +92,12 @@ namespace WlcDailyTrackAndroid
 					args.PutInt (StatsFragment.ARG_STATS, position);
 					fragment.Arguments = args;
 					break;
+				case 2:
+					fragment = new LeaderboardFragment ();
+					args = new Bundle ();
+					args.PutInt (LeaderboardFragment.ARG_LEADERBOARD, position);
+					fragment.Arguments = args;
+					break;
 				case 3:
 					fragment = new WebViewFragment ();
 					//https://www.wholelifechallenge.com/complete-game-rules-whole-life-challenge/

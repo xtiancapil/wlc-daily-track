@@ -34,6 +34,7 @@ namespace WlcDailyTrackAndroid
 		//TODO: move this to config object
 		public static string login_url = "https://game.wholelifechallenge.com/login";
 		private HtmlDocument doc;
+		private ProgressDialog pd;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -42,6 +43,7 @@ namespace WlcDailyTrackAndroid
 			doc = new HtmlDocument ();
 			// Create your application here
 			SetContentView (Resource.Layout.activity_login);
+
 
 			var button = FindViewById <Button> (Resource.Id.loginButton);
 			button.Click += async delegate {
@@ -62,21 +64,12 @@ namespace WlcDailyTrackAndroid
 
 		private void StoreCookie () {
 			var binaryFormatter = new BinaryFormatter ();
-			var serializer = new XmlSerializer (typeof(CookieContainer));
 			var prefs = this.GetSharedPreferences ("wlcPrefs", FileCreationMode.Private);
 			var editor = prefs.Edit ();
 			if (cookies != null && cookies.Count > 0) {
-				var buffer = new System.IO.StringWriter ();
-
 				var buff = new MemoryStream ();
-
 				binaryFormatter.Serialize (buff, cookies);
-
 				var buffString = Convert.ToBase64String(buff.GetBuffer());
-
-				serializer.Serialize (buffer, cookies);
-
-//				editor.PutString ("cookies", buffer.ToString ());
 				editor.PutString ("cookies", buffString);
 			}
 
@@ -88,8 +81,26 @@ namespace WlcDailyTrackAndroid
 				var username = emailField.Text;
 				var pass = passwordField.Text;
 
-				await Login(username, pass);
+				pd = new ProgressDialog(this);
+				pd.Indeterminate = true;
+				pd.SetCancelable (false);
+				pd.SetMessage ("Logging in...");
 
+				RunOnUiThread( () => {
+					pd.Show();
+				});
+				var loginStatus = await Login(username, pass);
+
+				RunOnUiThread( () => {
+					pd.Dismiss();
+				});
+				 
+				if(String.IsNullOrEmpty(loginStatus)){
+					FinishActivity();
+					return;
+				}
+
+				emailField.Error = loginStatus;
 //
 //				await Parse.ParseUser.LogInAsync (username, pass);
 //				Console.WriteLine (Parse.ParseUser.CurrentUser.Username);
@@ -112,8 +123,10 @@ namespace WlcDailyTrackAndroid
 					var prefs = this.GetSharedPreferences ("wlcPrefs", FileCreationMode.Private);
 					var serialized = prefs.GetString ("cookies", null);
 					if (serialized != null) {
-						var serializer = new XmlSerializer (typeof(CookieContainer));
-						cookies = (CookieContainer)serializer.Deserialize (new System.IO.StringReader (serialized));
+						byte[] binData = Convert.FromBase64String(serialized);
+						BinaryFormatter formatter = new BinaryFormatter();
+						MemoryStream ms = new MemoryStream(binData);
+						cookies = (CookieContainer) formatter.Deserialize(ms);																
 					}
 				}
 				return cookies ?? (cookies = new CookieContainer ());
@@ -138,7 +151,7 @@ namespace WlcDailyTrackAndroid
 		}
 
 		// Just login and
-		async Task Login(string email, string password) {
+		async Task<string> Login(string email, string password) {
 			string htmlString = "";
 
 			try {
@@ -148,7 +161,7 @@ namespace WlcDailyTrackAndroid
 				var loginFormReq = new RestRequest ("login", Method.GET);
 
 				loginFormReq.AddHeader("Accept", "text/html");
-				RestResponse loginFormResp = (RestResponse) client.Execute(loginFormReq); //await client.ExecuteTaskAsync(loginFormReq);
+				var loginFormResp = (RestResponse) client.Execute(loginFormReq); //await client.ExecuteTaskAsync(loginFormReq);
 				var loginHtml = loginFormResp.Content;
 
 				doc.LoadHtml (loginHtml);
@@ -188,25 +201,45 @@ namespace WlcDailyTrackAndroid
 				var resp = client.Execute(loginPostReq);
 				htmlString = resp.Content;
 
+				// If the status code is 302, it means we have logged in correctly and are being
+				// redirected to the hub page. This will probably break though :\
 				if(resp.StatusCode == HttpStatusCode.Redirect) {
+					// We logged in correctly, store the credentials and session cookies before doing anything else.
 					StoredCredentials = new Core.WlcCredentials() {
 						Username = email,
 						Password = password
 					};
 					StoreCookie();
-					FinishActivity();
-					return;
+
+					// Get the initial hub page to get the stats , leaderboard, and reflection urls
+					var hubReq = new RestRequest("wlcsummer14/hub", Method.GET);
+					hubReq.AddHeader("Accept", "text/html");
+
+					var hubResp = (RestResponse) client.Execute(hubReq);
+					var hubHtml = hubResp.Content;
+
+					//HACK: Get the IDs instead of the route for the stats and team id.
+					var profileMatch = Regex.Match(hubHtml, "/profiles/[0-9]+/stats_calendar");
+					var leaderboardMatch = Regex.Match(hubHtml, "team=[0-9]+");
+
+					var prefs = this.GetSharedPreferences ("wlcPrefs", FileCreationMode.Private);
+					var editor = prefs.Edit ();
+					editor.PutString("statsUrl", profileMatch.Success ? profileMatch.Value : String.Empty);
+					editor.PutString("leaderBoardUrl", leaderboardMatch.Success ? leaderboardMatch.Value : String.Empty);
+
+					editor.Commit();
+
+					htmlString = "";
 				}
 
-				// Get the error code and surface it to the screen.
+				// Get the error text and surface it to the screen.
 				var match = Regex.Match(htmlString, "flash_alert");
 				if(match.Success) {					
 					doc.LoadHtml(htmlString);
 					var _alert = doc.GetElementById("flash_alert");
-					Console.WriteLine(_alert.InnerText);
+					htmlString = _alert.InnerText;
 				}
 
-				Console.WriteLine(htmlString);
 //				var loginReq = new HttpRequestMessage(HttpMethod.Post, login_url);
 //				loginReq.Content = content;
 //
@@ -249,7 +282,7 @@ namespace WlcDailyTrackAndroid
 			} catch (Exception e) {
 				Console.WriteLine (e.Message);
 			}	
-//			return htmlString;
+			return htmlString;
 		}
 	}
 }

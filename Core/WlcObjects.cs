@@ -25,5 +25,27 @@ namespace Core
 			set;
 		}
 	}
+
+	public class LeaderboardItem {
+		public int Rank {
+			get;
+			set;
+		}
+
+		public int Total {
+			get;
+			set;
+		}
+
+		public string Player {
+			get;
+			set;
+		}
+
+		public string Teams {
+			get;
+			set;
+		}
+	}
 }
 

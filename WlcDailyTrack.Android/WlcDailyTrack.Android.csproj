@@ -105,6 +105,8 @@
       <DependentUpon>StatsHtml.cshtml</DependentUpon>
     </Compile>
     <Compile Include="Utils\StatsListAdapter.cs" />
+    <Compile Include="Views\LeaderboardFragment.cs" />
+    <Compile Include="Utils\LeaderboardListAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -215,6 +217,7 @@
     <AndroidResource Include="Resources\drawable-hdpi\supplement_light.png" />
     <AndroidResource Include="Resources\drawable-hdpi\water_light.png" />
     <AndroidResource Include="Resources\drawable-hdpi\workout_light.png" />
+    <AndroidResource Include="Resources\layout\list_item_leaderboard.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

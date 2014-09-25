@@ -38,28 +38,30 @@ namespace WlcDailyTrackAndroid
 		private ProgressBar loading;
 		private ListView listView;
 
-		string csrfToken = "";
-		string csrfParam = "";
+		private string myStatsUrl;
 
 		public async override void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
 
+			var prefs = Activity.GetSharedPreferences ("wlcPrefs", FileCreationMode.Private);
+			myStatsUrl = prefs.GetString ("statsUrl", "");
+
 			doc = new HtmlAgilityPack.HtmlDocument ();
 			adapter = new StatsListAdapter (this.Activity);
 			myStats = new List<Core.Stat> ();
 			string stringHtml = await GetStats();
-//			ProcessHtml (stringHtml);
-//
-//			adapter.Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
-//
-//			if (!Activity.IsFinishing) {
-//				updateView ();
-//				if (loading != null) {
-//					loading.Visibility = ViewStates.Gone;
-//					listView.Visibility = ViewStates.Visible;
-//				}
-//			}
+			ProcessHtml (stringHtml);
+
+			adapter.Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
+
+			if (!Activity.IsFinishing) {
+				updateView ();
+				if (loading != null) {
+					loading.Visibility = ViewStates.Gone;
+					listView.Visibility = ViewStates.Visible;
+				}
+			}
 //			await GetStats ();
 			// Create your fragment here
 		}
@@ -122,50 +124,12 @@ namespace WlcDailyTrackAndroid
 			};
 			var client = new HttpClient (handler);
 
-			//var resp = await client.GetAsync (login_url);
 			try {
-//				var loginHtml = await resp.Content.ReadAsStringAsync();
-//				doc.LoadHtml (loginHtml);
-//				var head = doc.DocumentNode.ChildNodes.FindFirst ("head");
-//				var metas = head.ChildNodes.Where (x => x.Name == "meta").ToList ();
-//	
-//				foreach (var meta in metas) {
-//					if (meta.GetAttributeValue ("name", "").Equals ("csrf-param", StringComparison.OrdinalIgnoreCase)) {
-//						csrfParam = meta.GetAttributeValue ("content", "");
-//					}
-//	
-//					if (meta.GetAttributeValue ("name", "").Equals ("csrf-token", StringComparison.OrdinalIgnoreCase)) {
-//						csrfToken = meta.GetAttributeValue ("content", "");
-//					}
-//				}
-//					
-//				var content = new FormUrlEncodedContent(new Dictionary<string, string> (){
-//					{"utf8", "✓"},
-//					{csrfParam, csrfToken},
-//					{"user[email]", "christian.capil@gmail.com"},
-//					{"user[password]", "lakers"},
-//					{"user[remember_me]", "0"},
-//					{"commit", "Sign In"}
-//				});
-//
-//				var loginReq = new HttpRequestMessage(HttpMethod.Post, login_url);
-//				loginReq.Content = content;
-				HttpWebRequest hubWebRequest = (HttpWebRequest) WebRequest.Create(hub_url);
-				hubWebRequest.CookieContainer = StoredCookies;
-				var hubResponse = await hubWebRequest.GetResponseAsync();
-				using (StreamReader sr = new StreamReader(hubResponse.GetResponseStream())) {
-					htmlString = sr.ReadToEnd();
+
+				if(!String.IsNullOrEmpty(myStatsUrl)) {
+					var statsResp = await client.GetAsync("https://game.wholelifechallenge.com/wlcsummer14" + myStatsUrl);
+					htmlString = await statsResp.Content.ReadAsStringAsync();
 				}
-				var loginResp = await client.GetAsync(hub_url);
-				// this is where all the content is stored. Need to move this to the login section.
-				var loginRespHtml = await loginResp.Content.ReadAsStringAsync();
-
-				var regex = new Regex("/profiles/[0-9]+/stats_calendar");
-				var match = regex.Match(loginRespHtml);
-
-				var statsResp = await client.GetAsync("https://game.wholelifechallenge.com/wlcsummer14" + match.Value);
-				htmlString = await statsResp.Content.ReadAsStringAsync();
-//						var cookie = cookieContainer.GetCookieHeader (new Uri ("https://game.wholelifechallenge.com"));
 			} catch (Exception e) {
 				Console.WriteLine (e.Message);
 			}

@@ -1003,8 +1003,8 @@ namespace WlcDailyTrackAndroid
 			// aapt resource value: 0x7f05001d
 			public const int action_context_bar = 2131034141;
 			
-			// aapt resource value: 0x7f050052
-			public const int action_logout = 2131034194;
+			// aapt resource value: 0x7f050057
+			public const int action_logout = 2131034199;
 			
 			// aapt resource value: 0x7f050016
 			public const int action_menu_divider = 2131034134;
@@ -1078,8 +1078,11 @@ namespace WlcDailyTrackAndroid
 			// aapt resource value: 0x7f050027
 			public const int image = 2131034151;
 			
-			// aapt resource value: 0x7f050051
-			public const int lifestyle_switch = 2131034193;
+			// aapt resource value: 0x7f05004c
+			public const int leaderboardLayout = 2131034188;
+			
+			// aapt resource value: 0x7f050056
+			public const int lifestyle_switch = 2131034198;
 			
 			// aapt resource value: 0x7f050041
 			public const int linearLayout1 = 2131034177;
@@ -1102,8 +1105,8 @@ namespace WlcDailyTrackAndroid
 			// aapt resource value: 0x7f050012
 			public const int middle = 2131034130;
 			
-			// aapt resource value: 0x7f05004f
-			public const int mobilize_switch = 2131034191;
+			// aapt resource value: 0x7f050054
+			public const int mobilize_switch = 2131034196;
 			
 			// aapt resource value: 0x7f050009
 			public const int never = 2131034121;
@@ -1114,11 +1117,14 @@ namespace WlcDailyTrackAndroid
 			// aapt resource value: 0x7f050000
 			public const int normal = 2131034112;
 			
-			// aapt resource value: 0x7f05004d
-			public const int nutritionSpinner = 2131034189;
+			// aapt resource value: 0x7f050052
+			public const int nutritionSpinner = 2131034194;
 			
 			// aapt resource value: 0x7f05003d
 			public const int passwordField = 2131034173;
+			
+			// aapt resource value: 0x7f05004e
+			public const int playerTextView = 2131034190;
 			
 			// aapt resource value: 0x7f050043
 			public const int pointView = 2131034179;
@@ -1132,8 +1138,11 @@ namespace WlcDailyTrackAndroid
 			// aapt resource value: 0x7f05002f
 			public const int radio = 2131034159;
 			
-			// aapt resource value: 0x7f05004c
-			public const int scoreLayout = 2131034188;
+			// aapt resource value: 0x7f05004d
+			public const int rankTextView = 2131034189;
+			
+			// aapt resource value: 0x7f050051
+			public const int scoreLayout = 2131034193;
 			
 			// aapt resource value: 0x7f050032
 			public const int search_badge = 2131034162;
@@ -1186,11 +1195,14 @@ namespace WlcDailyTrackAndroid
 			// aapt resource value: 0x7f050039
 			public const int submit_area = 2131034169;
 			
-			// aapt resource value: 0x7f050050
-			public const int supplement_switch = 2131034192;
+			// aapt resource value: 0x7f050055
+			public const int supplement_switch = 2131034197;
 			
 			// aapt resource value: 0x7f050002
 			public const int tabMode = 2131034114;
+			
+			// aapt resource value: 0x7f05004f
+			public const int teamTextView = 2131034191;
 			
 			// aapt resource value: 0x7f050044
 			public const int textView3 = 2131034180;
@@ -1203,6 +1215,9 @@ namespace WlcDailyTrackAndroid
 			
 			// aapt resource value: 0x7f05003f
 			public const int tos = 2131034175;
+			
+			// aapt resource value: 0x7f050050
+			public const int totalTextView = 2131034192;
 			
 			// aapt resource value: 0x7f050021
 			public const int up = 2131034145;
@@ -1225,8 +1240,8 @@ namespace WlcDailyTrackAndroid
 			// aapt resource value: 0x7f05000c
 			public const int withText = 2131034124;
 			
-			// aapt resource value: 0x7f05004e
-			public const int workout_switch = 2131034190;
+			// aapt resource value: 0x7f050053
+			public const int workout_switch = 2131034195;
 			
 			static Id()
 			{
@@ -1348,13 +1363,16 @@ namespace WlcDailyTrackAndroid
 			public const int fragment_webview = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int list_item_stat = 2130903070;
+			public const int list_item_leaderboard = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int Main = 2130903071;
+			public const int list_item_stat = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int support_simple_spinner_dropdown_item = 2130903072;
+			public const int Main = 2130903072;
+			
+			// aapt resource value: 0x7f030021
+			public const int support_simple_spinner_dropdown_item = 2130903073;
 			
 			static Layout()
 			{
