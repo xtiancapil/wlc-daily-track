@@ -7,6 +7,9 @@
 *.sln.docstates
 *.userprefs
 
+# ignore thumbs
+*.db
+
 # Dependencies
 [Cc]omponents/
 [Pp]ackages/
