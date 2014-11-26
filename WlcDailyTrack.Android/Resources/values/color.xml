@@ -20,4 +20,13 @@
 	<color name="dashboard">#3b5998</color>
 	<color name="internetorg">#d32ec6</color>
 	<color name="gameslounge">#d8532f</color>
+	<color name="nutrition">#db2841</color>
+	<color name="nutrition_partial">#ff7878</color>
+	<color name="workout">#f97b1e</color>
+	<color name="mobilize">#f8ba00</color>
+	<color name="supplement">#5da400</color>
+	<color name="lifestyle">#18a4ec</color>
+	<color name="water">#58cee6</color>
+	<color name="bonus">#7045b8</color>
+	<color name="reflection">#7045b8</color>
 </resources>

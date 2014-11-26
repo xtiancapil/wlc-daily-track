@@ -25,6 +25,8 @@
         android:id="@+id/loadingBar" />
     <ListView
         android:visibility="gone"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
         android:id="@+id/welcome_details_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

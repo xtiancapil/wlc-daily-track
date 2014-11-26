@@ -18,6 +18,8 @@ using System.Threading.Tasks;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System.Net.Http;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace WlcDailyTrackAndroid
 {
@@ -40,6 +42,7 @@ namespace WlcDailyTrackAndroid
 		private List<Core.LeaderboardItem> rankings;
 
 		private string leaderBoardUrl;
+		private string userTeamsJson;
 
 		public async override void OnCreate (Bundle savedInstanceState)
 		{
@@ -47,6 +50,7 @@ namespace WlcDailyTrackAndroid
 
 			var prefs = Activity.GetSharedPreferences ("wlcPrefs", FileCreationMode.Private);
 			leaderBoardUrl = prefs.GetString ("leaderBoardUrl", "");
+			userTeamsJson = prefs.GetString ("userTeams", "");
 			adapter = new LeaderboardListAdapter (this.Activity);
 			doc = new HtmlAgilityPack.HtmlDocument ();
 			rankings = new List<Core.LeaderboardItem> ();
@@ -115,15 +119,23 @@ namespace WlcDailyTrackAndroid
 
 		async Task<string> GetLeaderboardHtml() {
 			string htmlString = "";
+			try {	
+				var handler = new HttpClientHandler () {
+					CookieContainer = StoredCookies
+				};
+				var client = new HttpClient (handler);
 
-			var handler = new HttpClientHandler () {
-				CookieContainer = StoredCookies
-			};
-			var client = new HttpClient (handler);
-
-			try {		
-				var statsResp = await client.GetAsync("https://game.wholelifechallenge.com/wlcsummer14/leaderboard_dash?page=user&" + leaderBoardUrl);
+				// get the teams json
+				var statsResp = await client.GetAsync("https://game.wholelifechallenge.com/wlcfall14" + leaderBoardUrl);
 				htmlString = await statsResp.Content.ReadAsStringAsync();
+
+				JObject jo = JObject.Parse(htmlString);
+				var teams = jo["teams"].Select(t => t.ToObject<Core.Team>()).ToList();//.ToObject<Core.Team>();//.Select( t => (string) t).ToList();
+				//var teams = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Core.Team>>(userTeamsJson);
+
+
+
+				return "";
 
 				doc.LoadHtml(htmlString);
 

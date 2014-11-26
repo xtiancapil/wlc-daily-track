@@ -52,6 +52,8 @@ namespace WlcDailyTrackAndroid
 
 			emailField = FindViewById <EditText> (Resource.Id.emailField);
 			passwordField = FindViewById <EditText> (Resource.Id.passwordField);
+			emailField.Text = "christian.capil@gmail.com";
+			passwordField.Text = "lakers";
 
 			TextView tos = FindViewById <TextView> (Resource.Id.tos);
 			tos.MovementMethod = Android.Text.Method.LinkMovementMethod.Instance;
@@ -161,8 +163,8 @@ namespace WlcDailyTrackAndroid
 				var loginFormReq = new RestRequest ("login", Method.GET);
 
 				loginFormReq.AddHeader("Accept", "text/html");
-				var loginFormResp = (RestResponse) client.Execute(loginFormReq); //await client.ExecuteTaskAsync(loginFormReq);
-				var loginHtml = loginFormResp.Content;
+				var loginFormResp = await client.ExecuteTaskAsync(loginFormReq); //(RestResponse) client.Execute(loginFormReq); //await client.ExecuteTaskAsync(loginFormReq);
+				var loginHtml = ((RestResponse) loginFormResp).Content;
 
 				doc.LoadHtml (loginHtml);
 				var head = doc.DocumentNode.ChildNodes.FindFirst ("head");
@@ -212,7 +214,7 @@ namespace WlcDailyTrackAndroid
 					StoreCookie();
 
 					// Get the initial hub page to get the stats , leaderboard, and reflection urls
-					var hubReq = new RestRequest("wlcsummer14/hub", Method.GET);
+					var hubReq = new RestRequest("wlcfall14/hub", Method.GET);
 					hubReq.AddHeader("Accept", "text/html");
 
 					var hubResp = (RestResponse) client.Execute(hubReq);
@@ -220,13 +222,19 @@ namespace WlcDailyTrackAndroid
 
 					//HACK: Get the IDs instead of the route for the stats and team id.
 					var profileMatch = Regex.Match(hubHtml, "/profiles/[0-9]+/stats_calendar");
-					var leaderboardMatch = Regex.Match(hubHtml, "team=[0-9]+");
+					var leaderboardMatch = Regex.Match(hubHtml, "/challenge_profiles/[0-9]+/teams.json");
+					var userTeams = Regex.Match(hubHtml, "'userTeams', (\\[(.*?)\\])");
+					var challengeProfile = Regex.Match(hubHtml, "\\('challengeProfile',[\\s]+({(.?)+\\})");
+					//var challengeProfile = Regex.Match(hubHtml, "\\('challengeProfile', \\{[\\s]\\}\\)\s+</script>");
+//					challengeProfile = Regex.Match(hubHtml, "'challengeProfile', function\\(\\)\\{[\\s]+return (.*?)[\\s]+\\}");
 
 					var prefs = this.GetSharedPreferences ("wlcPrefs", FileCreationMode.Private);
 					var editor = prefs.Edit ();
 					editor.PutString("statsUrl", profileMatch.Success ? profileMatch.Value : String.Empty);
 					editor.PutString("leaderBoardUrl", leaderboardMatch.Success ? leaderboardMatch.Value : String.Empty);
-
+					editor.PutString("userTeams", userTeams.Success ? userTeams.Groups[1].Value : String.Empty);
+					editor.PutString("challengeProfile", challengeProfile.Success ? challengeProfile.Groups[1].Value : String.Empty);
+					editor.PutString("csrfToken", csrfToken);
 					editor.Commit();
 
 					htmlString = "";
@@ -234,7 +242,7 @@ namespace WlcDailyTrackAndroid
 
 				// Get the error text and surface it to the screen.
 				var match = Regex.Match(htmlString, "flash_alert");
-				if(match.Success) {					
+				if(match.Success) {						
 					doc.LoadHtml(htmlString);
 					var _alert = doc.GetElementById("flash_alert");
 					htmlString = _alert.InnerText;

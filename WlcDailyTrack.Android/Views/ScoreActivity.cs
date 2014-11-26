@@ -11,15 +11,18 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Graphics;
-using Android.Support.V4.App;
 using SupportFragmentManager = Android.Support.V4.App.FragmentManager;
 using SupportFragment = Android.Support.V4.App.Fragment;
-using Android.Support.V4.View;
+
 using Android.Text;
+using Android.Graphics.Drawables;
+using Android.Support.V4.View;
+using Android.Support.V4.App;
+using Android.Support.V7.Widget;
 
 namespace WlcDailyTrackAndroid
 {
-	[Activity (Label = "ScoreActivity", Theme = "@style/Theme.AppCompat.Light")]			
+	[Activity (Label = "ScoreActivity")]			
 	public class ScoreActivity : BaseActivity, Android.Support.V7.App.ActionBar.ITabListener
 	{
 		private ViewPager sectionsViewPager;
@@ -30,19 +33,23 @@ namespace WlcDailyTrackAndroid
 			var pagerAdapter = new SectionsPagerAdapter (this.SupportFragmentManager);
 			SetContentView (Resource.Layout.activity_score);
 
+			var toolbar = FindViewById<Toolbar> (Resource.Id.toolbar);
 
+			SupportActionBar.SetDisplayUseLogoEnabled (false);
+			SupportActionBar.SetLogo (new ColorDrawable(Resources.GetColor(Resource.Color.transparent)));
 			SupportActionBar.SetHomeButtonEnabled(false);
 			SupportActionBar.SetDisplayShowTitleEnabled(false);
+			SupportActionBar.SetDisplayShowHomeEnabled (false);
 			SupportActionBar.SetBackgroundDrawable(new Android.Graphics.Drawables.ColorDrawable(Color.Transparent));
 
-			SupportActionBar.NavigationMode = (int) ActionBarNavigationMode.Tabs;
+//			SupportActionBar.NavigationMode = (int) ActionBarNavigationMode.Tabs;
 			SupportActionBar.SetStackedBackgroundDrawable(new Android.Graphics.Drawables.ColorDrawable(Color.Transparent));
 
 			sectionsViewPager = FindViewById <ViewPager> (Resource.Id.sections_pager);
 			sectionsViewPager.Adapter = pagerAdapter;
 			sectionsViewPager.OffscreenPageLimit = (int)TrimMemory.RunningModerate;
 			sectionsViewPager.PageSelected += (object sender, ViewPager.PageSelectedEventArgs e) => {
-				SupportActionBar.SetSelectedNavigationItem(e.Position);
+//				SupportActionBar.SetSelectedNavigationItem(e.Position);
 			};
 
 			// Add a tab to the action bar for each subsection
@@ -87,9 +94,9 @@ namespace WlcDailyTrackAndroid
 					fragment = new DashboardFragment ();
 					break;
 				case 1:
-					fragment = new StatsFragment ();
+					fragment = new LeaderboardFragment ();
 					args = new Bundle ();
-					args.PutInt (StatsFragment.ARG_STATS, position);
+					args.PutInt (LeaderboardFragment.ARG_LEADERBOARD, position);
 					fragment.Arguments = args;
 					break;
 				case 2:
@@ -123,7 +130,7 @@ namespace WlcDailyTrackAndroid
 
 			public override int Count {
 				get {
-					return 3;
+					return 1;
 				}
 			}
 

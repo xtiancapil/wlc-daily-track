@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:text="Nutrition"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:id="@+id/nutritionSeekBar"
+        android:progress="5" />
+    <CheckBox
+        android:text="Workout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/workoutCheckBox"
+        android:checked="true" />
+    <CheckBox
+        android:text="Mobilize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobilizeCheckBox"
+        android:checked="true" />
+    <CheckBox
+        android:text="Supplement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/supplementCheckBox"
+        android:checked="true" />
+    <CheckBox
+        android:text="Water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/waterCheckBox"
+        android:checked="true" />
+    <CheckBox
+        android:text="Lifestyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lifestyleCheckBox"
+        android:checked="true" />
+    <TextView
+        android:text="Reflection"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/editText1"
+        android:gravity="top" />
+</LinearLayout>

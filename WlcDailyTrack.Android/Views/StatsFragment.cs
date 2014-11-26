@@ -32,7 +32,7 @@ namespace WlcDailyTrackAndroid
 
 		private CookieContainer cookies;
 		private HtmlDocument doc;
-		private StatsListAdapter adapter;
+		private ColorStatsListAdapter adapter;
 
 		private List<Core.Stat> myStats;
 		private ProgressBar loading;
@@ -48,7 +48,7 @@ namespace WlcDailyTrackAndroid
 			myStatsUrl = prefs.GetString ("statsUrl", "");
 
 			doc = new HtmlAgilityPack.HtmlDocument ();
-			adapter = new StatsListAdapter (this.Activity);
+			adapter = new ColorStatsListAdapter (this.Activity);
 			myStats = new List<Core.Stat> ();
 			string stringHtml = await GetStats();
 			ProcessHtml (stringHtml);
@@ -127,7 +127,7 @@ namespace WlcDailyTrackAndroid
 			try {
 
 				if(!String.IsNullOrEmpty(myStatsUrl)) {
-					var statsResp = await client.GetAsync("https://game.wholelifechallenge.com/wlcsummer14" + myStatsUrl);
+					var statsResp = await client.GetAsync("https://game.wholelifechallenge.com/wlcfall14" + myStatsUrl);
 					htmlString = await statsResp.Content.ReadAsStringAsync();
 				}
 			} catch (Exception e) {
@@ -139,7 +139,9 @@ namespace WlcDailyTrackAndroid
 
 
 		void ProcessHtml(string statsString) {
-
+			if (string.IsNullOrEmpty (statsString)) {
+				return;
+			}
 			doc.LoadHtml (statsString);
 
 //			var body = doc.DocumentNode.ChildNodes.FindFirst ("body");
@@ -162,6 +164,11 @@ namespace WlcDailyTrackAndroid
 				var dayStat = new Core.Stat ();
 				dayStat.Day = i + 1;
 				dayStat.StatDate = Convert.ToDateTime (days [i].Element ("span").GetAttributeValue ("title", ""));
+
+				// only want to display up to the current date only.
+				if (dayStat.StatDate.Date.CompareTo (DateTime.Now.Date) > 0) {
+					continue;
+				}
 
 				for (int j = 0; j < fields.Length; j++) {
 					if (days.Length != dataFields [j].Count || fields[j].ChildNodes.Count == 0)

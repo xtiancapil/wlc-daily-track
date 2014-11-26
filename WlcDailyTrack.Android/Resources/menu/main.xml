@@ -1,4 +1,12 @@
-﻿<menu xmlns:android="http://schemas.android.com/apk/res/android" >      
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:compat="http://schemas.android.com/apk/res-auto" >      
+	<item
+		android:id="@+id/action_enterScore"
+        android:orderInCategory="100"
+        compat:showAsAction="always"
+        android:title="Enter your score"
+        android:icon="@drawable/ic_action_edit_256"
+        android:layout_width="20dp"/>
     <item
         android:id="@+id/action_logout"
         android:orderInCategory="100"

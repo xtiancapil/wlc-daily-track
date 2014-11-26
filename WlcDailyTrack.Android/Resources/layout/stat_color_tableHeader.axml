@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:weightSum="7"
+    p1:orientation="horizontal">
+    <RelativeLayout
+        p1:layout_marginRight="5dp"
+        p1:layout_weight="1"
+        p1:layout_width="0dp"
+        p1:layout_height="40dp"
+        p1:background="@drawable/bg_nutrition">
+        <ImageView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:src="@drawable/nutrition" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:layout_marginRight="5dp"
+        p1:layout_weight="1"
+        p1:layout_width="0dp"
+        p1:layout_height="40dp"
+        p1:background="@drawable/bg_workout">
+        <ImageView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:src="@drawable/workout" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:layout_marginRight="5dp"
+        p1:layout_weight="1"
+        p1:layout_width="0dp"
+        p1:layout_height="40dp"
+        p1:background="@drawable/bg_mobilize">
+        <ImageView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:src="@drawable/mobilize" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:layout_marginRight="5dp"
+        p1:layout_weight="1"
+        p1:layout_width="0dp"
+        p1:layout_height="40dp"
+        p1:background="@drawable/bg_supplement">
+        <ImageView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:src="@drawable/supplement" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:layout_marginRight="5dp"
+        p1:layout_weight="1"
+        p1:layout_width="0dp"
+        p1:layout_height="40dp"
+        p1:background="@drawable/bg_water">
+        <ImageView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:src="@drawable/water" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:layout_marginRight="5dp"
+        p1:layout_weight="1"
+        p1:layout_width="0dp"
+        p1:layout_height="40dp"
+        p1:background="@drawable/bg_lifestyle">
+        <ImageView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:src="@drawable/lifestyle" />
+    </RelativeLayout>
+    <RelativeLayout
+        p1:layout_weight="1"
+        p1:layout_width="0dp"
+        p1:layout_height="40dp"
+        p1:background="@drawable/bg_reflection">
+        <ImageView
+            p1:layout_width="match_parent"
+            p1:layout_height="match_parent"
+            p1:src="@drawable/bonus" />
+    </RelativeLayout>
+</LinearLayout>

@@ -28,6 +28,7 @@ namespace WlcDailyTrackAndroid
 			CategoryIcons.Add ("Workout", Resource.Drawable.workout_light);
 			CategoryIcons.Add ("Mobilize", Resource.Drawable.mobilize_light);
 			CategoryIcons.Add ("Bonus", Resource.Drawable.bonus_light);
+			CategoryIcons.Add ("Reflections", Resource.Drawable.bonus_light);
 			CategoryIcons.Add ("Supplement", Resource.Drawable.supplement_light);
 			CategoryIcons.Add ("Water", Resource.Drawable.water_light);
 			CategoryIcons.Add ("Lifestyle", Resource.Drawable.lifestyle_light);
@@ -53,8 +54,10 @@ namespace WlcDailyTrackAndroid
 
 			stat = Stats [position];
 
-			point = stat.Points ["Total"];//stat.Points.TryGetValue ("Total", out point);
-			point += stat.Points ["Bonus"];
+			//point = stat.Points ["Total"];//stat.Points.TryGetValue ("Total", out point);
+
+			stat.Points.TryGetValue ("Bonus", out point);
+			point += stat.Points ["Total"];
 
 			holder.titleView.Text = point.ToString ();
 

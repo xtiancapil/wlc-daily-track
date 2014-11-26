@@ -56,6 +56,11 @@ namespace WlcDailyTrackAndroid
 				intent.AddFlags (ActivityFlags.ClearTask | ActivityFlags.NewTask);
 				StartActivity (intent);
 				break;
+			case Resource.Id.action_enterScore:
+
+				var enterIntent = new Intent (this, typeof(EnterScoreActivity));
+				StartActivity (enterIntent);
+				break;
 
 			}
 			return base.OnOptionsItemSelected (item);
