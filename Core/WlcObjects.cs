@@ -87,24 +87,42 @@ namespace Core
 		public List<Score> scores { get; set; }
 		public ChallengeProfile challenge_profile { get; set; }
 		public Reflection reflection { get; set; }
+		public string state { get; set; }
+		public bool showSummary { get; set; }
+		public string editWindow { get; set; }
 	}
 
 	public class Reflection
 	{
 		public Reflection () {
-			reflection_likes = new List<object> ();
-			comments = new List<object> ();
+			likes = new List<object> ();
+			comments = new List<Comment> ();
+			scopes = new List<Scope> ();
 		}
 
-		public object id { get; set; }
+		public int id { get; set; }
 		public string content { get; set; }
-		public object daily_record_recorded_at { get; set; }
-		public object created_at { get; set; }
-		public object daily_record_id { get; set; }
+		public int challenge_profile_id { get; set; }
+		public int user_id { get; set; }
+		public string type { get; set; }
+		public object image { get; set; }
+		public string postable_type { get; set; }
+		public int postable_id { get; set; }
+		public string created_at { get; set; }
+		public string updated_at { get; set; }
+		public bool pinned { get; set; }
 		public User user { get; set; }
-		public List<object> reflection_likes { get; set; }
-		public List<object> comments { get; set; }
+		public List<Comment> comments { get; set; }
+		public List<object> likes { get; set; }
+		public List<Scope> scopes { get; set; }
 	}
+
+	public class Scope
+	{
+		public int scope_id { get; set; }
+		public string scope_type { get; set; }
+	}
+
 
 	public class ChallengeLevel
 	{
@@ -114,14 +132,19 @@ namespace Core
 
 	public class ChallengeProfile
 	{
+		public ChallengeProfile() {
+			incomplete_personal_info = new List<object> ();
+			missed_daily_record_dates = new List<string> ();
+			teams = new List<Team> ();
+		}
 		public int id { get; set; }
 		public bool should_record_missing_daily_records { get; set; }
-		public List<object> missed_daily_record_dates { get; set; }
+		public List<string> missed_daily_record_dates { get; set; }
 		public bool has_missing_daily_records { get; set; }
 		public int mulligans_remaining { get; set; }
 		public bool can_record_todays_daily_record { get; set; }
 		public bool can_record_yesterdays_daily_record { get; set; }
-		public bool can_edit_yesterdays_daily_record { get; set; }
+		public object can_edit_yesterdays_daily_record { get; set; }
 		public bool daily_recording_ended { get; set; }
 		public string today { get; set; }
 		public string yesterday { get; set; }
@@ -131,10 +154,18 @@ namespace Core
 		public bool has_bonus_tokens { get; set; }
 		public double average_score { get; set; }
 		public int total_score { get; set; }
-		public bool on_team { get; set; }
 		public bool can_change_challenge_level { get; set; }
-		public User user { get; set; }
+		public string level_locks_on { get; set; }
+		public double workout_improvement_percent { get; set; }
+		public double body_measurement_improvement_percent { get; set; }
+		public bool personal_info_incomplete { get; set; }
+		public List<object> incomplete_personal_info { get; set; }
 		public ChallengeLevel challenge_level { get; set; }
+		public List<Team> teams { get; set; }
+		public bool challenge_started { get; set; }
+		public User user { get; set; }
+		public object preliminary_score { get; set; }
+		public object final_score { get; set; }
 	}
 
 	public class User
@@ -201,6 +232,31 @@ namespace Core
 		public List<int> incremental_options { get; set; }
 		public List<YesNoOption> yes_no_options { get; set; }
 		public ChallengeCategory challenge_category { get; set; }
+	}
+
+	public class Comment
+	{
+		public int id { get; set; }
+		public string body { get; set; }
+		public int challenge_profile_id { get; set; }
+		public DateTime created_at { get; set; }
+		public User user { get; set; }
+	}
+
+	public class Pagination
+	{
+		public int next_cursor { get; set; }
+		public int size { get; set; }
+	}
+
+	public class Feed {
+		public Feed () {
+			data = new List<Reflection> ();
+		}
+
+		public List<Reflection> data { get; set; }
+		public Pagination pagination { get; set; }
+
 	}
 }
 

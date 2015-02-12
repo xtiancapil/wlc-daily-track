@@ -8,7 +8,7 @@ namespace Core
 {
 	public class WlcWebService
 	{
-		private const string challengeUrl = "https://game.wholelifechallenge.com/wlcfall14";
+		private const string challengeUrl = "https://game.wholelifechallenge.com/wlcny15";
 		public WlcWebService ()
 		{
 		}

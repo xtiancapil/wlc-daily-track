@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <radialprogress.RadialProgressView
+        android:id="@+id/progressView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        min_value="0"
+        max_value="13"
+        progress_type="big"
+        hide_label="true"
+        progress_color="#FF00FF" />
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:text="text"
+        android:layout_centerVertical="true"
+        android:id="@+id/totalScoreView"
+        android:background="@drawable/circle"
+        android:gravity="center" />
+</LinearLayout>
