@@ -11,12 +11,17 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Support.V7.App;
+using Android.Support.V4.View;
+using com.refractored;
+using Android.Support.V4.App;
 
 namespace CounterWeightsDroid
 {
 	[Activity (Label = "Counter Weights")]			
 	public class GameActivity : ActionBarActivity
 	{
+		MyPagerAdapter adapter;
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -25,12 +30,18 @@ namespace CounterWeightsDroid
 
 			SetSupportActionBar (toolbar);
 
-			var transaction = SupportFragmentManager.BeginTransaction ();
-			transaction.Replace (Resource.Id.fragment_container, new OverviewFragment ());
-			transaction.Commit ();
+//			var transaction = SupportFragmentManager.BeginTransaction ();
+//			transaction.Replace (Resource.Id.fragment_container, new OverviewFragment ());
+//			transaction.Commit ();
+//
+			// Initialize the ViewPager and set an adapter
+			adapter = new MyPagerAdapter(SupportFragmentManager);
 
-			// Create your application here
-		}
+			var pager =  FindViewById<ViewPager>(Resource.Id.pager);
+			pager.Adapter = adapter;
+			// Bind the tabs to the ViewPager
+			var tabs = FindViewById<PagerSlidingTabStrip>(Resource.Id.tabs);
+			tabs.SetViewPager(pager);		}
 
 		public override bool OnCreateOptionsMenu (IMenu menu)
 		{
@@ -52,6 +63,38 @@ namespace CounterWeightsDroid
 				return true;
 			}
 			return base.OnOptionsItemSelected (item);
+		}
+
+		public class MyPagerAdapter : FragmentPagerAdapter{
+			private  string[] Titles = { "Daily Play", "My Results", "Leaderboard" }; 
+			//, "Top Free", "Top Grossing", "Top New Paid",
+			//	"Top New Free", "Trending"};
+
+			public MyPagerAdapter(Android.Support.V4.App.FragmentManager fm) : base(fm)
+			{
+			}
+
+			public override Java.Lang.ICharSequence GetPageTitleFormatted (int position)
+			{
+				return new Java.Lang.String (Titles [position]);
+			}
+			#region implemented abstract members of PagerAdapter
+			public override int Count {
+				get {
+					return Titles.Length;
+				}
+			}
+			#endregion
+			#region implemented abstract members of FragmentPagerAdapter
+			public override Android.Support.V4.App.Fragment GetItem (int position)
+			{
+				if (position == 0) {
+					return DailyPlayFragment.NewInstance (position);
+				}
+
+				return OverviewFragment.NewInstance (position);
+			}
+			#endregion
 		}
 	}
 }

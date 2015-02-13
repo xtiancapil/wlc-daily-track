@@ -83,6 +83,8 @@
     <Compile Include="GameActivity.cs" />
     <Compile Include="Adapters\StatsBarAdapter.cs" />
     <Compile Include="OverviewFragment.cs" />
+    <Compile Include="DailyPlayFragment.cs" />
+    <Compile Include="Adapters\ReflectionAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -104,6 +106,7 @@
     <AndroidResource Include="Resources\menu\home.xml" />
     <AndroidResource Include="Resources\layout\list_header.axml" />
     <AndroidResource Include="Resources\drawable\circle.xml" />
+    <AndroidResource Include="Resources\layout\list_item_reflection.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

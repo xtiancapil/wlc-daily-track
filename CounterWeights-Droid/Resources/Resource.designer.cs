@@ -26,6 +26,984 @@ namespace CounterWeightsDroid
 		
 		public static void UpdateIdValues()
 		{
+			global::com.refractored.Resource.Animation.abc_fade_in = global::CounterWeightsDroid.Resource.Animation.abc_fade_in;
+			global::com.refractored.Resource.Animation.abc_fade_out = global::CounterWeightsDroid.Resource.Animation.abc_fade_out;
+			global::com.refractored.Resource.Animation.abc_slide_in_bottom = global::CounterWeightsDroid.Resource.Animation.abc_slide_in_bottom;
+			global::com.refractored.Resource.Animation.abc_slide_in_top = global::CounterWeightsDroid.Resource.Animation.abc_slide_in_top;
+			global::com.refractored.Resource.Animation.abc_slide_out_bottom = global::CounterWeightsDroid.Resource.Animation.abc_slide_out_bottom;
+			global::com.refractored.Resource.Animation.abc_slide_out_top = global::CounterWeightsDroid.Resource.Animation.abc_slide_out_top;
+			global::com.refractored.Resource.Attribute.actionBarDivider = global::CounterWeightsDroid.Resource.Attribute.actionBarDivider;
+			global::com.refractored.Resource.Attribute.actionBarItemBackground = global::CounterWeightsDroid.Resource.Attribute.actionBarItemBackground;
+			global::com.refractored.Resource.Attribute.actionBarPopupTheme = global::CounterWeightsDroid.Resource.Attribute.actionBarPopupTheme;
+			global::com.refractored.Resource.Attribute.actionBarSize = global::CounterWeightsDroid.Resource.Attribute.actionBarSize;
+			global::com.refractored.Resource.Attribute.actionBarSplitStyle = global::CounterWeightsDroid.Resource.Attribute.actionBarSplitStyle;
+			global::com.refractored.Resource.Attribute.actionBarStyle = global::CounterWeightsDroid.Resource.Attribute.actionBarStyle;
+			global::com.refractored.Resource.Attribute.actionBarTabBarStyle = global::CounterWeightsDroid.Resource.Attribute.actionBarTabBarStyle;
+			global::com.refractored.Resource.Attribute.actionBarTabStyle = global::CounterWeightsDroid.Resource.Attribute.actionBarTabStyle;
+			global::com.refractored.Resource.Attribute.actionBarTabTextStyle = global::CounterWeightsDroid.Resource.Attribute.actionBarTabTextStyle;
+			global::com.refractored.Resource.Attribute.actionBarTheme = global::CounterWeightsDroid.Resource.Attribute.actionBarTheme;
+			global::com.refractored.Resource.Attribute.actionBarWidgetTheme = global::CounterWeightsDroid.Resource.Attribute.actionBarWidgetTheme;
+			global::com.refractored.Resource.Attribute.actionButtonStyle = global::CounterWeightsDroid.Resource.Attribute.actionButtonStyle;
+			global::com.refractored.Resource.Attribute.actionDropDownStyle = global::CounterWeightsDroid.Resource.Attribute.actionDropDownStyle;
+			global::com.refractored.Resource.Attribute.actionLayout = global::CounterWeightsDroid.Resource.Attribute.actionLayout;
+			global::com.refractored.Resource.Attribute.actionMenuTextAppearance = global::CounterWeightsDroid.Resource.Attribute.actionMenuTextAppearance;
+			global::com.refractored.Resource.Attribute.actionMenuTextColor = global::CounterWeightsDroid.Resource.Attribute.actionMenuTextColor;
+			global::com.refractored.Resource.Attribute.actionModeBackground = global::CounterWeightsDroid.Resource.Attribute.actionModeBackground;
+			global::com.refractored.Resource.Attribute.actionModeCloseButtonStyle = global::CounterWeightsDroid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::com.refractored.Resource.Attribute.actionModeCloseDrawable = global::CounterWeightsDroid.Resource.Attribute.actionModeCloseDrawable;
+			global::com.refractored.Resource.Attribute.actionModeCopyDrawable = global::CounterWeightsDroid.Resource.Attribute.actionModeCopyDrawable;
+			global::com.refractored.Resource.Attribute.actionModeCutDrawable = global::CounterWeightsDroid.Resource.Attribute.actionModeCutDrawable;
+			global::com.refractored.Resource.Attribute.actionModeFindDrawable = global::CounterWeightsDroid.Resource.Attribute.actionModeFindDrawable;
+			global::com.refractored.Resource.Attribute.actionModePasteDrawable = global::CounterWeightsDroid.Resource.Attribute.actionModePasteDrawable;
+			global::com.refractored.Resource.Attribute.actionModePopupWindowStyle = global::CounterWeightsDroid.Resource.Attribute.actionModePopupWindowStyle;
+			global::com.refractored.Resource.Attribute.actionModeSelectAllDrawable = global::CounterWeightsDroid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::com.refractored.Resource.Attribute.actionModeShareDrawable = global::CounterWeightsDroid.Resource.Attribute.actionModeShareDrawable;
+			global::com.refractored.Resource.Attribute.actionModeSplitBackground = global::CounterWeightsDroid.Resource.Attribute.actionModeSplitBackground;
+			global::com.refractored.Resource.Attribute.actionModeStyle = global::CounterWeightsDroid.Resource.Attribute.actionModeStyle;
+			global::com.refractored.Resource.Attribute.actionModeWebSearchDrawable = global::CounterWeightsDroid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::com.refractored.Resource.Attribute.actionOverflowButtonStyle = global::CounterWeightsDroid.Resource.Attribute.actionOverflowButtonStyle;
+			global::com.refractored.Resource.Attribute.actionOverflowMenuStyle = global::CounterWeightsDroid.Resource.Attribute.actionOverflowMenuStyle;
+			global::com.refractored.Resource.Attribute.actionProviderClass = global::CounterWeightsDroid.Resource.Attribute.actionProviderClass;
+			global::com.refractored.Resource.Attribute.actionViewClass = global::CounterWeightsDroid.Resource.Attribute.actionViewClass;
+			global::com.refractored.Resource.Attribute.activityChooserViewStyle = global::CounterWeightsDroid.Resource.Attribute.activityChooserViewStyle;
+			global::com.refractored.Resource.Attribute.background = global::CounterWeightsDroid.Resource.Attribute.background;
+			global::com.refractored.Resource.Attribute.backgroundSplit = global::CounterWeightsDroid.Resource.Attribute.backgroundSplit;
+			global::com.refractored.Resource.Attribute.backgroundStacked = global::CounterWeightsDroid.Resource.Attribute.backgroundStacked;
+			global::com.refractored.Resource.Attribute.barSize = global::CounterWeightsDroid.Resource.Attribute.barSize;
+			global::com.refractored.Resource.Attribute.buttonBarButtonStyle = global::CounterWeightsDroid.Resource.Attribute.buttonBarButtonStyle;
+			global::com.refractored.Resource.Attribute.buttonBarStyle = global::CounterWeightsDroid.Resource.Attribute.buttonBarStyle;
+			global::com.refractored.Resource.Attribute.closeIcon = global::CounterWeightsDroid.Resource.Attribute.closeIcon;
+			global::com.refractored.Resource.Attribute.closeItemLayout = global::CounterWeightsDroid.Resource.Attribute.closeItemLayout;
+			global::com.refractored.Resource.Attribute.collapseContentDescription = global::CounterWeightsDroid.Resource.Attribute.collapseContentDescription;
+			global::com.refractored.Resource.Attribute.collapseIcon = global::CounterWeightsDroid.Resource.Attribute.collapseIcon;
+			global::com.refractored.Resource.Attribute.color = global::CounterWeightsDroid.Resource.Attribute.color;
+			global::com.refractored.Resource.Attribute.colorAccent = global::CounterWeightsDroid.Resource.Attribute.colorAccent;
+			global::com.refractored.Resource.Attribute.colorButtonNormal = global::CounterWeightsDroid.Resource.Attribute.colorButtonNormal;
+			global::com.refractored.Resource.Attribute.colorControlActivated = global::CounterWeightsDroid.Resource.Attribute.colorControlActivated;
+			global::com.refractored.Resource.Attribute.colorControlHighlight = global::CounterWeightsDroid.Resource.Attribute.colorControlHighlight;
+			global::com.refractored.Resource.Attribute.colorControlNormal = global::CounterWeightsDroid.Resource.Attribute.colorControlNormal;
+			global::com.refractored.Resource.Attribute.colorPrimary = global::CounterWeightsDroid.Resource.Attribute.colorPrimary;
+			global::com.refractored.Resource.Attribute.colorPrimaryDark = global::CounterWeightsDroid.Resource.Attribute.colorPrimaryDark;
+			global::com.refractored.Resource.Attribute.colorSwitchThumbNormal = global::CounterWeightsDroid.Resource.Attribute.colorSwitchThumbNormal;
+			global::com.refractored.Resource.Attribute.commitIcon = global::CounterWeightsDroid.Resource.Attribute.commitIcon;
+			global::com.refractored.Resource.Attribute.contentInsetEnd = global::CounterWeightsDroid.Resource.Attribute.contentInsetEnd;
+			global::com.refractored.Resource.Attribute.contentInsetLeft = global::CounterWeightsDroid.Resource.Attribute.contentInsetLeft;
+			global::com.refractored.Resource.Attribute.contentInsetRight = global::CounterWeightsDroid.Resource.Attribute.contentInsetRight;
+			global::com.refractored.Resource.Attribute.contentInsetStart = global::CounterWeightsDroid.Resource.Attribute.contentInsetStart;
+			global::com.refractored.Resource.Attribute.customNavigationLayout = global::CounterWeightsDroid.Resource.Attribute.customNavigationLayout;
+			global::com.refractored.Resource.Attribute.disableChildrenWhenDisabled = global::CounterWeightsDroid.Resource.Attribute.disableChildrenWhenDisabled;
+			global::com.refractored.Resource.Attribute.displayOptions = global::CounterWeightsDroid.Resource.Attribute.displayOptions;
+			global::com.refractored.Resource.Attribute.divider = global::CounterWeightsDroid.Resource.Attribute.divider;
+			global::com.refractored.Resource.Attribute.dividerHorizontal = global::CounterWeightsDroid.Resource.Attribute.dividerHorizontal;
+			global::com.refractored.Resource.Attribute.dividerPadding = global::CounterWeightsDroid.Resource.Attribute.dividerPadding;
+			global::com.refractored.Resource.Attribute.dividerVertical = global::CounterWeightsDroid.Resource.Attribute.dividerVertical;
+			global::com.refractored.Resource.Attribute.drawableSize = global::CounterWeightsDroid.Resource.Attribute.drawableSize;
+			global::com.refractored.Resource.Attribute.drawerArrowStyle = global::CounterWeightsDroid.Resource.Attribute.drawerArrowStyle;
+			global::com.refractored.Resource.Attribute.dropDownListViewStyle = global::CounterWeightsDroid.Resource.Attribute.dropDownListViewStyle;
+			global::com.refractored.Resource.Attribute.dropdownListPreferredItemHeight = global::CounterWeightsDroid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::com.refractored.Resource.Attribute.editTextBackground = global::CounterWeightsDroid.Resource.Attribute.editTextBackground;
+			global::com.refractored.Resource.Attribute.editTextColor = global::CounterWeightsDroid.Resource.Attribute.editTextColor;
+			global::com.refractored.Resource.Attribute.elevation = global::CounterWeightsDroid.Resource.Attribute.elevation;
+			global::com.refractored.Resource.Attribute.expandActivityOverflowButtonDrawable = global::CounterWeightsDroid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::com.refractored.Resource.Attribute.gapBetweenBars = global::CounterWeightsDroid.Resource.Attribute.gapBetweenBars;
+			global::com.refractored.Resource.Attribute.goIcon = global::CounterWeightsDroid.Resource.Attribute.goIcon;
+			global::com.refractored.Resource.Attribute.height = global::CounterWeightsDroid.Resource.Attribute.height;
+			global::com.refractored.Resource.Attribute.hideOnContentScroll = global::CounterWeightsDroid.Resource.Attribute.hideOnContentScroll;
+			global::com.refractored.Resource.Attribute.homeAsUpIndicator = global::CounterWeightsDroid.Resource.Attribute.homeAsUpIndicator;
+			global::com.refractored.Resource.Attribute.homeLayout = global::CounterWeightsDroid.Resource.Attribute.homeLayout;
+			global::com.refractored.Resource.Attribute.icon = global::CounterWeightsDroid.Resource.Attribute.icon;
+			global::com.refractored.Resource.Attribute.iconifiedByDefault = global::CounterWeightsDroid.Resource.Attribute.iconifiedByDefault;
+			global::com.refractored.Resource.Attribute.indeterminateProgressStyle = global::CounterWeightsDroid.Resource.Attribute.indeterminateProgressStyle;
+			global::com.refractored.Resource.Attribute.initialActivityCount = global::CounterWeightsDroid.Resource.Attribute.initialActivityCount;
+			global::com.refractored.Resource.Attribute.isLightTheme = global::CounterWeightsDroid.Resource.Attribute.isLightTheme;
+			global::com.refractored.Resource.Attribute.itemPadding = global::CounterWeightsDroid.Resource.Attribute.itemPadding;
+			global::com.refractored.Resource.Attribute.layout = global::CounterWeightsDroid.Resource.Attribute.layout;
+			global::com.refractored.Resource.Attribute.listChoiceBackgroundIndicator = global::CounterWeightsDroid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::com.refractored.Resource.Attribute.listPopupWindowStyle = global::CounterWeightsDroid.Resource.Attribute.listPopupWindowStyle;
+			global::com.refractored.Resource.Attribute.listPreferredItemHeight = global::CounterWeightsDroid.Resource.Attribute.listPreferredItemHeight;
+			global::com.refractored.Resource.Attribute.listPreferredItemHeightLarge = global::CounterWeightsDroid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::com.refractored.Resource.Attribute.listPreferredItemHeightSmall = global::CounterWeightsDroid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::com.refractored.Resource.Attribute.listPreferredItemPaddingLeft = global::CounterWeightsDroid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::com.refractored.Resource.Attribute.listPreferredItemPaddingRight = global::CounterWeightsDroid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::com.refractored.Resource.Attribute.logo = global::CounterWeightsDroid.Resource.Attribute.logo;
+			global::com.refractored.Resource.Attribute.maxButtonHeight = global::CounterWeightsDroid.Resource.Attribute.maxButtonHeight;
+			global::com.refractored.Resource.Attribute.measureWithLargestChild = global::CounterWeightsDroid.Resource.Attribute.measureWithLargestChild;
+			global::com.refractored.Resource.Attribute.middleBarArrowSize = global::CounterWeightsDroid.Resource.Attribute.middleBarArrowSize;
+			global::com.refractored.Resource.Attribute.navigationContentDescription = global::CounterWeightsDroid.Resource.Attribute.navigationContentDescription;
+			global::com.refractored.Resource.Attribute.navigationIcon = global::CounterWeightsDroid.Resource.Attribute.navigationIcon;
+			global::com.refractored.Resource.Attribute.navigationMode = global::CounterWeightsDroid.Resource.Attribute.navigationMode;
+			global::com.refractored.Resource.Attribute.overlapAnchor = global::CounterWeightsDroid.Resource.Attribute.overlapAnchor;
+			global::com.refractored.Resource.Attribute.paddingEnd = global::CounterWeightsDroid.Resource.Attribute.paddingEnd;
+			global::com.refractored.Resource.Attribute.paddingStart = global::CounterWeightsDroid.Resource.Attribute.paddingStart;
+			global::com.refractored.Resource.Attribute.panelBackground = global::CounterWeightsDroid.Resource.Attribute.panelBackground;
+			global::com.refractored.Resource.Attribute.panelMenuListTheme = global::CounterWeightsDroid.Resource.Attribute.panelMenuListTheme;
+			global::com.refractored.Resource.Attribute.panelMenuListWidth = global::CounterWeightsDroid.Resource.Attribute.panelMenuListWidth;
+			global::com.refractored.Resource.Attribute.popupMenuStyle = global::CounterWeightsDroid.Resource.Attribute.popupMenuStyle;
+			global::com.refractored.Resource.Attribute.popupPromptView = global::CounterWeightsDroid.Resource.Attribute.popupPromptView;
+			global::com.refractored.Resource.Attribute.popupTheme = global::CounterWeightsDroid.Resource.Attribute.popupTheme;
+			global::com.refractored.Resource.Attribute.popupWindowStyle = global::CounterWeightsDroid.Resource.Attribute.popupWindowStyle;
+			global::com.refractored.Resource.Attribute.preserveIconSpacing = global::CounterWeightsDroid.Resource.Attribute.preserveIconSpacing;
+			global::com.refractored.Resource.Attribute.progressBarPadding = global::CounterWeightsDroid.Resource.Attribute.progressBarPadding;
+			global::com.refractored.Resource.Attribute.progressBarStyle = global::CounterWeightsDroid.Resource.Attribute.progressBarStyle;
+			global::com.refractored.Resource.Attribute.prompt = global::CounterWeightsDroid.Resource.Attribute.prompt;
+			global::com.refractored.Resource.Attribute.pstsDividerColor = global::CounterWeightsDroid.Resource.Attribute.pstsDividerColor;
+			global::com.refractored.Resource.Attribute.pstsDividerPadding = global::CounterWeightsDroid.Resource.Attribute.pstsDividerPadding;
+			global::com.refractored.Resource.Attribute.pstsDividerWidth = global::CounterWeightsDroid.Resource.Attribute.pstsDividerWidth;
+			global::com.refractored.Resource.Attribute.pstsIndicatorColor = global::CounterWeightsDroid.Resource.Attribute.pstsIndicatorColor;
+			global::com.refractored.Resource.Attribute.pstsIndicatorHeight = global::CounterWeightsDroid.Resource.Attribute.pstsIndicatorHeight;
+			global::com.refractored.Resource.Attribute.pstsPaddingMiddle = global::CounterWeightsDroid.Resource.Attribute.pstsPaddingMiddle;
+			global::com.refractored.Resource.Attribute.pstsScrollOffset = global::CounterWeightsDroid.Resource.Attribute.pstsScrollOffset;
+			global::com.refractored.Resource.Attribute.pstsShouldExpand = global::CounterWeightsDroid.Resource.Attribute.pstsShouldExpand;
+			global::com.refractored.Resource.Attribute.pstsTabBackground = global::CounterWeightsDroid.Resource.Attribute.pstsTabBackground;
+			global::com.refractored.Resource.Attribute.pstsTabPaddingLeftRight = global::CounterWeightsDroid.Resource.Attribute.pstsTabPaddingLeftRight;
+			global::com.refractored.Resource.Attribute.pstsTextAllCaps = global::CounterWeightsDroid.Resource.Attribute.pstsTextAllCaps;
+			global::com.refractored.Resource.Attribute.pstsTextAlpha = global::CounterWeightsDroid.Resource.Attribute.pstsTextAlpha;
+			global::com.refractored.Resource.Attribute.pstsTextSelectedAlpha = global::CounterWeightsDroid.Resource.Attribute.pstsTextSelectedAlpha;
+			global::com.refractored.Resource.Attribute.pstsTextSelectedStyle = global::CounterWeightsDroid.Resource.Attribute.pstsTextSelectedStyle;
+			global::com.refractored.Resource.Attribute.pstsTextStyle = global::CounterWeightsDroid.Resource.Attribute.pstsTextStyle;
+			global::com.refractored.Resource.Attribute.pstsUnderlineColor = global::CounterWeightsDroid.Resource.Attribute.pstsUnderlineColor;
+			global::com.refractored.Resource.Attribute.pstsUnderlineHeight = global::CounterWeightsDroid.Resource.Attribute.pstsUnderlineHeight;
+			global::com.refractored.Resource.Attribute.queryBackground = global::CounterWeightsDroid.Resource.Attribute.queryBackground;
+			global::com.refractored.Resource.Attribute.queryHint = global::CounterWeightsDroid.Resource.Attribute.queryHint;
+			global::com.refractored.Resource.Attribute.searchIcon = global::CounterWeightsDroid.Resource.Attribute.searchIcon;
+			global::com.refractored.Resource.Attribute.searchViewStyle = global::CounterWeightsDroid.Resource.Attribute.searchViewStyle;
+			global::com.refractored.Resource.Attribute.selectableItemBackground = global::CounterWeightsDroid.Resource.Attribute.selectableItemBackground;
+			global::com.refractored.Resource.Attribute.selectableItemBackgroundBorderless = global::CounterWeightsDroid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::com.refractored.Resource.Attribute.showAsAction = global::CounterWeightsDroid.Resource.Attribute.showAsAction;
+			global::com.refractored.Resource.Attribute.showDividers = global::CounterWeightsDroid.Resource.Attribute.showDividers;
+			global::com.refractored.Resource.Attribute.showText = global::CounterWeightsDroid.Resource.Attribute.showText;
+			global::com.refractored.Resource.Attribute.spinBars = global::CounterWeightsDroid.Resource.Attribute.spinBars;
+			global::com.refractored.Resource.Attribute.spinnerDropDownItemStyle = global::CounterWeightsDroid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::com.refractored.Resource.Attribute.spinnerMode = global::CounterWeightsDroid.Resource.Attribute.spinnerMode;
+			global::com.refractored.Resource.Attribute.spinnerStyle = global::CounterWeightsDroid.Resource.Attribute.spinnerStyle;
+			global::com.refractored.Resource.Attribute.splitTrack = global::CounterWeightsDroid.Resource.Attribute.splitTrack;
+			global::com.refractored.Resource.Attribute.state_above_anchor = global::CounterWeightsDroid.Resource.Attribute.state_above_anchor;
+			global::com.refractored.Resource.Attribute.submitBackground = global::CounterWeightsDroid.Resource.Attribute.submitBackground;
+			global::com.refractored.Resource.Attribute.subtitle = global::CounterWeightsDroid.Resource.Attribute.subtitle;
+			global::com.refractored.Resource.Attribute.subtitleTextAppearance = global::CounterWeightsDroid.Resource.Attribute.subtitleTextAppearance;
+			global::com.refractored.Resource.Attribute.subtitleTextStyle = global::CounterWeightsDroid.Resource.Attribute.subtitleTextStyle;
+			global::com.refractored.Resource.Attribute.suggestionRowLayout = global::CounterWeightsDroid.Resource.Attribute.suggestionRowLayout;
+			global::com.refractored.Resource.Attribute.switchMinWidth = global::CounterWeightsDroid.Resource.Attribute.switchMinWidth;
+			global::com.refractored.Resource.Attribute.switchPadding = global::CounterWeightsDroid.Resource.Attribute.switchPadding;
+			global::com.refractored.Resource.Attribute.switchStyle = global::CounterWeightsDroid.Resource.Attribute.switchStyle;
+			global::com.refractored.Resource.Attribute.switchTextAppearance = global::CounterWeightsDroid.Resource.Attribute.switchTextAppearance;
+			global::com.refractored.Resource.Attribute.textAllCaps = global::CounterWeightsDroid.Resource.Attribute.textAllCaps;
+			global::com.refractored.Resource.Attribute.textAppearanceLargePopupMenu = global::CounterWeightsDroid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::com.refractored.Resource.Attribute.textAppearanceListItem = global::CounterWeightsDroid.Resource.Attribute.textAppearanceListItem;
+			global::com.refractored.Resource.Attribute.textAppearanceListItemSmall = global::CounterWeightsDroid.Resource.Attribute.textAppearanceListItemSmall;
+			global::com.refractored.Resource.Attribute.textAppearanceSearchResultSubtitle = global::CounterWeightsDroid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::com.refractored.Resource.Attribute.textAppearanceSearchResultTitle = global::CounterWeightsDroid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::com.refractored.Resource.Attribute.textAppearanceSmallPopupMenu = global::CounterWeightsDroid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::com.refractored.Resource.Attribute.textColorSearchUrl = global::CounterWeightsDroid.Resource.Attribute.textColorSearchUrl;
+			global::com.refractored.Resource.Attribute.theme = global::CounterWeightsDroid.Resource.Attribute.theme;
+			global::com.refractored.Resource.Attribute.thickness = global::CounterWeightsDroid.Resource.Attribute.thickness;
+			global::com.refractored.Resource.Attribute.thumbTextPadding = global::CounterWeightsDroid.Resource.Attribute.thumbTextPadding;
+			global::com.refractored.Resource.Attribute.title = global::CounterWeightsDroid.Resource.Attribute.title;
+			global::com.refractored.Resource.Attribute.titleMarginBottom = global::CounterWeightsDroid.Resource.Attribute.titleMarginBottom;
+			global::com.refractored.Resource.Attribute.titleMarginEnd = global::CounterWeightsDroid.Resource.Attribute.titleMarginEnd;
+			global::com.refractored.Resource.Attribute.titleMarginStart = global::CounterWeightsDroid.Resource.Attribute.titleMarginStart;
+			global::com.refractored.Resource.Attribute.titleMarginTop = global::CounterWeightsDroid.Resource.Attribute.titleMarginTop;
+			global::com.refractored.Resource.Attribute.titleMargins = global::CounterWeightsDroid.Resource.Attribute.titleMargins;
+			global::com.refractored.Resource.Attribute.titleTextAppearance = global::CounterWeightsDroid.Resource.Attribute.titleTextAppearance;
+			global::com.refractored.Resource.Attribute.titleTextStyle = global::CounterWeightsDroid.Resource.Attribute.titleTextStyle;
+			global::com.refractored.Resource.Attribute.toolbarNavigationButtonStyle = global::CounterWeightsDroid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::com.refractored.Resource.Attribute.toolbarStyle = global::CounterWeightsDroid.Resource.Attribute.toolbarStyle;
+			global::com.refractored.Resource.Attribute.topBottomBarArrowSize = global::CounterWeightsDroid.Resource.Attribute.topBottomBarArrowSize;
+			global::com.refractored.Resource.Attribute.track = global::CounterWeightsDroid.Resource.Attribute.track;
+			global::com.refractored.Resource.Attribute.voiceIcon = global::CounterWeightsDroid.Resource.Attribute.voiceIcon;
+			global::com.refractored.Resource.Attribute.windowActionBar = global::CounterWeightsDroid.Resource.Attribute.windowActionBar;
+			global::com.refractored.Resource.Attribute.windowActionBarOverlay = global::CounterWeightsDroid.Resource.Attribute.windowActionBarOverlay;
+			global::com.refractored.Resource.Attribute.windowActionModeOverlay = global::CounterWeightsDroid.Resource.Attribute.windowActionModeOverlay;
+			global::com.refractored.Resource.Attribute.windowFixedHeightMajor = global::CounterWeightsDroid.Resource.Attribute.windowFixedHeightMajor;
+			global::com.refractored.Resource.Attribute.windowFixedHeightMinor = global::CounterWeightsDroid.Resource.Attribute.windowFixedHeightMinor;
+			global::com.refractored.Resource.Attribute.windowFixedWidthMajor = global::CounterWeightsDroid.Resource.Attribute.windowFixedWidthMajor;
+			global::com.refractored.Resource.Attribute.windowFixedWidthMinor = global::CounterWeightsDroid.Resource.Attribute.windowFixedWidthMinor;
+			global::com.refractored.Resource.Boolean.abc_action_bar_embed_tabs = global::CounterWeightsDroid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::com.refractored.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb = global::CounterWeightsDroid.Resource.Boolean.abc_action_bar_embed_tabs_pre_jb;
+			global::com.refractored.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive = global::CounterWeightsDroid.Resource.Boolean.abc_action_bar_expanded_action_views_exclusive;
+			global::com.refractored.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::CounterWeightsDroid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::com.refractored.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon = global::CounterWeightsDroid.Resource.Boolean.abc_config_allowActionMenuItemTextWithIcon;
+			global::com.refractored.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::CounterWeightsDroid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::com.refractored.Resource.Color.abc_background_cache_hint_selector_material_dark = global::CounterWeightsDroid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::com.refractored.Resource.Color.abc_background_cache_hint_selector_material_light = global::CounterWeightsDroid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::com.refractored.Resource.Color.abc_input_method_navigation_guard = global::CounterWeightsDroid.Resource.Color.abc_input_method_navigation_guard;
+			global::com.refractored.Resource.Color.abc_primary_text_disable_only_material_dark = global::CounterWeightsDroid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::com.refractored.Resource.Color.abc_primary_text_disable_only_material_light = global::CounterWeightsDroid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::com.refractored.Resource.Color.abc_primary_text_material_dark = global::CounterWeightsDroid.Resource.Color.abc_primary_text_material_dark;
+			global::com.refractored.Resource.Color.abc_primary_text_material_light = global::CounterWeightsDroid.Resource.Color.abc_primary_text_material_light;
+			global::com.refractored.Resource.Color.abc_search_url_text = global::CounterWeightsDroid.Resource.Color.abc_search_url_text;
+			global::com.refractored.Resource.Color.abc_search_url_text_normal = global::CounterWeightsDroid.Resource.Color.abc_search_url_text_normal;
+			global::com.refractored.Resource.Color.abc_search_url_text_pressed = global::CounterWeightsDroid.Resource.Color.abc_search_url_text_pressed;
+			global::com.refractored.Resource.Color.abc_search_url_text_selected = global::CounterWeightsDroid.Resource.Color.abc_search_url_text_selected;
+			global::com.refractored.Resource.Color.abc_secondary_text_material_dark = global::CounterWeightsDroid.Resource.Color.abc_secondary_text_material_dark;
+			global::com.refractored.Resource.Color.abc_secondary_text_material_light = global::CounterWeightsDroid.Resource.Color.abc_secondary_text_material_light;
+			global::com.refractored.Resource.Color.accent_material_dark = global::CounterWeightsDroid.Resource.Color.accent_material_dark;
+			global::com.refractored.Resource.Color.accent_material_light = global::CounterWeightsDroid.Resource.Color.accent_material_light;
+			global::com.refractored.Resource.Color.background_floating_material_dark = global::CounterWeightsDroid.Resource.Color.background_floating_material_dark;
+			global::com.refractored.Resource.Color.background_floating_material_light = global::CounterWeightsDroid.Resource.Color.background_floating_material_light;
+			global::com.refractored.Resource.Color.background_material_dark = global::CounterWeightsDroid.Resource.Color.background_material_dark;
+			global::com.refractored.Resource.Color.background_material_light = global::CounterWeightsDroid.Resource.Color.background_material_light;
+			global::com.refractored.Resource.Color.background_tab_pressed = global::CounterWeightsDroid.Resource.Color.background_tab_pressed;
+			global::com.refractored.Resource.Color.bright_foreground_disabled_material_dark = global::CounterWeightsDroid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::com.refractored.Resource.Color.bright_foreground_disabled_material_light = global::CounterWeightsDroid.Resource.Color.bright_foreground_disabled_material_light;
+			global::com.refractored.Resource.Color.bright_foreground_inverse_material_dark = global::CounterWeightsDroid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::com.refractored.Resource.Color.bright_foreground_inverse_material_light = global::CounterWeightsDroid.Resource.Color.bright_foreground_inverse_material_light;
+			global::com.refractored.Resource.Color.bright_foreground_material_dark = global::CounterWeightsDroid.Resource.Color.bright_foreground_material_dark;
+			global::com.refractored.Resource.Color.bright_foreground_material_light = global::CounterWeightsDroid.Resource.Color.bright_foreground_material_light;
+			global::com.refractored.Resource.Color.button_material_dark = global::CounterWeightsDroid.Resource.Color.button_material_dark;
+			global::com.refractored.Resource.Color.button_material_light = global::CounterWeightsDroid.Resource.Color.button_material_light;
+			global::com.refractored.Resource.Color.dim_foreground_disabled_material_dark = global::CounterWeightsDroid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::com.refractored.Resource.Color.dim_foreground_disabled_material_light = global::CounterWeightsDroid.Resource.Color.dim_foreground_disabled_material_light;
+			global::com.refractored.Resource.Color.dim_foreground_material_dark = global::CounterWeightsDroid.Resource.Color.dim_foreground_material_dark;
+			global::com.refractored.Resource.Color.dim_foreground_material_light = global::CounterWeightsDroid.Resource.Color.dim_foreground_material_light;
+			global::com.refractored.Resource.Color.highlighted_text_material_dark = global::CounterWeightsDroid.Resource.Color.highlighted_text_material_dark;
+			global::com.refractored.Resource.Color.highlighted_text_material_light = global::CounterWeightsDroid.Resource.Color.highlighted_text_material_light;
+			global::com.refractored.Resource.Color.hint_foreground_material_dark = global::CounterWeightsDroid.Resource.Color.hint_foreground_material_dark;
+			global::com.refractored.Resource.Color.hint_foreground_material_light = global::CounterWeightsDroid.Resource.Color.hint_foreground_material_light;
+			global::com.refractored.Resource.Color.link_text_material_dark = global::CounterWeightsDroid.Resource.Color.link_text_material_dark;
+			global::com.refractored.Resource.Color.link_text_material_light = global::CounterWeightsDroid.Resource.Color.link_text_material_light;
+			global::com.refractored.Resource.Color.material_blue_grey_800 = global::CounterWeightsDroid.Resource.Color.material_blue_grey_800;
+			global::com.refractored.Resource.Color.material_blue_grey_900 = global::CounterWeightsDroid.Resource.Color.material_blue_grey_900;
+			global::com.refractored.Resource.Color.material_blue_grey_950 = global::CounterWeightsDroid.Resource.Color.material_blue_grey_950;
+			global::com.refractored.Resource.Color.material_deep_teal_200 = global::CounterWeightsDroid.Resource.Color.material_deep_teal_200;
+			global::com.refractored.Resource.Color.material_deep_teal_500 = global::CounterWeightsDroid.Resource.Color.material_deep_teal_500;
+			global::com.refractored.Resource.Color.primary_dark_material_dark = global::CounterWeightsDroid.Resource.Color.primary_dark_material_dark;
+			global::com.refractored.Resource.Color.primary_dark_material_light = global::CounterWeightsDroid.Resource.Color.primary_dark_material_light;
+			global::com.refractored.Resource.Color.primary_material_dark = global::CounterWeightsDroid.Resource.Color.primary_material_dark;
+			global::com.refractored.Resource.Color.primary_material_light = global::CounterWeightsDroid.Resource.Color.primary_material_light;
+			global::com.refractored.Resource.Color.primary_text_default_material_dark = global::CounterWeightsDroid.Resource.Color.primary_text_default_material_dark;
+			global::com.refractored.Resource.Color.primary_text_default_material_light = global::CounterWeightsDroid.Resource.Color.primary_text_default_material_light;
+			global::com.refractored.Resource.Color.primary_text_disabled_material_dark = global::CounterWeightsDroid.Resource.Color.primary_text_disabled_material_dark;
+			global::com.refractored.Resource.Color.primary_text_disabled_material_light = global::CounterWeightsDroid.Resource.Color.primary_text_disabled_material_light;
+			global::com.refractored.Resource.Color.ripple_material_dark = global::CounterWeightsDroid.Resource.Color.ripple_material_dark;
+			global::com.refractored.Resource.Color.ripple_material_light = global::CounterWeightsDroid.Resource.Color.ripple_material_light;
+			global::com.refractored.Resource.Color.secondary_text_default_material_dark = global::CounterWeightsDroid.Resource.Color.secondary_text_default_material_dark;
+			global::com.refractored.Resource.Color.secondary_text_default_material_light = global::CounterWeightsDroid.Resource.Color.secondary_text_default_material_light;
+			global::com.refractored.Resource.Color.secondary_text_disabled_material_dark = global::CounterWeightsDroid.Resource.Color.secondary_text_disabled_material_dark;
+			global::com.refractored.Resource.Color.secondary_text_disabled_material_light = global::CounterWeightsDroid.Resource.Color.secondary_text_disabled_material_light;
+			global::com.refractored.Resource.Color.switch_thumb_normal_material_dark = global::CounterWeightsDroid.Resource.Color.switch_thumb_normal_material_dark;
+			global::com.refractored.Resource.Color.switch_thumb_normal_material_light = global::CounterWeightsDroid.Resource.Color.switch_thumb_normal_material_light;
+			global::com.refractored.Resource.Dimension.abc_action_bar_default_height_material = global::CounterWeightsDroid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_default_padding_material = global::CounterWeightsDroid.Resource.Dimension.abc_action_bar_default_padding_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::CounterWeightsDroid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_progress_bar_size = global::CounterWeightsDroid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::com.refractored.Resource.Dimension.abc_action_bar_stacked_max_height = global::CounterWeightsDroid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::com.refractored.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::CounterWeightsDroid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::com.refractored.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::CounterWeightsDroid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::com.refractored.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::CounterWeightsDroid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::com.refractored.Resource.Dimension.abc_action_button_min_height_material = global::CounterWeightsDroid.Resource.Dimension.abc_action_button_min_height_material;
+			global::com.refractored.Resource.Dimension.abc_action_button_min_width_material = global::CounterWeightsDroid.Resource.Dimension.abc_action_button_min_width_material;
+			global::com.refractored.Resource.Dimension.abc_action_button_min_width_overflow_material = global::CounterWeightsDroid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::com.refractored.Resource.Dimension.abc_config_prefDialogWidth = global::CounterWeightsDroid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::com.refractored.Resource.Dimension.abc_control_inset_material = global::CounterWeightsDroid.Resource.Dimension.abc_control_inset_material;
+			global::com.refractored.Resource.Dimension.abc_control_padding_material = global::CounterWeightsDroid.Resource.Dimension.abc_control_padding_material;
+			global::com.refractored.Resource.Dimension.abc_dropdownitem_icon_width = global::CounterWeightsDroid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::com.refractored.Resource.Dimension.abc_dropdownitem_text_padding_left = global::CounterWeightsDroid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::com.refractored.Resource.Dimension.abc_dropdownitem_text_padding_right = global::CounterWeightsDroid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::com.refractored.Resource.Dimension.abc_panel_menu_list_width = global::CounterWeightsDroid.Resource.Dimension.abc_panel_menu_list_width;
+			global::com.refractored.Resource.Dimension.abc_search_view_preferred_width = global::CounterWeightsDroid.Resource.Dimension.abc_search_view_preferred_width;
+			global::com.refractored.Resource.Dimension.abc_search_view_text_min_width = global::CounterWeightsDroid.Resource.Dimension.abc_search_view_text_min_width;
+			global::com.refractored.Resource.Dimension.abc_text_size_body_1_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_body_1_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_body_2_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_body_2_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_button_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_button_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_caption_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_caption_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_1_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_display_1_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_2_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_display_2_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_3_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_display_3_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_display_4_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_display_4_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_headline_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_headline_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_large_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_large_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_medium_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_medium_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_menu_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_menu_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_small_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_small_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_subhead_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_subhead_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::com.refractored.Resource.Dimension.abc_text_size_title_material = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_title_material;
+			global::com.refractored.Resource.Dimension.abc_text_size_title_material_toolbar = global::CounterWeightsDroid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::com.refractored.Resource.Dimension.dialog_fixed_height_major = global::CounterWeightsDroid.Resource.Dimension.dialog_fixed_height_major;
+			global::com.refractored.Resource.Dimension.dialog_fixed_height_minor = global::CounterWeightsDroid.Resource.Dimension.dialog_fixed_height_minor;
+			global::com.refractored.Resource.Dimension.dialog_fixed_width_major = global::CounterWeightsDroid.Resource.Dimension.dialog_fixed_width_major;
+			global::com.refractored.Resource.Dimension.dialog_fixed_width_minor = global::CounterWeightsDroid.Resource.Dimension.dialog_fixed_width_minor;
+			global::com.refractored.Resource.Dimension.disabled_alpha_material_dark = global::CounterWeightsDroid.Resource.Dimension.disabled_alpha_material_dark;
+			global::com.refractored.Resource.Dimension.disabled_alpha_material_light = global::CounterWeightsDroid.Resource.Dimension.disabled_alpha_material_light;
+			global::com.refractored.Resource.Drawable.abc_ab_share_pack_holo_dark = global::CounterWeightsDroid.Resource.Drawable.abc_ab_share_pack_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_ab_share_pack_holo_light = global::CounterWeightsDroid.Resource.Drawable.abc_ab_share_pack_holo_light;
+			global::com.refractored.Resource.Drawable.abc_btn_check_material = global::CounterWeightsDroid.Resource.Drawable.abc_btn_check_material;
+			global::com.refractored.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::CounterWeightsDroid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::com.refractored.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::CounterWeightsDroid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::com.refractored.Resource.Drawable.abc_btn_radio_material = global::CounterWeightsDroid.Resource.Drawable.abc_btn_radio_material;
+			global::com.refractored.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::CounterWeightsDroid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::com.refractored.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::CounterWeightsDroid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::com.refractored.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::CounterWeightsDroid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::com.refractored.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::CounterWeightsDroid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::com.refractored.Resource.Drawable.abc_cab_background_internal_bg = global::CounterWeightsDroid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::com.refractored.Resource.Drawable.abc_cab_background_top_material = global::CounterWeightsDroid.Resource.Drawable.abc_cab_background_top_material;
+			global::com.refractored.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_edit_text_material = global::CounterWeightsDroid.Resource.Drawable.abc_edit_text_material;
+			global::com.refractored.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_ab_back_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_clear_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_clear_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_go_search_api_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_menu_moreoverflow_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_search_api_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_search_api_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_ic_voice_search_api_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_item_background_holo_dark = global::CounterWeightsDroid.Resource.Drawable.abc_item_background_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_item_background_holo_light = global::CounterWeightsDroid.Resource.Drawable.abc_item_background_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_divider_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_list_focused_holo = global::CounterWeightsDroid.Resource.Drawable.abc_list_focused_holo;
+			global::com.refractored.Resource.Drawable.abc_list_longpressed_holo = global::CounterWeightsDroid.Resource.Drawable.abc_list_longpressed_holo;
+			global::com.refractored.Resource.Drawable.abc_list_pressed_holo_dark = global::CounterWeightsDroid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_pressed_holo_light = global::CounterWeightsDroid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::CounterWeightsDroid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::CounterWeightsDroid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::CounterWeightsDroid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_selector_disabled_holo_light = global::CounterWeightsDroid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::com.refractored.Resource.Drawable.abc_list_selector_holo_dark = global::CounterWeightsDroid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::com.refractored.Resource.Drawable.abc_list_selector_holo_light = global::CounterWeightsDroid.Resource.Drawable.abc_list_selector_holo_light;
+			global::com.refractored.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::CounterWeightsDroid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::com.refractored.Resource.Drawable.abc_popup_background_mtrl_mult = global::CounterWeightsDroid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::com.refractored.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::com.refractored.Resource.Drawable.abc_switch_thumb_material = global::CounterWeightsDroid.Resource.Drawable.abc_switch_thumb_material;
+			global::com.refractored.Resource.Drawable.abc_switch_track_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_tab_indicator_material = global::CounterWeightsDroid.Resource.Drawable.abc_tab_indicator_material;
+			global::com.refractored.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::CounterWeightsDroid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::com.refractored.Resource.Drawable.abc_textfield_search_material = global::CounterWeightsDroid.Resource.Drawable.abc_textfield_search_material;
+			global::com.refractored.Resource.Drawable.background_tab = global::CounterWeightsDroid.Resource.Drawable.background_tab;
+			global::com.refractored.Resource.Id.action_bar = global::CounterWeightsDroid.Resource.Id.action_bar;
+			global::com.refractored.Resource.Id.action_bar_activity_content = global::CounterWeightsDroid.Resource.Id.action_bar_activity_content;
+			global::com.refractored.Resource.Id.action_bar_container = global::CounterWeightsDroid.Resource.Id.action_bar_container;
+			global::com.refractored.Resource.Id.action_bar_root = global::CounterWeightsDroid.Resource.Id.action_bar_root;
+			global::com.refractored.Resource.Id.action_bar_spinner = global::CounterWeightsDroid.Resource.Id.action_bar_spinner;
+			global::com.refractored.Resource.Id.action_bar_subtitle = global::CounterWeightsDroid.Resource.Id.action_bar_subtitle;
+			global::com.refractored.Resource.Id.action_bar_title = global::CounterWeightsDroid.Resource.Id.action_bar_title;
+			global::com.refractored.Resource.Id.action_context_bar = global::CounterWeightsDroid.Resource.Id.action_context_bar;
+			global::com.refractored.Resource.Id.action_menu_divider = global::CounterWeightsDroid.Resource.Id.action_menu_divider;
+			global::com.refractored.Resource.Id.action_menu_presenter = global::CounterWeightsDroid.Resource.Id.action_menu_presenter;
+			global::com.refractored.Resource.Id.action_mode_bar = global::CounterWeightsDroid.Resource.Id.action_mode_bar;
+			global::com.refractored.Resource.Id.action_mode_bar_stub = global::CounterWeightsDroid.Resource.Id.action_mode_bar_stub;
+			global::com.refractored.Resource.Id.action_mode_close_button = global::CounterWeightsDroid.Resource.Id.action_mode_close_button;
+			global::com.refractored.Resource.Id.activity_chooser_view_content = global::CounterWeightsDroid.Resource.Id.activity_chooser_view_content;
+			global::com.refractored.Resource.Id.always = global::CounterWeightsDroid.Resource.Id.always;
+			global::com.refractored.Resource.Id.beginning = global::CounterWeightsDroid.Resource.Id.beginning;
+			global::com.refractored.Resource.Id.bold = global::CounterWeightsDroid.Resource.Id.bold;
+			global::com.refractored.Resource.Id.checkbox = global::CounterWeightsDroid.Resource.Id.checkbox;
+			global::com.refractored.Resource.Id.collapseActionView = global::CounterWeightsDroid.Resource.Id.collapseActionView;
+			global::com.refractored.Resource.Id.decor_content_parent = global::CounterWeightsDroid.Resource.Id.decor_content_parent;
+			global::com.refractored.Resource.Id.default_activity_button = global::CounterWeightsDroid.Resource.Id.default_activity_button;
+			global::com.refractored.Resource.Id.dialog = global::CounterWeightsDroid.Resource.Id.dialog;
+			global::com.refractored.Resource.Id.disableHome = global::CounterWeightsDroid.Resource.Id.disableHome;
+			global::com.refractored.Resource.Id.dropdown = global::CounterWeightsDroid.Resource.Id.dropdown;
+			global::com.refractored.Resource.Id.edit_query = global::CounterWeightsDroid.Resource.Id.edit_query;
+			global::com.refractored.Resource.Id.end = global::CounterWeightsDroid.Resource.Id.end;
+			global::com.refractored.Resource.Id.expand_activities_button = global::CounterWeightsDroid.Resource.Id.expand_activities_button;
+			global::com.refractored.Resource.Id.expanded_menu = global::CounterWeightsDroid.Resource.Id.expanded_menu;
+			global::com.refractored.Resource.Id.home = global::CounterWeightsDroid.Resource.Id.home;
+			global::com.refractored.Resource.Id.homeAsUp = global::CounterWeightsDroid.Resource.Id.homeAsUp;
+			global::com.refractored.Resource.Id.icon = global::CounterWeightsDroid.Resource.Id.icon;
+			global::com.refractored.Resource.Id.ifRoom = global::CounterWeightsDroid.Resource.Id.ifRoom;
+			global::com.refractored.Resource.Id.image = global::CounterWeightsDroid.Resource.Id.image;
+			global::com.refractored.Resource.Id.italic = global::CounterWeightsDroid.Resource.Id.italic;
+			global::com.refractored.Resource.Id.listMode = global::CounterWeightsDroid.Resource.Id.listMode;
+			global::com.refractored.Resource.Id.list_item = global::CounterWeightsDroid.Resource.Id.list_item;
+			global::com.refractored.Resource.Id.middle = global::CounterWeightsDroid.Resource.Id.middle;
+			global::com.refractored.Resource.Id.never = global::CounterWeightsDroid.Resource.Id.never;
+			global::com.refractored.Resource.Id.none = global::CounterWeightsDroid.Resource.Id.none;
+			global::com.refractored.Resource.Id.normal = global::CounterWeightsDroid.Resource.Id.normal;
+			global::com.refractored.Resource.Id.progress_circular = global::CounterWeightsDroid.Resource.Id.progress_circular;
+			global::com.refractored.Resource.Id.progress_horizontal = global::CounterWeightsDroid.Resource.Id.progress_horizontal;
+			global::com.refractored.Resource.Id.radio = global::CounterWeightsDroid.Resource.Id.radio;
+			global::com.refractored.Resource.Id.search_badge = global::CounterWeightsDroid.Resource.Id.search_badge;
+			global::com.refractored.Resource.Id.search_bar = global::CounterWeightsDroid.Resource.Id.search_bar;
+			global::com.refractored.Resource.Id.search_button = global::CounterWeightsDroid.Resource.Id.search_button;
+			global::com.refractored.Resource.Id.search_close_btn = global::CounterWeightsDroid.Resource.Id.search_close_btn;
+			global::com.refractored.Resource.Id.search_edit_frame = global::CounterWeightsDroid.Resource.Id.search_edit_frame;
+			global::com.refractored.Resource.Id.search_go_btn = global::CounterWeightsDroid.Resource.Id.search_go_btn;
+			global::com.refractored.Resource.Id.search_mag_icon = global::CounterWeightsDroid.Resource.Id.search_mag_icon;
+			global::com.refractored.Resource.Id.search_plate = global::CounterWeightsDroid.Resource.Id.search_plate;
+			global::com.refractored.Resource.Id.search_src_text = global::CounterWeightsDroid.Resource.Id.search_src_text;
+			global::com.refractored.Resource.Id.search_voice_btn = global::CounterWeightsDroid.Resource.Id.search_voice_btn;
+			global::com.refractored.Resource.Id.shortcut = global::CounterWeightsDroid.Resource.Id.shortcut;
+			global::com.refractored.Resource.Id.showCustom = global::CounterWeightsDroid.Resource.Id.showCustom;
+			global::com.refractored.Resource.Id.showHome = global::CounterWeightsDroid.Resource.Id.showHome;
+			global::com.refractored.Resource.Id.showTitle = global::CounterWeightsDroid.Resource.Id.showTitle;
+			global::com.refractored.Resource.Id.split_action_bar = global::CounterWeightsDroid.Resource.Id.split_action_bar;
+			global::com.refractored.Resource.Id.submit_area = global::CounterWeightsDroid.Resource.Id.submit_area;
+			global::com.refractored.Resource.Id.tabMode = global::CounterWeightsDroid.Resource.Id.tabMode;
+			global::com.refractored.Resource.Id.tab_title = global::CounterWeightsDroid.Resource.Id.tab_title;
+			global::com.refractored.Resource.Id.title = global::CounterWeightsDroid.Resource.Id.title;
+			global::com.refractored.Resource.Id.up = global::CounterWeightsDroid.Resource.Id.up;
+			global::com.refractored.Resource.Id.useLogo = global::CounterWeightsDroid.Resource.Id.useLogo;
+			global::com.refractored.Resource.Id.withText = global::CounterWeightsDroid.Resource.Id.withText;
+			global::com.refractored.Resource.Id.wrap_content = global::CounterWeightsDroid.Resource.Id.wrap_content;
+			global::com.refractored.Resource.Integer.abc_max_action_buttons = global::CounterWeightsDroid.Resource.Integer.abc_max_action_buttons;
+			global::com.refractored.Resource.Layout.abc_action_bar_title_item = global::CounterWeightsDroid.Resource.Layout.abc_action_bar_title_item;
+			global::com.refractored.Resource.Layout.abc_action_bar_up_container = global::CounterWeightsDroid.Resource.Layout.abc_action_bar_up_container;
+			global::com.refractored.Resource.Layout.abc_action_bar_view_list_nav_layout = global::CounterWeightsDroid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::com.refractored.Resource.Layout.abc_action_menu_item_layout = global::CounterWeightsDroid.Resource.Layout.abc_action_menu_item_layout;
+			global::com.refractored.Resource.Layout.abc_action_menu_layout = global::CounterWeightsDroid.Resource.Layout.abc_action_menu_layout;
+			global::com.refractored.Resource.Layout.abc_action_mode_bar = global::CounterWeightsDroid.Resource.Layout.abc_action_mode_bar;
+			global::com.refractored.Resource.Layout.abc_action_mode_close_item_material = global::CounterWeightsDroid.Resource.Layout.abc_action_mode_close_item_material;
+			global::com.refractored.Resource.Layout.abc_activity_chooser_view = global::CounterWeightsDroid.Resource.Layout.abc_activity_chooser_view;
+			global::com.refractored.Resource.Layout.abc_activity_chooser_view_include = global::CounterWeightsDroid.Resource.Layout.abc_activity_chooser_view_include;
+			global::com.refractored.Resource.Layout.abc_activity_chooser_view_list_item = global::CounterWeightsDroid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::com.refractored.Resource.Layout.abc_expanded_menu_layout = global::CounterWeightsDroid.Resource.Layout.abc_expanded_menu_layout;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_checkbox = global::CounterWeightsDroid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_icon = global::CounterWeightsDroid.Resource.Layout.abc_list_menu_item_icon;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_layout = global::CounterWeightsDroid.Resource.Layout.abc_list_menu_item_layout;
+			global::com.refractored.Resource.Layout.abc_list_menu_item_radio = global::CounterWeightsDroid.Resource.Layout.abc_list_menu_item_radio;
+			global::com.refractored.Resource.Layout.abc_popup_menu_item_layout = global::CounterWeightsDroid.Resource.Layout.abc_popup_menu_item_layout;
+			global::com.refractored.Resource.Layout.abc_screen_content_include = global::CounterWeightsDroid.Resource.Layout.abc_screen_content_include;
+			global::com.refractored.Resource.Layout.abc_screen_simple = global::CounterWeightsDroid.Resource.Layout.abc_screen_simple;
+			global::com.refractored.Resource.Layout.abc_screen_simple_overlay_action_mode = global::CounterWeightsDroid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::com.refractored.Resource.Layout.abc_screen_toolbar = global::CounterWeightsDroid.Resource.Layout.abc_screen_toolbar;
+			global::com.refractored.Resource.Layout.abc_search_dropdown_item_icons_2line = global::CounterWeightsDroid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::com.refractored.Resource.Layout.abc_search_view = global::CounterWeightsDroid.Resource.Layout.abc_search_view;
+			global::com.refractored.Resource.Layout.abc_simple_dropdown_hint = global::CounterWeightsDroid.Resource.Layout.abc_simple_dropdown_hint;
+			global::com.refractored.Resource.Layout.support_simple_spinner_dropdown_item = global::CounterWeightsDroid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::com.refractored.Resource.Layout.tab = global::CounterWeightsDroid.Resource.Layout.tab;
+			global::com.refractored.Resource.String.abc_action_bar_home_description = global::CounterWeightsDroid.Resource.String.abc_action_bar_home_description;
+			global::com.refractored.Resource.String.abc_action_bar_home_description_format = global::CounterWeightsDroid.Resource.String.abc_action_bar_home_description_format;
+			global::com.refractored.Resource.String.abc_action_bar_home_subtitle_description_format = global::CounterWeightsDroid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::com.refractored.Resource.String.abc_action_bar_up_description = global::CounterWeightsDroid.Resource.String.abc_action_bar_up_description;
+			global::com.refractored.Resource.String.abc_action_menu_overflow_description = global::CounterWeightsDroid.Resource.String.abc_action_menu_overflow_description;
+			global::com.refractored.Resource.String.abc_action_mode_done = global::CounterWeightsDroid.Resource.String.abc_action_mode_done;
+			global::com.refractored.Resource.String.abc_activity_chooser_view_see_all = global::CounterWeightsDroid.Resource.String.abc_activity_chooser_view_see_all;
+			global::com.refractored.Resource.String.abc_activitychooserview_choose_application = global::CounterWeightsDroid.Resource.String.abc_activitychooserview_choose_application;
+			global::com.refractored.Resource.String.abc_searchview_description_clear = global::CounterWeightsDroid.Resource.String.abc_searchview_description_clear;
+			global::com.refractored.Resource.String.abc_searchview_description_query = global::CounterWeightsDroid.Resource.String.abc_searchview_description_query;
+			global::com.refractored.Resource.String.abc_searchview_description_search = global::CounterWeightsDroid.Resource.String.abc_searchview_description_search;
+			global::com.refractored.Resource.String.abc_searchview_description_submit = global::CounterWeightsDroid.Resource.String.abc_searchview_description_submit;
+			global::com.refractored.Resource.String.abc_searchview_description_voice = global::CounterWeightsDroid.Resource.String.abc_searchview_description_voice;
+			global::com.refractored.Resource.String.abc_shareactionprovider_share_with = global::CounterWeightsDroid.Resource.String.abc_shareactionprovider_share_with;
+			global::com.refractored.Resource.String.abc_shareactionprovider_share_with_application = global::CounterWeightsDroid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::com.refractored.Resource.String.abc_toolbar_collapse_description = global::CounterWeightsDroid.Resource.String.abc_toolbar_collapse_description;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Button = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Large = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Small = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Title = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::com.refractored.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::com.refractored.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::com.refractored.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::CounterWeightsDroid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::com.refractored.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::CounterWeightsDroid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat = global::CounterWeightsDroid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::CounterWeightsDroid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::CounterWeightsDroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::CounterWeightsDroid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::com.refractored.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::CounterWeightsDroid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V11_Theme_AppCompat = global::CounterWeightsDroid.Resource.Style.Base_V11_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::CounterWeightsDroid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V11_Theme_AppCompat_Light = global::CounterWeightsDroid.Resource.Style.Base_V11_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::CounterWeightsDroid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_V14_Theme_AppCompat = global::CounterWeightsDroid.Resource.Style.Base_V14_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V14_Theme_AppCompat_Dialog = global::CounterWeightsDroid.Resource.Style.Base_V14_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V14_Theme_AppCompat_Light = global::CounterWeightsDroid.Resource.Style.Base_V14_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V14_Theme_AppCompat_Light_Dialog = global::CounterWeightsDroid.Resource.Style.Base_V14_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat = global::CounterWeightsDroid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::CounterWeightsDroid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat_Light = global::CounterWeightsDroid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::CounterWeightsDroid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat = global::CounterWeightsDroid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::CounterWeightsDroid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Base_V7_Theme_AppCompat_Light = global::CounterWeightsDroid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionButton = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActionMode = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_EditText = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_ActivityChooserView = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_ActivityChooserView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_AutoCompleteTextView = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_SearchView = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Spinner = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Spinner_DropDown_ActionBar = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Toolbar = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::com.refractored.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::CounterWeightsDroid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::com.refractored.Resource.Style.Platform_AppCompat = global::CounterWeightsDroid.Resource.Style.Platform_AppCompat;
+			global::com.refractored.Resource.Style.Platform_AppCompat_Dialog = global::CounterWeightsDroid.Resource.Style.Platform_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Platform_AppCompat_Light = global::CounterWeightsDroid.Resource.Style.Platform_AppCompat_Light;
+			global::com.refractored.Resource.Style.Platform_AppCompat_Light_Dialog = global::CounterWeightsDroid.Resource.Style.Platform_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_CloseMode = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::com.refractored.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::CounterWeightsDroid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Body1 = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Body2 = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Button = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Caption = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display1 = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display2 = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display3 = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Display4 = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Headline = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Large = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Medium = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Menu = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Small = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Subhead = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Title = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::com.refractored.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::CounterWeightsDroid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::com.refractored.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::CounterWeightsDroid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::com.refractored.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::CounterWeightsDroid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::com.refractored.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::CounterWeightsDroid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::com.refractored.Resource.Style.Theme_AppCompat = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat;
+			global::com.refractored.Resource.Style.Theme_AppCompat_CompactMenu = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Dialog = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat_Dialog;
+			global::com.refractored.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat_Light;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_Dialog = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::com.refractored.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::com.refractored.Resource.Style.Theme_AppCompat_NoActionBar = global::CounterWeightsDroid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat = global::CounterWeightsDroid.Resource.Style.ThemeOverlay_AppCompat;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::CounterWeightsDroid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_Dark = global::CounterWeightsDroid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::CounterWeightsDroid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::com.refractored.Resource.Style.ThemeOverlay_AppCompat_Light = global::CounterWeightsDroid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionButton = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActionMode = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ActivityChooserView = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::com.refractored.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::com.refractored.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::com.refractored.Resource.Style.Widget_AppCompat_EditText = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_EditText;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionButton = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_SearchView = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListPopupWindow = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListView_DropDown = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ListView_Menu = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::com.refractored.Resource.Style.Widget_AppCompat_PopupMenu = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::com.refractored.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_PopupWindow = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ProgressBar = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::com.refractored.Resource.Style.Widget_AppCompat_SearchView = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_SearchView;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Spinner;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Toolbar = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::com.refractored.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::CounterWeightsDroid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::com.refractored.Resource.Styleable.ActionBar = global::CounterWeightsDroid.Resource.Styleable.ActionBar;
+			global::com.refractored.Resource.Styleable.ActionBar_background = global::CounterWeightsDroid.Resource.Styleable.ActionBar_background;
+			global::com.refractored.Resource.Styleable.ActionBar_backgroundSplit = global::CounterWeightsDroid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::com.refractored.Resource.Styleable.ActionBar_backgroundStacked = global::CounterWeightsDroid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetEnd = global::CounterWeightsDroid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetLeft = global::CounterWeightsDroid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetRight = global::CounterWeightsDroid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::com.refractored.Resource.Styleable.ActionBar_contentInsetStart = global::CounterWeightsDroid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::com.refractored.Resource.Styleable.ActionBar_customNavigationLayout = global::CounterWeightsDroid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::com.refractored.Resource.Styleable.ActionBar_displayOptions = global::CounterWeightsDroid.Resource.Styleable.ActionBar_displayOptions;
+			global::com.refractored.Resource.Styleable.ActionBar_divider = global::CounterWeightsDroid.Resource.Styleable.ActionBar_divider;
+			global::com.refractored.Resource.Styleable.ActionBar_elevation = global::CounterWeightsDroid.Resource.Styleable.ActionBar_elevation;
+			global::com.refractored.Resource.Styleable.ActionBar_height = global::CounterWeightsDroid.Resource.Styleable.ActionBar_height;
+			global::com.refractored.Resource.Styleable.ActionBar_hideOnContentScroll = global::CounterWeightsDroid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::com.refractored.Resource.Styleable.ActionBar_homeAsUpIndicator = global::CounterWeightsDroid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::com.refractored.Resource.Styleable.ActionBar_homeLayout = global::CounterWeightsDroid.Resource.Styleable.ActionBar_homeLayout;
+			global::com.refractored.Resource.Styleable.ActionBar_icon = global::CounterWeightsDroid.Resource.Styleable.ActionBar_icon;
+			global::com.refractored.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::CounterWeightsDroid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::com.refractored.Resource.Styleable.ActionBar_itemPadding = global::CounterWeightsDroid.Resource.Styleable.ActionBar_itemPadding;
+			global::com.refractored.Resource.Styleable.ActionBar_logo = global::CounterWeightsDroid.Resource.Styleable.ActionBar_logo;
+			global::com.refractored.Resource.Styleable.ActionBar_navigationMode = global::CounterWeightsDroid.Resource.Styleable.ActionBar_navigationMode;
+			global::com.refractored.Resource.Styleable.ActionBar_popupTheme = global::CounterWeightsDroid.Resource.Styleable.ActionBar_popupTheme;
+			global::com.refractored.Resource.Styleable.ActionBar_progressBarPadding = global::CounterWeightsDroid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::com.refractored.Resource.Styleable.ActionBar_progressBarStyle = global::CounterWeightsDroid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::com.refractored.Resource.Styleable.ActionBar_subtitle = global::CounterWeightsDroid.Resource.Styleable.ActionBar_subtitle;
+			global::com.refractored.Resource.Styleable.ActionBar_subtitleTextStyle = global::CounterWeightsDroid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::com.refractored.Resource.Styleable.ActionBar_title = global::CounterWeightsDroid.Resource.Styleable.ActionBar_title;
+			global::com.refractored.Resource.Styleable.ActionBar_titleTextStyle = global::CounterWeightsDroid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::com.refractored.Resource.Styleable.ActionBarLayout = global::CounterWeightsDroid.Resource.Styleable.ActionBarLayout;
+			global::com.refractored.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::CounterWeightsDroid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::com.refractored.Resource.Styleable.ActionMenuItemView = global::CounterWeightsDroid.Resource.Styleable.ActionMenuItemView;
+			global::com.refractored.Resource.Styleable.ActionMenuItemView_android_minWidth = global::CounterWeightsDroid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::com.refractored.Resource.Styleable.ActionMenuView = global::CounterWeightsDroid.Resource.Styleable.ActionMenuView;
+			global::com.refractored.Resource.Styleable.ActionMode = global::CounterWeightsDroid.Resource.Styleable.ActionMode;
+			global::com.refractored.Resource.Styleable.ActionMode_background = global::CounterWeightsDroid.Resource.Styleable.ActionMode_background;
+			global::com.refractored.Resource.Styleable.ActionMode_backgroundSplit = global::CounterWeightsDroid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::com.refractored.Resource.Styleable.ActionMode_closeItemLayout = global::CounterWeightsDroid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::com.refractored.Resource.Styleable.ActionMode_height = global::CounterWeightsDroid.Resource.Styleable.ActionMode_height;
+			global::com.refractored.Resource.Styleable.ActionMode_subtitleTextStyle = global::CounterWeightsDroid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::com.refractored.Resource.Styleable.ActionMode_titleTextStyle = global::CounterWeightsDroid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::com.refractored.Resource.Styleable.ActivityChooserView = global::CounterWeightsDroid.Resource.Styleable.ActivityChooserView;
+			global::com.refractored.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::CounterWeightsDroid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::com.refractored.Resource.Styleable.ActivityChooserView_initialActivityCount = global::CounterWeightsDroid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::com.refractored.Resource.Styleable.CompatTextView = global::CounterWeightsDroid.Resource.Styleable.CompatTextView;
+			global::com.refractored.Resource.Styleable.CompatTextView_textAllCaps = global::CounterWeightsDroid.Resource.Styleable.CompatTextView_textAllCaps;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle = global::CounterWeightsDroid.Resource.Styleable.DrawerArrowToggle;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_barSize = global::CounterWeightsDroid.Resource.Styleable.DrawerArrowToggle_barSize;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_color = global::CounterWeightsDroid.Resource.Styleable.DrawerArrowToggle_color;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_drawableSize = global::CounterWeightsDroid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::CounterWeightsDroid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_middleBarArrowSize = global::CounterWeightsDroid.Resource.Styleable.DrawerArrowToggle_middleBarArrowSize;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_spinBars = global::CounterWeightsDroid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_thickness = global::CounterWeightsDroid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::com.refractored.Resource.Styleable.DrawerArrowToggle_topBottomBarArrowSize = global::CounterWeightsDroid.Resource.Styleable.DrawerArrowToggle_topBottomBarArrowSize;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_gravity = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_orientation = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_divider = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_showDividers = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::com.refractored.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::CounterWeightsDroid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::com.refractored.Resource.Styleable.ListPopupWindow = global::CounterWeightsDroid.Resource.Styleable.ListPopupWindow;
+			global::com.refractored.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::CounterWeightsDroid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::com.refractored.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::CounterWeightsDroid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::com.refractored.Resource.Styleable.MenuGroup = global::CounterWeightsDroid.Resource.Styleable.MenuGroup;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_checkableBehavior = global::CounterWeightsDroid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_enabled = global::CounterWeightsDroid.Resource.Styleable.MenuGroup_android_enabled;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_id = global::CounterWeightsDroid.Resource.Styleable.MenuGroup_android_id;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_menuCategory = global::CounterWeightsDroid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_orderInCategory = global::CounterWeightsDroid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::com.refractored.Resource.Styleable.MenuGroup_android_visible = global::CounterWeightsDroid.Resource.Styleable.MenuGroup_android_visible;
+			global::com.refractored.Resource.Styleable.MenuItem = global::CounterWeightsDroid.Resource.Styleable.MenuItem;
+			global::com.refractored.Resource.Styleable.MenuItem_actionLayout = global::CounterWeightsDroid.Resource.Styleable.MenuItem_actionLayout;
+			global::com.refractored.Resource.Styleable.MenuItem_actionProviderClass = global::CounterWeightsDroid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::com.refractored.Resource.Styleable.MenuItem_actionViewClass = global::CounterWeightsDroid.Resource.Styleable.MenuItem_actionViewClass;
+			global::com.refractored.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::com.refractored.Resource.Styleable.MenuItem_android_checkable = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_checkable;
+			global::com.refractored.Resource.Styleable.MenuItem_android_checked = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_checked;
+			global::com.refractored.Resource.Styleable.MenuItem_android_enabled = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_enabled;
+			global::com.refractored.Resource.Styleable.MenuItem_android_icon = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_icon;
+			global::com.refractored.Resource.Styleable.MenuItem_android_id = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_id;
+			global::com.refractored.Resource.Styleable.MenuItem_android_menuCategory = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::com.refractored.Resource.Styleable.MenuItem_android_numericShortcut = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::com.refractored.Resource.Styleable.MenuItem_android_onClick = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_onClick;
+			global::com.refractored.Resource.Styleable.MenuItem_android_orderInCategory = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::com.refractored.Resource.Styleable.MenuItem_android_title = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_title;
+			global::com.refractored.Resource.Styleable.MenuItem_android_titleCondensed = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::com.refractored.Resource.Styleable.MenuItem_android_visible = global::CounterWeightsDroid.Resource.Styleable.MenuItem_android_visible;
+			global::com.refractored.Resource.Styleable.MenuItem_showAsAction = global::CounterWeightsDroid.Resource.Styleable.MenuItem_showAsAction;
+			global::com.refractored.Resource.Styleable.MenuView = global::CounterWeightsDroid.Resource.Styleable.MenuView;
+			global::com.refractored.Resource.Styleable.MenuView_android_headerBackground = global::CounterWeightsDroid.Resource.Styleable.MenuView_android_headerBackground;
+			global::com.refractored.Resource.Styleable.MenuView_android_horizontalDivider = global::CounterWeightsDroid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::com.refractored.Resource.Styleable.MenuView_android_itemBackground = global::CounterWeightsDroid.Resource.Styleable.MenuView_android_itemBackground;
+			global::com.refractored.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::CounterWeightsDroid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::com.refractored.Resource.Styleable.MenuView_android_itemTextAppearance = global::CounterWeightsDroid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::com.refractored.Resource.Styleable.MenuView_android_verticalDivider = global::CounterWeightsDroid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::com.refractored.Resource.Styleable.MenuView_android_windowAnimationStyle = global::CounterWeightsDroid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::com.refractored.Resource.Styleable.MenuView_preserveIconSpacing = global::CounterWeightsDroid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsDividerColor = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsDividerColor;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsDividerPadding = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsDividerPadding;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsDividerWidth = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsDividerWidth;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorColor = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorColor;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorHeight = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsIndicatorHeight;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsPaddingMiddle = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsPaddingMiddle;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsScrollOffset = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsScrollOffset;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsShouldExpand = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsShouldExpand;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTabBackground = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsTabBackground;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTabPaddingLeftRight = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsTabPaddingLeftRight;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextAllCaps = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsTextAllCaps;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextAlpha = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsTextAlpha;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextSelectedAlpha = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsTextSelectedAlpha;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextSelectedStyle = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsTextSelectedStyle;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsTextStyle = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsTextStyle;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineColor = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineColor;
+			global::com.refractored.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineHeight = global::CounterWeightsDroid.Resource.Styleable.PagerSlidingTabStrip_pstsUnderlineHeight;
+			global::com.refractored.Resource.Styleable.PopupWindow = global::CounterWeightsDroid.Resource.Styleable.PopupWindow;
+			global::com.refractored.Resource.Styleable.PopupWindow_android_popupBackground = global::CounterWeightsDroid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::com.refractored.Resource.Styleable.PopupWindow_overlapAnchor = global::CounterWeightsDroid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::com.refractored.Resource.Styleable.PopupWindowBackgroundState = global::CounterWeightsDroid.Resource.Styleable.PopupWindowBackgroundState;
+			global::com.refractored.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::CounterWeightsDroid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::com.refractored.Resource.Styleable.SearchView = global::CounterWeightsDroid.Resource.Styleable.SearchView;
+			global::com.refractored.Resource.Styleable.SearchView_android_focusable = global::CounterWeightsDroid.Resource.Styleable.SearchView_android_focusable;
+			global::com.refractored.Resource.Styleable.SearchView_android_imeOptions = global::CounterWeightsDroid.Resource.Styleable.SearchView_android_imeOptions;
+			global::com.refractored.Resource.Styleable.SearchView_android_inputType = global::CounterWeightsDroid.Resource.Styleable.SearchView_android_inputType;
+			global::com.refractored.Resource.Styleable.SearchView_android_maxWidth = global::CounterWeightsDroid.Resource.Styleable.SearchView_android_maxWidth;
+			global::com.refractored.Resource.Styleable.SearchView_closeIcon = global::CounterWeightsDroid.Resource.Styleable.SearchView_closeIcon;
+			global::com.refractored.Resource.Styleable.SearchView_commitIcon = global::CounterWeightsDroid.Resource.Styleable.SearchView_commitIcon;
+			global::com.refractored.Resource.Styleable.SearchView_goIcon = global::CounterWeightsDroid.Resource.Styleable.SearchView_goIcon;
+			global::com.refractored.Resource.Styleable.SearchView_iconifiedByDefault = global::CounterWeightsDroid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::com.refractored.Resource.Styleable.SearchView_layout = global::CounterWeightsDroid.Resource.Styleable.SearchView_layout;
+			global::com.refractored.Resource.Styleable.SearchView_queryBackground = global::CounterWeightsDroid.Resource.Styleable.SearchView_queryBackground;
+			global::com.refractored.Resource.Styleable.SearchView_queryHint = global::CounterWeightsDroid.Resource.Styleable.SearchView_queryHint;
+			global::com.refractored.Resource.Styleable.SearchView_searchIcon = global::CounterWeightsDroid.Resource.Styleable.SearchView_searchIcon;
+			global::com.refractored.Resource.Styleable.SearchView_submitBackground = global::CounterWeightsDroid.Resource.Styleable.SearchView_submitBackground;
+			global::com.refractored.Resource.Styleable.SearchView_suggestionRowLayout = global::CounterWeightsDroid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::com.refractored.Resource.Styleable.SearchView_voiceIcon = global::CounterWeightsDroid.Resource.Styleable.SearchView_voiceIcon;
+			global::com.refractored.Resource.Styleable.Spinner = global::CounterWeightsDroid.Resource.Styleable.Spinner;
+			global::com.refractored.Resource.Styleable.Spinner_android_background = global::CounterWeightsDroid.Resource.Styleable.Spinner_android_background;
+			global::com.refractored.Resource.Styleable.Spinner_android_dropDownHorizontalOffset = global::CounterWeightsDroid.Resource.Styleable.Spinner_android_dropDownHorizontalOffset;
+			global::com.refractored.Resource.Styleable.Spinner_android_dropDownSelector = global::CounterWeightsDroid.Resource.Styleable.Spinner_android_dropDownSelector;
+			global::com.refractored.Resource.Styleable.Spinner_android_dropDownVerticalOffset = global::CounterWeightsDroid.Resource.Styleable.Spinner_android_dropDownVerticalOffset;
+			global::com.refractored.Resource.Styleable.Spinner_android_dropDownWidth = global::CounterWeightsDroid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::com.refractored.Resource.Styleable.Spinner_android_gravity = global::CounterWeightsDroid.Resource.Styleable.Spinner_android_gravity;
+			global::com.refractored.Resource.Styleable.Spinner_android_popupBackground = global::CounterWeightsDroid.Resource.Styleable.Spinner_android_popupBackground;
+			global::com.refractored.Resource.Styleable.Spinner_disableChildrenWhenDisabled = global::CounterWeightsDroid.Resource.Styleable.Spinner_disableChildrenWhenDisabled;
+			global::com.refractored.Resource.Styleable.Spinner_popupPromptView = global::CounterWeightsDroid.Resource.Styleable.Spinner_popupPromptView;
+			global::com.refractored.Resource.Styleable.Spinner_prompt = global::CounterWeightsDroid.Resource.Styleable.Spinner_prompt;
+			global::com.refractored.Resource.Styleable.Spinner_spinnerMode = global::CounterWeightsDroid.Resource.Styleable.Spinner_spinnerMode;
+			global::com.refractored.Resource.Styleable.SwitchCompat = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat;
+			global::com.refractored.Resource.Styleable.SwitchCompat_android_textOff = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::com.refractored.Resource.Styleable.SwitchCompat_android_textOn = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::com.refractored.Resource.Styleable.SwitchCompat_android_thumb = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::com.refractored.Resource.Styleable.SwitchCompat_showText = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_showText;
+			global::com.refractored.Resource.Styleable.SwitchCompat_splitTrack = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::com.refractored.Resource.Styleable.SwitchCompat_switchMinWidth = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::com.refractored.Resource.Styleable.SwitchCompat_switchPadding = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::com.refractored.Resource.Styleable.SwitchCompat_switchTextAppearance = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::com.refractored.Resource.Styleable.SwitchCompat_thumbTextPadding = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::com.refractored.Resource.Styleable.SwitchCompat_track = global::CounterWeightsDroid.Resource.Styleable.SwitchCompat_track;
+			global::com.refractored.Resource.Styleable.Theme = global::CounterWeightsDroid.Resource.Styleable.Theme;
+			global::com.refractored.Resource.Styleable.Theme_actionBarDivider = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarDivider;
+			global::com.refractored.Resource.Styleable.Theme_actionBarItemBackground = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarItemBackground;
+			global::com.refractored.Resource.Styleable.Theme_actionBarPopupTheme = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarPopupTheme;
+			global::com.refractored.Resource.Styleable.Theme_actionBarSize = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarSize;
+			global::com.refractored.Resource.Styleable.Theme_actionBarSplitStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarSplitStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionBarStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionBarTabBarStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarTabBarStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionBarTabStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarTabStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionBarTabTextStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarTabTextStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionBarTheme = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarTheme;
+			global::com.refractored.Resource.Styleable.Theme_actionBarWidgetTheme = global::CounterWeightsDroid.Resource.Styleable.Theme_actionBarWidgetTheme;
+			global::com.refractored.Resource.Styleable.Theme_actionButtonStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionButtonStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionDropDownStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionDropDownStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionMenuTextAppearance = global::CounterWeightsDroid.Resource.Styleable.Theme_actionMenuTextAppearance;
+			global::com.refractored.Resource.Styleable.Theme_actionMenuTextColor = global::CounterWeightsDroid.Resource.Styleable.Theme_actionMenuTextColor;
+			global::com.refractored.Resource.Styleable.Theme_actionModeBackground = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeBackground;
+			global::com.refractored.Resource.Styleable.Theme_actionModeCloseButtonStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeCloseButtonStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionModeCloseDrawable = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeCloseDrawable;
+			global::com.refractored.Resource.Styleable.Theme_actionModeCopyDrawable = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeCopyDrawable;
+			global::com.refractored.Resource.Styleable.Theme_actionModeCutDrawable = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeCutDrawable;
+			global::com.refractored.Resource.Styleable.Theme_actionModeFindDrawable = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeFindDrawable;
+			global::com.refractored.Resource.Styleable.Theme_actionModePasteDrawable = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModePasteDrawable;
+			global::com.refractored.Resource.Styleable.Theme_actionModePopupWindowStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModePopupWindowStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionModeSelectAllDrawable = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeSelectAllDrawable;
+			global::com.refractored.Resource.Styleable.Theme_actionModeShareDrawable = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeShareDrawable;
+			global::com.refractored.Resource.Styleable.Theme_actionModeSplitBackground = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeSplitBackground;
+			global::com.refractored.Resource.Styleable.Theme_actionModeStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionModeWebSearchDrawable = global::CounterWeightsDroid.Resource.Styleable.Theme_actionModeWebSearchDrawable;
+			global::com.refractored.Resource.Styleable.Theme_actionOverflowButtonStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionOverflowButtonStyle;
+			global::com.refractored.Resource.Styleable.Theme_actionOverflowMenuStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_actionOverflowMenuStyle;
+			global::com.refractored.Resource.Styleable.Theme_activityChooserViewStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_activityChooserViewStyle;
+			global::com.refractored.Resource.Styleable.Theme_android_windowIsFloating = global::CounterWeightsDroid.Resource.Styleable.Theme_android_windowIsFloating;
+			global::com.refractored.Resource.Styleable.Theme_buttonBarButtonStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_buttonBarButtonStyle;
+			global::com.refractored.Resource.Styleable.Theme_buttonBarStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_buttonBarStyle;
+			global::com.refractored.Resource.Styleable.Theme_colorAccent = global::CounterWeightsDroid.Resource.Styleable.Theme_colorAccent;
+			global::com.refractored.Resource.Styleable.Theme_colorButtonNormal = global::CounterWeightsDroid.Resource.Styleable.Theme_colorButtonNormal;
+			global::com.refractored.Resource.Styleable.Theme_colorControlActivated = global::CounterWeightsDroid.Resource.Styleable.Theme_colorControlActivated;
+			global::com.refractored.Resource.Styleable.Theme_colorControlHighlight = global::CounterWeightsDroid.Resource.Styleable.Theme_colorControlHighlight;
+			global::com.refractored.Resource.Styleable.Theme_colorControlNormal = global::CounterWeightsDroid.Resource.Styleable.Theme_colorControlNormal;
+			global::com.refractored.Resource.Styleable.Theme_colorPrimary = global::CounterWeightsDroid.Resource.Styleable.Theme_colorPrimary;
+			global::com.refractored.Resource.Styleable.Theme_colorPrimaryDark = global::CounterWeightsDroid.Resource.Styleable.Theme_colorPrimaryDark;
+			global::com.refractored.Resource.Styleable.Theme_colorSwitchThumbNormal = global::CounterWeightsDroid.Resource.Styleable.Theme_colorSwitchThumbNormal;
+			global::com.refractored.Resource.Styleable.Theme_dividerHorizontal = global::CounterWeightsDroid.Resource.Styleable.Theme_dividerHorizontal;
+			global::com.refractored.Resource.Styleable.Theme_dividerVertical = global::CounterWeightsDroid.Resource.Styleable.Theme_dividerVertical;
+			global::com.refractored.Resource.Styleable.Theme_dropDownListViewStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_dropDownListViewStyle;
+			global::com.refractored.Resource.Styleable.Theme_dropdownListPreferredItemHeight = global::CounterWeightsDroid.Resource.Styleable.Theme_dropdownListPreferredItemHeight;
+			global::com.refractored.Resource.Styleable.Theme_editTextBackground = global::CounterWeightsDroid.Resource.Styleable.Theme_editTextBackground;
+			global::com.refractored.Resource.Styleable.Theme_editTextColor = global::CounterWeightsDroid.Resource.Styleable.Theme_editTextColor;
+			global::com.refractored.Resource.Styleable.Theme_homeAsUpIndicator = global::CounterWeightsDroid.Resource.Styleable.Theme_homeAsUpIndicator;
+			global::com.refractored.Resource.Styleable.Theme_listChoiceBackgroundIndicator = global::CounterWeightsDroid.Resource.Styleable.Theme_listChoiceBackgroundIndicator;
+			global::com.refractored.Resource.Styleable.Theme_listPopupWindowStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_listPopupWindowStyle;
+			global::com.refractored.Resource.Styleable.Theme_listPreferredItemHeight = global::CounterWeightsDroid.Resource.Styleable.Theme_listPreferredItemHeight;
+			global::com.refractored.Resource.Styleable.Theme_listPreferredItemHeightLarge = global::CounterWeightsDroid.Resource.Styleable.Theme_listPreferredItemHeightLarge;
+			global::com.refractored.Resource.Styleable.Theme_listPreferredItemHeightSmall = global::CounterWeightsDroid.Resource.Styleable.Theme_listPreferredItemHeightSmall;
+			global::com.refractored.Resource.Styleable.Theme_listPreferredItemPaddingLeft = global::CounterWeightsDroid.Resource.Styleable.Theme_listPreferredItemPaddingLeft;
+			global::com.refractored.Resource.Styleable.Theme_listPreferredItemPaddingRight = global::CounterWeightsDroid.Resource.Styleable.Theme_listPreferredItemPaddingRight;
+			global::com.refractored.Resource.Styleable.Theme_panelBackground = global::CounterWeightsDroid.Resource.Styleable.Theme_panelBackground;
+			global::com.refractored.Resource.Styleable.Theme_panelMenuListTheme = global::CounterWeightsDroid.Resource.Styleable.Theme_panelMenuListTheme;
+			global::com.refractored.Resource.Styleable.Theme_panelMenuListWidth = global::CounterWeightsDroid.Resource.Styleable.Theme_panelMenuListWidth;
+			global::com.refractored.Resource.Styleable.Theme_popupMenuStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_popupMenuStyle;
+			global::com.refractored.Resource.Styleable.Theme_popupWindowStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_popupWindowStyle;
+			global::com.refractored.Resource.Styleable.Theme_searchViewStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_searchViewStyle;
+			global::com.refractored.Resource.Styleable.Theme_selectableItemBackground = global::CounterWeightsDroid.Resource.Styleable.Theme_selectableItemBackground;
+			global::com.refractored.Resource.Styleable.Theme_selectableItemBackgroundBorderless = global::CounterWeightsDroid.Resource.Styleable.Theme_selectableItemBackgroundBorderless;
+			global::com.refractored.Resource.Styleable.Theme_spinnerDropDownItemStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_spinnerDropDownItemStyle;
+			global::com.refractored.Resource.Styleable.Theme_spinnerStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_spinnerStyle;
+			global::com.refractored.Resource.Styleable.Theme_switchStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_switchStyle;
+			global::com.refractored.Resource.Styleable.Theme_textAppearanceLargePopupMenu = global::CounterWeightsDroid.Resource.Styleable.Theme_textAppearanceLargePopupMenu;
+			global::com.refractored.Resource.Styleable.Theme_textAppearanceListItem = global::CounterWeightsDroid.Resource.Styleable.Theme_textAppearanceListItem;
+			global::com.refractored.Resource.Styleable.Theme_textAppearanceListItemSmall = global::CounterWeightsDroid.Resource.Styleable.Theme_textAppearanceListItemSmall;
+			global::com.refractored.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle = global::CounterWeightsDroid.Resource.Styleable.Theme_textAppearanceSearchResultSubtitle;
+			global::com.refractored.Resource.Styleable.Theme_textAppearanceSearchResultTitle = global::CounterWeightsDroid.Resource.Styleable.Theme_textAppearanceSearchResultTitle;
+			global::com.refractored.Resource.Styleable.Theme_textAppearanceSmallPopupMenu = global::CounterWeightsDroid.Resource.Styleable.Theme_textAppearanceSmallPopupMenu;
+			global::com.refractored.Resource.Styleable.Theme_textColorSearchUrl = global::CounterWeightsDroid.Resource.Styleable.Theme_textColorSearchUrl;
+			global::com.refractored.Resource.Styleable.Theme_toolbarNavigationButtonStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_toolbarNavigationButtonStyle;
+			global::com.refractored.Resource.Styleable.Theme_toolbarStyle = global::CounterWeightsDroid.Resource.Styleable.Theme_toolbarStyle;
+			global::com.refractored.Resource.Styleable.Theme_windowActionBar = global::CounterWeightsDroid.Resource.Styleable.Theme_windowActionBar;
+			global::com.refractored.Resource.Styleable.Theme_windowActionBarOverlay = global::CounterWeightsDroid.Resource.Styleable.Theme_windowActionBarOverlay;
+			global::com.refractored.Resource.Styleable.Theme_windowActionModeOverlay = global::CounterWeightsDroid.Resource.Styleable.Theme_windowActionModeOverlay;
+			global::com.refractored.Resource.Styleable.Theme_windowFixedHeightMajor = global::CounterWeightsDroid.Resource.Styleable.Theme_windowFixedHeightMajor;
+			global::com.refractored.Resource.Styleable.Theme_windowFixedHeightMinor = global::CounterWeightsDroid.Resource.Styleable.Theme_windowFixedHeightMinor;
+			global::com.refractored.Resource.Styleable.Theme_windowFixedWidthMajor = global::CounterWeightsDroid.Resource.Styleable.Theme_windowFixedWidthMajor;
+			global::com.refractored.Resource.Styleable.Theme_windowFixedWidthMinor = global::CounterWeightsDroid.Resource.Styleable.Theme_windowFixedWidthMinor;
+			global::com.refractored.Resource.Styleable.Toolbar = global::CounterWeightsDroid.Resource.Styleable.Toolbar;
+			global::com.refractored.Resource.Styleable.Toolbar_android_gravity = global::CounterWeightsDroid.Resource.Styleable.Toolbar_android_gravity;
+			global::com.refractored.Resource.Styleable.Toolbar_android_minHeight = global::CounterWeightsDroid.Resource.Styleable.Toolbar_android_minHeight;
+			global::com.refractored.Resource.Styleable.Toolbar_collapseContentDescription = global::CounterWeightsDroid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::com.refractored.Resource.Styleable.Toolbar_collapseIcon = global::CounterWeightsDroid.Resource.Styleable.Toolbar_collapseIcon;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetEnd = global::CounterWeightsDroid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetLeft = global::CounterWeightsDroid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetRight = global::CounterWeightsDroid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::com.refractored.Resource.Styleable.Toolbar_contentInsetStart = global::CounterWeightsDroid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::com.refractored.Resource.Styleable.Toolbar_maxButtonHeight = global::CounterWeightsDroid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::com.refractored.Resource.Styleable.Toolbar_navigationContentDescription = global::CounterWeightsDroid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::com.refractored.Resource.Styleable.Toolbar_navigationIcon = global::CounterWeightsDroid.Resource.Styleable.Toolbar_navigationIcon;
+			global::com.refractored.Resource.Styleable.Toolbar_popupTheme = global::CounterWeightsDroid.Resource.Styleable.Toolbar_popupTheme;
+			global::com.refractored.Resource.Styleable.Toolbar_subtitle = global::CounterWeightsDroid.Resource.Styleable.Toolbar_subtitle;
+			global::com.refractored.Resource.Styleable.Toolbar_subtitleTextAppearance = global::CounterWeightsDroid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::com.refractored.Resource.Styleable.Toolbar_theme = global::CounterWeightsDroid.Resource.Styleable.Toolbar_theme;
+			global::com.refractored.Resource.Styleable.Toolbar_title = global::CounterWeightsDroid.Resource.Styleable.Toolbar_title;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginBottom = global::CounterWeightsDroid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginEnd = global::CounterWeightsDroid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginStart = global::CounterWeightsDroid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMarginTop = global::CounterWeightsDroid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::com.refractored.Resource.Styleable.Toolbar_titleMargins = global::CounterWeightsDroid.Resource.Styleable.Toolbar_titleMargins;
+			global::com.refractored.Resource.Styleable.Toolbar_titleTextAppearance = global::CounterWeightsDroid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::com.refractored.Resource.Styleable.View = global::CounterWeightsDroid.Resource.Styleable.View;
+			global::com.refractored.Resource.Styleable.View_android_focusable = global::CounterWeightsDroid.Resource.Styleable.View_android_focusable;
+			global::com.refractored.Resource.Styleable.View_paddingEnd = global::CounterWeightsDroid.Resource.Styleable.View_paddingEnd;
+			global::com.refractored.Resource.Styleable.View_paddingStart = global::CounterWeightsDroid.Resource.Styleable.View_paddingStart;
+			global::com.refractored.Resource.Styleable.ViewStubCompat = global::CounterWeightsDroid.Resource.Styleable.ViewStubCompat;
+			global::com.refractored.Resource.Styleable.ViewStubCompat_android_id = global::CounterWeightsDroid.Resource.Styleable.ViewStubCompat_android_id;
+			global::com.refractored.Resource.Styleable.ViewStubCompat_android_inflatedId = global::CounterWeightsDroid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::com.refractored.Resource.Styleable.ViewStubCompat_android_layout = global::CounterWeightsDroid.Resource.Styleable.ViewStubCompat_android_layout;
 		}
 		
 		public partial class Animation
@@ -503,6 +1481,57 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f010042
 			public const int prompt = 2130772034;
 			
+			// aapt resource value: 0x7f0100d5
+			public const int pstsDividerColor = 2130772181;
+			
+			// aapt resource value: 0x7f0100d9
+			public const int pstsDividerPadding = 2130772185;
+			
+			// aapt resource value: 0x7f0100d6
+			public const int pstsDividerWidth = 2130772182;
+			
+			// aapt resource value: 0x7f0100d3
+			public const int pstsIndicatorColor = 2130772179;
+			
+			// aapt resource value: 0x7f0100d7
+			public const int pstsIndicatorHeight = 2130772183;
+			
+			// aapt resource value: 0x7f0100df
+			public const int pstsPaddingMiddle = 2130772191;
+			
+			// aapt resource value: 0x7f0100db
+			public const int pstsScrollOffset = 2130772187;
+			
+			// aapt resource value: 0x7f0100dd
+			public const int pstsShouldExpand = 2130772189;
+			
+			// aapt resource value: 0x7f0100dc
+			public const int pstsTabBackground = 2130772188;
+			
+			// aapt resource value: 0x7f0100da
+			public const int pstsTabPaddingLeftRight = 2130772186;
+			
+			// aapt resource value: 0x7f0100de
+			public const int pstsTextAllCaps = 2130772190;
+			
+			// aapt resource value: 0x7f0100e2
+			public const int pstsTextAlpha = 2130772194;
+			
+			// aapt resource value: 0x7f0100e3
+			public const int pstsTextSelectedAlpha = 2130772195;
+			
+			// aapt resource value: 0x7f0100e1
+			public const int pstsTextSelectedStyle = 2130772193;
+			
+			// aapt resource value: 0x7f0100e0
+			public const int pstsTextStyle = 2130772192;
+			
+			// aapt resource value: 0x7f0100d4
+			public const int pstsUnderlineColor = 2130772180;
+			
+			// aapt resource value: 0x7f0100d8
+			public const int pstsUnderlineHeight = 2130772184;
+			
 			// aapt resource value: 0x7f010040
 			public const int queryBackground = 2130772032;
 			
@@ -739,29 +1768,29 @@ namespace CounterWeightsDroid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f090049
-			public const int abc_background_cache_hint_selector_material_dark = 2131296329;
+			// aapt resource value: 0x7f09004b
+			public const int abc_background_cache_hint_selector_material_dark = 2131296331;
 			
-			// aapt resource value: 0x7f09004a
-			public const int abc_background_cache_hint_selector_material_light = 2131296330;
+			// aapt resource value: 0x7f09004c
+			public const int abc_background_cache_hint_selector_material_light = 2131296332;
 			
 			// aapt resource value: 0x7f090000
 			public const int abc_input_method_navigation_guard = 2131296256;
 			
-			// aapt resource value: 0x7f09004b
-			public const int abc_primary_text_disable_only_material_dark = 2131296331;
-			
-			// aapt resource value: 0x7f09004c
-			public const int abc_primary_text_disable_only_material_light = 2131296332;
-			
 			// aapt resource value: 0x7f09004d
-			public const int abc_primary_text_material_dark = 2131296333;
+			public const int abc_primary_text_disable_only_material_dark = 2131296333;
 			
 			// aapt resource value: 0x7f09004e
-			public const int abc_primary_text_material_light = 2131296334;
+			public const int abc_primary_text_disable_only_material_light = 2131296334;
 			
 			// aapt resource value: 0x7f09004f
-			public const int abc_search_url_text = 2131296335;
+			public const int abc_primary_text_material_dark = 2131296335;
+			
+			// aapt resource value: 0x7f090050
+			public const int abc_primary_text_material_light = 2131296336;
+			
+			// aapt resource value: 0x7f090051
+			public const int abc_search_url_text = 2131296337;
 			
 			// aapt resource value: 0x7f090001
 			public const int abc_search_url_text_normal = 2131296257;
@@ -772,11 +1801,11 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f090003
 			public const int abc_search_url_text_selected = 2131296259;
 			
-			// aapt resource value: 0x7f090050
-			public const int abc_secondary_text_material_dark = 2131296336;
+			// aapt resource value: 0x7f090052
+			public const int abc_secondary_text_material_dark = 2131296338;
 			
-			// aapt resource value: 0x7f090051
-			public const int abc_secondary_text_material_light = 2131296337;
+			// aapt resource value: 0x7f090053
+			public const int abc_secondary_text_material_light = 2131296339;
 			
 			// aapt resource value: 0x7f090004
 			public const int accent_material_dark = 2131296260;
@@ -795,6 +1824,9 @@ namespace CounterWeightsDroid
 			
 			// aapt resource value: 0x7f090009
 			public const int background_material_light = 2131296265;
+			
+			// aapt resource value: 0x7f090048
+			public const int background_tab_pressed = 2131296328;
 			
 			// aapt resource value: 0x7f09000a
 			public const int bright_foreground_disabled_material_dark = 2131296266;
@@ -820,8 +1852,11 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f090011
 			public const int button_material_light = 2131296273;
 			
-			// aapt resource value: 0x7f090048
-			public const int colorPrimary = 2131296328;
+			// aapt resource value: 0x7f090049
+			public const int colorPrimary = 2131296329;
+			
+			// aapt resource value: 0x7f09004a
+			public const int colorSecondary = 2131296330;
 			
 			// aapt resource value: 0x7f09003a
 			public const int common_action_bar_splitter = 2131296314;
@@ -853,11 +1888,11 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f090036
 			public const int common_signin_btn_light_text_pressed = 2131296310;
 			
-			// aapt resource value: 0x7f090052
-			public const int common_signin_btn_text_dark = 2131296338;
+			// aapt resource value: 0x7f090054
+			public const int common_signin_btn_text_dark = 2131296340;
 			
-			// aapt resource value: 0x7f090053
-			public const int common_signin_btn_text_light = 2131296339;
+			// aapt resource value: 0x7f090055
+			public const int common_signin_btn_text_light = 2131296341;
 			
 			// aapt resource value: 0x7f090012
 			public const int dim_foreground_disabled_material_dark = 2131296274;
@@ -991,11 +2026,11 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f090047
 			public const int wallet_link_text_light = 2131296327;
 			
-			// aapt resource value: 0x7f090054
-			public const int wallet_primary_text_holo_light = 2131296340;
+			// aapt resource value: 0x7f090056
+			public const int wallet_primary_text_holo_light = 2131296342;
 			
-			// aapt resource value: 0x7f090055
-			public const int wallet_secondary_text_holo_dark = 2131296341;
+			// aapt resource value: 0x7f090057
+			public const int wallet_secondary_text_holo_dark = 2131296343;
 			
 			static Color()
 			{
@@ -1306,157 +2341,160 @@ namespace CounterWeightsDroid
 			public const int abc_textfield_search_material = 2130837554;
 			
 			// aapt resource value: 0x7f020033
-			public const int circle = 2130837555;
+			public const int background_tab = 2130837555;
 			
 			// aapt resource value: 0x7f020034
-			public const int common_full_open_on_phone = 2130837556;
+			public const int circle = 2130837556;
 			
 			// aapt resource value: 0x7f020035
-			public const int common_ic_googleplayservices = 2130837557;
+			public const int common_full_open_on_phone = 2130837557;
 			
 			// aapt resource value: 0x7f020036
-			public const int common_signin_btn_icon_dark = 2130837558;
+			public const int common_ic_googleplayservices = 2130837558;
 			
 			// aapt resource value: 0x7f020037
-			public const int common_signin_btn_icon_disabled_dark = 2130837559;
+			public const int common_signin_btn_icon_dark = 2130837559;
 			
 			// aapt resource value: 0x7f020038
-			public const int common_signin_btn_icon_disabled_focus_dark = 2130837560;
+			public const int common_signin_btn_icon_disabled_dark = 2130837560;
 			
 			// aapt resource value: 0x7f020039
-			public const int common_signin_btn_icon_disabled_focus_light = 2130837561;
+			public const int common_signin_btn_icon_disabled_focus_dark = 2130837561;
 			
 			// aapt resource value: 0x7f02003a
-			public const int common_signin_btn_icon_disabled_light = 2130837562;
+			public const int common_signin_btn_icon_disabled_focus_light = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int common_signin_btn_icon_focus_dark = 2130837563;
+			public const int common_signin_btn_icon_disabled_light = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int common_signin_btn_icon_focus_light = 2130837564;
+			public const int common_signin_btn_icon_focus_dark = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int common_signin_btn_icon_light = 2130837565;
+			public const int common_signin_btn_icon_focus_light = 2130837565;
 			
 			// aapt resource value: 0x7f02003e
-			public const int common_signin_btn_icon_normal_dark = 2130837566;
+			public const int common_signin_btn_icon_light = 2130837566;
 			
 			// aapt resource value: 0x7f02003f
-			public const int common_signin_btn_icon_normal_light = 2130837567;
+			public const int common_signin_btn_icon_normal_dark = 2130837567;
 			
 			// aapt resource value: 0x7f020040
-			public const int common_signin_btn_icon_pressed_dark = 2130837568;
+			public const int common_signin_btn_icon_normal_light = 2130837568;
 			
 			// aapt resource value: 0x7f020041
-			public const int common_signin_btn_icon_pressed_light = 2130837569;
+			public const int common_signin_btn_icon_pressed_dark = 2130837569;
 			
 			// aapt resource value: 0x7f020042
-			public const int common_signin_btn_text_dark = 2130837570;
+			public const int common_signin_btn_icon_pressed_light = 2130837570;
 			
 			// aapt resource value: 0x7f020043
-			public const int common_signin_btn_text_disabled_dark = 2130837571;
+			public const int common_signin_btn_text_dark = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int common_signin_btn_text_disabled_focus_dark = 2130837572;
+			public const int common_signin_btn_text_disabled_dark = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int common_signin_btn_text_disabled_focus_light = 2130837573;
+			public const int common_signin_btn_text_disabled_focus_dark = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int common_signin_btn_text_disabled_light = 2130837574;
+			public const int common_signin_btn_text_disabled_focus_light = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int common_signin_btn_text_focus_dark = 2130837575;
+			public const int common_signin_btn_text_disabled_light = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int common_signin_btn_text_focus_light = 2130837576;
+			public const int common_signin_btn_text_focus_dark = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int common_signin_btn_text_light = 2130837577;
+			public const int common_signin_btn_text_focus_light = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int common_signin_btn_text_normal_dark = 2130837578;
+			public const int common_signin_btn_text_light = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int common_signin_btn_text_normal_light = 2130837579;
+			public const int common_signin_btn_text_normal_dark = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int common_signin_btn_text_pressed_dark = 2130837580;
+			public const int common_signin_btn_text_normal_light = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int common_signin_btn_text_pressed_light = 2130837581;
+			public const int common_signin_btn_text_pressed_dark = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int ic_plusone_medium_off_client = 2130837582;
+			public const int common_signin_btn_text_pressed_light = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int ic_plusone_small_off_client = 2130837583;
+			public const int ic_plusone_medium_off_client = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int ic_plusone_standard_off_client = 2130837584;
+			public const int ic_plusone_small_off_client = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int ic_plusone_tall_off_client = 2130837585;
+			public const int ic_plusone_standard_off_client = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int Icon = 2130837586;
+			public const int ic_plusone_tall_off_client = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int mr_ic_audio_vol = 2130837587;
+			public const int Icon = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int mr_ic_media_route_connecting_holo_dark = 2130837588;
+			public const int mr_ic_audio_vol = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int mr_ic_media_route_connecting_holo_light = 2130837589;
+			public const int mr_ic_media_route_connecting_holo_dark = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int mr_ic_media_route_disabled_holo_dark = 2130837590;
+			public const int mr_ic_media_route_connecting_holo_light = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int mr_ic_media_route_disabled_holo_light = 2130837591;
+			public const int mr_ic_media_route_disabled_holo_dark = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int mr_ic_media_route_holo_dark = 2130837592;
+			public const int mr_ic_media_route_disabled_holo_light = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int mr_ic_media_route_holo_light = 2130837593;
+			public const int mr_ic_media_route_holo_dark = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int mr_ic_media_route_off_holo_dark = 2130837594;
+			public const int mr_ic_media_route_holo_light = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int mr_ic_media_route_off_holo_light = 2130837595;
+			public const int mr_ic_media_route_off_holo_dark = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int mr_ic_media_route_on_0_holo_dark = 2130837596;
+			public const int mr_ic_media_route_off_holo_light = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int mr_ic_media_route_on_0_holo_light = 2130837597;
+			public const int mr_ic_media_route_on_0_holo_dark = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int mr_ic_media_route_on_1_holo_dark = 2130837598;
+			public const int mr_ic_media_route_on_0_holo_light = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int mr_ic_media_route_on_1_holo_light = 2130837599;
+			public const int mr_ic_media_route_on_1_holo_dark = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int mr_ic_media_route_on_2_holo_dark = 2130837600;
+			public const int mr_ic_media_route_on_1_holo_light = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int mr_ic_media_route_on_2_holo_light = 2130837601;
+			public const int mr_ic_media_route_on_2_holo_dark = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int mr_ic_media_route_on_holo_dark = 2130837602;
+			public const int mr_ic_media_route_on_2_holo_light = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int mr_ic_media_route_on_holo_light = 2130837603;
+			public const int mr_ic_media_route_on_holo_dark = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int powered_by_google_dark = 2130837604;
+			public const int mr_ic_media_route_on_holo_light = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int powered_by_google_light = 2130837605;
+			public const int powered_by_google_dark = 2130837605;
+			
+			// aapt resource value: 0x7f020066
+			public const int powered_by_google_light = 2130837606;
 			
 			static Drawable()
 			{
@@ -1471,29 +2509,29 @@ namespace CounterWeightsDroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0b0045
-			public const int action_bar = 2131427397;
+			// aapt resource value: 0x7f0b0047
+			public const int action_bar = 2131427399;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int action_bar_activity_content = 2131427328;
 			
-			// aapt resource value: 0x7f0b0044
-			public const int action_bar_container = 2131427396;
+			// aapt resource value: 0x7f0b0046
+			public const int action_bar_container = 2131427398;
 			
-			// aapt resource value: 0x7f0b0040
-			public const int action_bar_root = 2131427392;
+			// aapt resource value: 0x7f0b0042
+			public const int action_bar_root = 2131427394;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int action_bar_spinner = 2131427329;
 			
-			// aapt resource value: 0x7f0b0033
-			public const int action_bar_subtitle = 2131427379;
+			// aapt resource value: 0x7f0b0035
+			public const int action_bar_subtitle = 2131427381;
 			
-			// aapt resource value: 0x7f0b0032
-			public const int action_bar_title = 2131427378;
+			// aapt resource value: 0x7f0b0034
+			public const int action_bar_title = 2131427380;
 			
-			// aapt resource value: 0x7f0b0046
-			public const int action_context_bar = 2131427398;
+			// aapt resource value: 0x7f0b0048
+			public const int action_context_bar = 2131427400;
 			
 			// aapt resource value: 0x7f0b0002
 			public const int action_menu_divider = 2131427330;
@@ -1501,17 +2539,17 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b0003
 			public const int action_menu_presenter = 2131427331;
 			
-			// aapt resource value: 0x7f0b0042
-			public const int action_mode_bar = 2131427394;
+			// aapt resource value: 0x7f0b0044
+			public const int action_mode_bar = 2131427396;
 			
-			// aapt resource value: 0x7f0b0041
-			public const int action_mode_bar_stub = 2131427393;
+			// aapt resource value: 0x7f0b0043
+			public const int action_mode_bar_stub = 2131427395;
 			
-			// aapt resource value: 0x7f0b0034
-			public const int action_mode_close_button = 2131427380;
+			// aapt resource value: 0x7f0b0036
+			public const int action_mode_close_button = 2131427382;
 			
-			// aapt resource value: 0x7f0b0035
-			public const int activity_chooser_view_content = 2131427381;
+			// aapt resource value: 0x7f0b0037
+			public const int activity_chooser_view_content = 2131427383;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int adjust_height = 2131427358;
@@ -1522,11 +2560,14 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b0016
 			public const int always = 2131427350;
 			
-			// aapt resource value: 0x7f0b005e
-			public const int barView = 2131427422;
+			// aapt resource value: 0x7f0b0061
+			public const int barView = 2131427425;
 			
 			// aapt resource value: 0x7f0b0013
 			public const int beginning = 2131427347;
+			
+			// aapt resource value: 0x7f0b0032
+			public const int bold = 2131427378;
 			
 			// aapt resource value: 0x7f0b002b
 			public const int book_now = 2131427371;
@@ -1540,8 +2581,8 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b002d
 			public const int buy_with_google = 2131427373;
 			
-			// aapt resource value: 0x7f0b003d
-			public const int checkbox = 2131427389;
+			// aapt resource value: 0x7f0b003f
+			public const int checkbox = 2131427391;
 			
 			// aapt resource value: 0x7f0b002f
 			public const int classic = 2131427375;
@@ -1549,11 +2590,14 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b0017
 			public const int collapseActionView = 2131427351;
 			
-			// aapt resource value: 0x7f0b0043
-			public const int decor_content_parent = 2131427395;
+			// aapt resource value: 0x7f0b0067
+			public const int commentText = 2131427431;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int default_activity_button = 2131427384;
+			// aapt resource value: 0x7f0b0045
+			public const int decor_content_parent = 2131427397;
+			
+			// aapt resource value: 0x7f0b003a
+			public const int default_activity_button = 2131427386;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int dialog = 2131427355;
@@ -1567,26 +2611,23 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b001c
 			public const int dropdown = 2131427356;
 			
-			// aapt resource value: 0x7f0b0047
-			public const int edit_query = 2131427399;
+			// aapt resource value: 0x7f0b0049
+			public const int edit_query = 2131427401;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int emailField = 2131427411;
+			// aapt resource value: 0x7f0b0055
+			public const int emailField = 2131427413;
 			
-			// aapt resource value: 0x7f0b005f
-			public const int emptyView = 2131427423;
+			// aapt resource value: 0x7f0b0062
+			public const int emptyView = 2131427426;
 			
 			// aapt resource value: 0x7f0b0014
 			public const int end = 2131427348;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int expand_activities_button = 2131427382;
+			// aapt resource value: 0x7f0b0038
+			public const int expand_activities_button = 2131427384;
 			
-			// aapt resource value: 0x7f0b003c
-			public const int expanded_menu = 2131427388;
-			
-			// aapt resource value: 0x7f0b0057
-			public const int fragment_container = 2131427415;
+			// aapt resource value: 0x7f0b003e
+			public const int expanded_menu = 2131427390;
 			
 			// aapt resource value: 0x7f0b0030
 			public const int grayscale = 2131427376;
@@ -1606,44 +2647,50 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b0020
 			public const int hybrid = 2131427360;
 			
-			// aapt resource value: 0x7f0b003a
-			public const int icon = 2131427386;
+			// aapt resource value: 0x7f0b003c
+			public const int icon = 2131427388;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int ifRoom = 2131427352;
 			
-			// aapt resource value: 0x7f0b0037
-			public const int image = 2131427383;
+			// aapt resource value: 0x7f0b0039
+			public const int image = 2131427385;
+			
+			// aapt resource value: 0x7f0b0033
+			public const int italic = 2131427379;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int likeText = 2131427430;
 			
 			// aapt resource value: 0x7f0b0009
 			public const int listMode = 2131427337;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int list_item = 2131427385;
+			// aapt resource value: 0x7f0b003b
+			public const int list_item = 2131427387;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int loginButton = 2131427413;
+			// aapt resource value: 0x7f0b0057
+			public const int loginButton = 2131427415;
 			
 			// aapt resource value: 0x7f0b002a
 			public const int match_parent = 2131427370;
 			
-			// aapt resource value: 0x7f0b0064
-			public const int media_route_control_frame = 2131427428;
+			// aapt resource value: 0x7f0b006c
+			public const int media_route_control_frame = 2131427436;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int media_route_disconnect_button = 2131427429;
+			// aapt resource value: 0x7f0b006d
+			public const int media_route_disconnect_button = 2131427437;
 			
-			// aapt resource value: 0x7f0b0061
-			public const int media_route_list = 2131427425;
+			// aapt resource value: 0x7f0b0069
+			public const int media_route_list = 2131427433;
 			
-			// aapt resource value: 0x7f0b0062
-			public const int media_route_volume_layout = 2131427426;
+			// aapt resource value: 0x7f0b006a
+			public const int media_route_volume_layout = 2131427434;
 			
-			// aapt resource value: 0x7f0b0063
-			public const int media_route_volume_slider = 2131427427;
+			// aapt resource value: 0x7f0b006b
+			public const int media_route_volume_slider = 2131427435;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int menu_logout = 2131427430;
+			// aapt resource value: 0x7f0b006f
+			public const int menu_logout = 2131427439;
 			
 			// aapt resource value: 0x7f0b0015
 			public const int middle = 2131427349;
@@ -1651,8 +2698,8 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b0031
 			public const int monochrome = 2131427377;
 			
-			// aapt resource value: 0x7f0b0060
-			public const int myButton = 2131427424;
+			// aapt resource value: 0x7f0b0068
+			public const int myButton = 2131427432;
 			
 			// aapt resource value: 0x7f0b0019
 			public const int never = 2131427353;
@@ -1663,17 +2710,23 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b000a
 			public const int normal = 2131427338;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int passwordField = 2131427412;
+			// aapt resource value: 0x7f0b005a
+			public const int pager = 2131427418;
 			
-			// aapt resource value: 0x7f0b005c
-			public const int pointView = 2131427420;
+			// aapt resource value: 0x7f0b0056
+			public const int passwordField = 2131427414;
+			
+			// aapt resource value: 0x7f0b005f
+			public const int pointView = 2131427423;
+			
+			// aapt resource value: 0x7f0b0064
+			public const int postDate = 2131427428;
 			
 			// aapt resource value: 0x7f0b0025
 			public const int production = 2131427365;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int progressView = 2131427418;
+			// aapt resource value: 0x7f0b005d
+			public const int progressView = 2131427421;
 			
 			// aapt resource value: 0x7f0b0005
 			public const int progress_circular = 2131427333;
@@ -1681,11 +2734,14 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b0006
 			public const int progress_horizontal = 2131427334;
 			
-			// aapt resource value: 0x7f0b003f
-			public const int radio = 2131427391;
+			// aapt resource value: 0x7f0b0041
+			public const int radio = 2131427393;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int refreshView = 2131427416;
+			// aapt resource value: 0x7f0b0065
+			public const int reflectionText = 2131427429;
+			
+			// aapt resource value: 0x7f0b005b
+			public const int refreshView = 2131427419;
 			
 			// aapt resource value: 0x7f0b0026
 			public const int sandbox = 2131427366;
@@ -1693,41 +2749,41 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b0021
 			public const int satellite = 2131427361;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int search_badge = 2131427401;
-			
-			// aapt resource value: 0x7f0b0048
-			public const int search_bar = 2131427400;
+			// aapt resource value: 0x7f0b004b
+			public const int search_badge = 2131427403;
 			
 			// aapt resource value: 0x7f0b004a
-			public const int search_button = 2131427402;
-			
-			// aapt resource value: 0x7f0b004f
-			public const int search_close_btn = 2131427407;
-			
-			// aapt resource value: 0x7f0b004b
-			public const int search_edit_frame = 2131427403;
-			
-			// aapt resource value: 0x7f0b0051
-			public const int search_go_btn = 2131427409;
+			public const int search_bar = 2131427402;
 			
 			// aapt resource value: 0x7f0b004c
-			public const int search_mag_icon = 2131427404;
+			public const int search_button = 2131427404;
+			
+			// aapt resource value: 0x7f0b0051
+			public const int search_close_btn = 2131427409;
 			
 			// aapt resource value: 0x7f0b004d
-			public const int search_plate = 2131427405;
+			public const int search_edit_frame = 2131427405;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int search_go_btn = 2131427411;
 			
 			// aapt resource value: 0x7f0b004e
-			public const int search_src_text = 2131427406;
+			public const int search_mag_icon = 2131427406;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int search_voice_btn = 2131427410;
+			// aapt resource value: 0x7f0b004f
+			public const int search_plate = 2131427407;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int search_src_text = 2131427408;
+			
+			// aapt resource value: 0x7f0b0054
+			public const int search_voice_btn = 2131427412;
 			
 			// aapt resource value: 0x7f0b0029
 			public const int selectionDetails = 2131427369;
 			
-			// aapt resource value: 0x7f0b003e
-			public const int shortcut = 2131427390;
+			// aapt resource value: 0x7f0b0040
+			public const int shortcut = 2131427392;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int showCustom = 2131427343;
@@ -1741,38 +2797,47 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b0007
 			public const int split_action_bar = 2131427335;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int stats_list = 2131427417;
+			// aapt resource value: 0x7f0b005c
+			public const int stats_list = 2131427420;
 			
 			// aapt resource value: 0x7f0b0027
 			public const int strict_sandbox = 2131427367;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int submit_area = 2131427408;
+			// aapt resource value: 0x7f0b0052
+			public const int submit_area = 2131427410;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int tabMode = 2131427339;
 			
+			// aapt resource value: 0x7f0b006e
+			public const int tab_title = 2131427438;
+			
+			// aapt resource value: 0x7f0b0059
+			public const int tabs = 2131427417;
+			
 			// aapt resource value: 0x7f0b0022
 			public const int terrain = 2131427362;
 			
-			// aapt resource value: 0x7f0b003b
-			public const int title = 2131427387;
+			// aapt resource value: 0x7f0b003d
+			public const int title = 2131427389;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int toolbar = 2131427414;
+			// aapt resource value: 0x7f0b0058
+			public const int toolbar = 2131427416;
 			
-			// aapt resource value: 0x7f0b005b
-			public const int totalScoreView = 2131427419;
+			// aapt resource value: 0x7f0b005e
+			public const int totalScoreView = 2131427422;
 			
-			// aapt resource value: 0x7f0b005d
-			public const int totalView = 2131427421;
+			// aapt resource value: 0x7f0b0060
+			public const int totalView = 2131427424;
 			
 			// aapt resource value: 0x7f0b0008
 			public const int up = 2131427336;
 			
 			// aapt resource value: 0x7f0b0012
 			public const int useLogo = 2131427346;
+			
+			// aapt resource value: 0x7f0b0063
+			public const int username = 2131427427;
 			
 			// aapt resource value: 0x7f0b001a
 			public const int withText = 2131427354;
@@ -1897,22 +2962,28 @@ namespace CounterWeightsDroid
 			public const int list_item_bar = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int Main = 2130903068;
+			public const int list_item_reflection = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int mr_media_route_chooser_dialog = 2130903069;
+			public const int Main = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int mr_media_route_controller_dialog = 2130903070;
+			public const int mr_media_route_chooser_dialog = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int mr_media_route_list_item = 2130903071;
+			public const int mr_media_route_controller_dialog = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int support_simple_spinner_dropdown_item = 2130903072;
+			public const int mr_media_route_list_item = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int toolbar = 2130903073;
+			public const int support_simple_spinner_dropdown_item = 2130903073;
+			
+			// aapt resource value: 0x7f030022
+			public const int tab = 2130903074;
+			
+			// aapt resource value: 0x7f030023
+			public const int toolbar = 2130903075;
 			
 			static Layout()
 			{
@@ -3403,6 +4474,76 @@ namespace CounterWeightsDroid
 			
 			// aapt resource value: 7
 			public const int MenuView_preserveIconSpacing = 7;
+			
+			public static int[] PagerSlidingTabStrip = new int[] {
+					2130772179,
+					2130772180,
+					2130772181,
+					2130772182,
+					2130772183,
+					2130772184,
+					2130772185,
+					2130772186,
+					2130772187,
+					2130772188,
+					2130772189,
+					2130772190,
+					2130772191,
+					2130772192,
+					2130772193,
+					2130772194,
+					2130772195};
+			
+			// aapt resource value: 2
+			public const int PagerSlidingTabStrip_pstsDividerColor = 2;
+			
+			// aapt resource value: 6
+			public const int PagerSlidingTabStrip_pstsDividerPadding = 6;
+			
+			// aapt resource value: 3
+			public const int PagerSlidingTabStrip_pstsDividerWidth = 3;
+			
+			// aapt resource value: 0
+			public const int PagerSlidingTabStrip_pstsIndicatorColor = 0;
+			
+			// aapt resource value: 4
+			public const int PagerSlidingTabStrip_pstsIndicatorHeight = 4;
+			
+			// aapt resource value: 12
+			public const int PagerSlidingTabStrip_pstsPaddingMiddle = 12;
+			
+			// aapt resource value: 8
+			public const int PagerSlidingTabStrip_pstsScrollOffset = 8;
+			
+			// aapt resource value: 10
+			public const int PagerSlidingTabStrip_pstsShouldExpand = 10;
+			
+			// aapt resource value: 9
+			public const int PagerSlidingTabStrip_pstsTabBackground = 9;
+			
+			// aapt resource value: 7
+			public const int PagerSlidingTabStrip_pstsTabPaddingLeftRight = 7;
+			
+			// aapt resource value: 11
+			public const int PagerSlidingTabStrip_pstsTextAllCaps = 11;
+			
+			// aapt resource value: 15
+			public const int PagerSlidingTabStrip_pstsTextAlpha = 15;
+			
+			// aapt resource value: 16
+			public const int PagerSlidingTabStrip_pstsTextSelectedAlpha = 16;
+			
+			// aapt resource value: 14
+			public const int PagerSlidingTabStrip_pstsTextSelectedStyle = 14;
+			
+			// aapt resource value: 13
+			public const int PagerSlidingTabStrip_pstsTextStyle = 13;
+			
+			// aapt resource value: 1
+			public const int PagerSlidingTabStrip_pstsUnderlineColor = 1;
+			
+			// aapt resource value: 5
+			public const int PagerSlidingTabStrip_pstsUnderlineHeight = 5;
 			
 			public static int[] PopupWindow = new int[] {
 					16843126,

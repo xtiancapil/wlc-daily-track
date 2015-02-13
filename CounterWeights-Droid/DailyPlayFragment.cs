@@ -11,33 +11,31 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using Core;
 using System.Net;
+using Core;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using System.Threading.Tasks;
+using RestSharp;
+using Newtonsoft.Json;
 
 namespace CounterWeightsDroid
 {
-	public class OverviewFragment : Android.Support.V4.App.Fragment
+	public class DailyPlayFragment :  Android.Support.V4.App.Fragment
 	{
 		CookieContainer cookies;
-		ListView statsList;
+		ListView reflectionList;
 		View headerView;
-		TextView totalScoreView;
 		ChallengeProfile profile;
-		ArrayAdapter adapter;
+		ReflectionAdapter adapter;
+		Android.Support.V4.Widget.SwipeRefreshLayout refreshView;
 
 		WlcWebService webService;
-		List<Core.Stat> myStats;
-		DailyRecord today;
-		RadialProgress.RadialProgressView averageScoreView;
-		Android.Support.V4.Widget.SwipeRefreshLayout refreshView;
-		string csrfToken;
-
 		int position;
-		public static OverviewFragment NewInstance(int position) {
-			var f = new OverviewFragment ();
+		string csrfToken;				
+
+		public static DailyPlayFragment NewInstance (int position) {
+
+			var f = new DailyPlayFragment ();
 			var b = new Bundle ();
 			b.PutInt("position", position);
 			f.Arguments = b;
@@ -54,62 +52,67 @@ namespace CounterWeightsDroid
 			var myStatsUrl = prefs.GetString ("statsUrl", "");
 			var challengeProfile = prefs.GetString ("challengeProfile", "");
 			csrfToken = prefs.GetString ("csrfToken", "");
-			adapter = new StatsBarAdapter (Activity);
-
+			adapter = new ReflectionAdapter (Activity);
 			try {
 				profile = Newtonsoft.Json.JsonConvert.DeserializeObject<ChallengeProfile> (challengeProfile, new Newtonsoft.Json.JsonSerializerSettings() {
 					NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore
 				});
 
-				var contentStr = await webService.GetStats(StoredCookies, "/profiles/"+ profile.id.ToString() + "/stats_calendar");
-				myStats = WlcHelpers.GetStats(contentStr);
-				((StatsBarAdapter)adapter).Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
-				today = await webService.GetRecord(StoredCookies, "today.json", csrfToken); 
+				var client = new RestClient ("https://game.wholelifechallenge.com");
+				client.CookieContainer = StoredCookies;
+				client.FollowRedirects = true;
+				var postsReq = new RestRequest("api/frontend/current_user/teams/7569/posts.json?per=10", Method.GET);
+				postsReq.AddHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
+				postsReq.AddHeader("X-CSRF-TOKEN", csrfToken);
+				postsReq.AddHeader("Referer", "https://game.wholelifechallenge.com/wlcny15/hub");
+
+				var resp = client.Execute(postsReq);
+				var content = resp.Content;
+				var _settings = new JsonSerializerSettings() {
+					NullValueHandling = NullValueHandling.Ignore
+				};
+				//_record = JsonConvert.DeserializeObject<DailyRecord> (contentStr.Result);
+
+				int teamId = profile.teams.Select(x => x.id).First();
+
+				adapter.ReflectionFeed  = JsonConvert.DeserializeObject<Feed> (content, _settings);
+//				adapter.ReflectionFeed = await webService.GetReflections(teamId, 0, 10, StoredCookies, csrfToken);
 				if(!Activity.IsFinishing) {
 					UpdateView();
-				}
+				} 
 			} catch (Exception ex) {
 
 			}
-
 		}
 
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
+
 			var v = inflater.Inflate (Resource.Layout.fragment_overview, container, false);
-			headerView = inflater.Inflate (Resource.Layout.list_header, null, false);
-			statsList = v.FindViewById<ListView> (Resource.Id.stats_list);
-			statsList.AddHeaderView (headerView);
-			statsList.Adapter = adapter;
+			reflectionList = v.FindViewById<ListView> (Resource.Id.stats_list);
+			reflectionList.Adapter = adapter;
 
 			refreshView = v.FindViewById<Android.Support.V4.Widget.SwipeRefreshLayout> (Resource.Id.refreshView);
-			averageScoreView = headerView.FindViewById<RadialProgress.RadialProgressView> (Resource.Id.progressView);
-			totalScoreView = headerView.FindViewById<TextView> (Resource.Id.totalScoreView);
+
 			refreshView.Refresh += async delegate {
-				var contentStr = await webService.GetStats(StoredCookies, "/profiles/"+ profile.id.ToString() + "/stats_calendar");
-				myStats = WlcHelpers.GetStats(contentStr);
-				((StatsBarAdapter)adapter).Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
-				today = await webService.GetRecord(StoredCookies, "today.json", csrfToken); 
+//				var feed = await webService.GetReflections(teamId, 0, 10, StoredCookies, csrfToken);
+
+				//((ReflectionAdapter)adapter). = myStats.OrderByDescending(x => x.StatDate).ToList();
+
 				refreshView.Refreshing = false;
 				UpdateView();
 			};
 			UpdateView ();
 
-			return v;
+			return v;		
 		}
 
-		public void UpdateView() {
-
+		public void UpdateView () {
 			if (adapter != null) {
 				adapter.NotifyDataSetChanged ();
 			}
-
-			if (today != null) {
-				averageScoreView.Value = (float) today.challenge_profile.average_score;
-				totalScoreView.Text = today.challenge_profile.total_score.ToString ();
-			}
 		}
-			
+
 		CookieContainer StoredCookies {
 			get {
 				if (cookies == null) {

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        android:text="Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username" />
+    <TextView
+        android:layout_toRightOf="@id/username"
+        android:text="Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postDate"
+        android:layout_alignBaseline="@id/username" />
+    <TextView
+        android:layout_below="@id/username"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="8dp"
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reflectionText" />
+    <TextView
+        android:layout_below="@id/reflectionText"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:padding="8dp"
+        android:text="0 people like this"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likeText" />
+    <TextView
+        android:layout_below="@id/reflectionText"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:padding="8dp"
+        android:text="0 Comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentText"
+        android:layout_toRightOf="@id/likeText" />
+</RelativeLayout>
