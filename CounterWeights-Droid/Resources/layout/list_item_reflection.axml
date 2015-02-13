@@ -5,6 +5,7 @@
     android:layout_height="match_parent">
     <TextView
         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimary"
         android:padding="8dp"
         android:text="Text"
         android:layout_width="wrap_content"

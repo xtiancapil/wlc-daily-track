@@ -69,7 +69,8 @@ namespace CounterWeightsDroid
 				var resp = client.Execute(postsReq);
 				var content = resp.Content;
 				var _settings = new JsonSerializerSettings() {
-					NullValueHandling = NullValueHandling.Ignore
+					NullValueHandling = NullValueHandling.Ignore,
+					DateParseHandling = DateParseHandling.None
 				};
 				//_record = JsonConvert.DeserializeObject<DailyRecord> (contentStr.Result);
 
@@ -105,6 +106,23 @@ namespace CounterWeightsDroid
 			UpdateView ();
 
 			return v;		
+		}
+
+		public override void OnResume ()
+		{
+			base.OnResume ();
+			reflectionList.Scroll += HandleScroll;
+		}
+
+		public override void OnPause ()
+		{
+			base.OnPause ();
+			reflectionList.Scroll -= HandleScroll;
+		}
+
+		void HandleScroll (object sender, AbsListView.ScrollEventArgs e)
+		{
+			// if we're at the bottom of the list, check that there's a next cursor number
 		}
 
 		public void UpdateView () {

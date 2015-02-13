@@ -64,7 +64,7 @@ namespace CounterWeightsDroid
 				var contentStr = await webService.GetStats(StoredCookies, "/profiles/"+ profile.id.ToString() + "/stats_calendar");
 				myStats = WlcHelpers.GetStats(contentStr);
 				((StatsBarAdapter)adapter).Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
-				today = await webService.GetRecord(StoredCookies, "today.json", csrfToken); 
+//				today = await webService.GetRecord(StoredCookies, "today.json", csrfToken); 
 				if(!Activity.IsFinishing) {
 					UpdateView();
 				}
@@ -79,7 +79,7 @@ namespace CounterWeightsDroid
 			var v = inflater.Inflate (Resource.Layout.fragment_overview, container, false);
 			headerView = inflater.Inflate (Resource.Layout.list_header, null, false);
 			statsList = v.FindViewById<ListView> (Resource.Id.stats_list);
-			statsList.AddHeaderView (headerView);
+//			statsList.AddHeaderView (headerView);
 			statsList.Adapter = adapter;
 
 			refreshView = v.FindViewById<Android.Support.V4.Widget.SwipeRefreshLayout> (Resource.Id.refreshView);
@@ -89,7 +89,7 @@ namespace CounterWeightsDroid
 				var contentStr = await webService.GetStats(StoredCookies, "/profiles/"+ profile.id.ToString() + "/stats_calendar");
 				myStats = WlcHelpers.GetStats(contentStr);
 				((StatsBarAdapter)adapter).Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
-				today = await webService.GetRecord(StoredCookies, "today.json", csrfToken); 
+//				today = await webService.GetRecord(StoredCookies, "today.json", csrfToken); 
 				refreshView.Refreshing = false;
 				UpdateView();
 			};
