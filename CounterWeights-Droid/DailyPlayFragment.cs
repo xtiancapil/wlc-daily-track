@@ -17,6 +17,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using RestSharp;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
 
 namespace CounterWeightsDroid
 {
@@ -33,6 +34,10 @@ namespace CounterWeightsDroid
 		int position;
 		string csrfToken;				
 
+		bool isLoading;
+		bool hasMoreItems;
+
+
 		public static DailyPlayFragment NewInstance (int position) {
 
 			var f = new DailyPlayFragment ();
@@ -41,6 +46,10 @@ namespace CounterWeightsDroid
 			f.Arguments = b;
 			return f;
 		}
+
+		RestClient client;
+		RestRequest postsReq;
+		JsonSerializerSettings serializerSettings;
 
 		async public override void OnCreate (Bundle savedInstanceState)
 		{
@@ -58,17 +67,17 @@ namespace CounterWeightsDroid
 					NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore
 				});
 
-				var client = new RestClient ("https://game.wholelifechallenge.com");
+				client = new RestClient ("https://game.wholelifechallenge.com");
 				client.CookieContainer = StoredCookies;
 				client.FollowRedirects = true;
-				var postsReq = new RestRequest("api/frontend/current_user/teams/7569/posts.json?per=10", Method.GET);
+				postsReq = new RestRequest("api/frontend/current_user/teams/7569/posts.json", Method.GET);
 				postsReq.AddHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
 				postsReq.AddHeader("X-CSRF-TOKEN", csrfToken);
 				postsReq.AddHeader("Referer", "https://game.wholelifechallenge.com/wlcny15/hub");
-
+				postsReq.AddParameter("per", 10);
 				var resp = client.Execute(postsReq);
 				var content = resp.Content;
-				var _settings = new JsonSerializerSettings() {
+				serializerSettings = new JsonSerializerSettings() {
 					NullValueHandling = NullValueHandling.Ignore,
 					DateParseHandling = DateParseHandling.None
 				};
@@ -76,7 +85,7 @@ namespace CounterWeightsDroid
 
 				int teamId = profile.teams.Select(x => x.id).First();
 
-				adapter.ReflectionFeed  = JsonConvert.DeserializeObject<Feed> (content, _settings);
+				adapter.ReflectionFeed  = JsonConvert.DeserializeObject<Feed> (content, serializerSettings);
 //				adapter.ReflectionFeed = await webService.GetReflections(teamId, 0, 10, StoredCookies, csrfToken);
 				if(!Activity.IsFinishing) {
 					UpdateView();
@@ -119,10 +128,26 @@ namespace CounterWeightsDroid
 			base.OnPause ();
 			reflectionList.Scroll -= HandleScroll;
 		}
-
+		int lastVisibleItem;
 		void HandleScroll (object sender, AbsListView.ScrollEventArgs e)
 		{
-			// if we're at the bottom of the list, check that there's a next cursor number
+			lastVisibleItem = e.FirstVisibleItem + e.VisibleItemCount;
+			if (!isLoading && (adapter.ReflectionFeed.pagination.next_cursor != null) && (lastVisibleItem == e.TotalItemCount)) {
+				isLoading = true;
+				Task.Run (async delegate {
+					postsReq.Parameters.RemoveAll(x => x.Name == "cursor");
+					postsReq.AddParameter ("cursor", adapter.ReflectionFeed.pagination.next_cursor);
+
+					var resp = client.Execute (postsReq);
+					var feed = JsonConvert.DeserializeObject<Feed> (resp.Content, serializerSettings);
+
+					adapter.ReflectionFeed.data.AddRange (feed.data);
+					adapter.ReflectionFeed.pagination = feed.pagination;
+					isLoading = false;
+					Activity.RunOnUiThread (UpdateView);					
+				});
+				// if we're at the bottom of the list, check that there's a next cursor number
+			}
 		}
 
 		public void UpdateView () {
