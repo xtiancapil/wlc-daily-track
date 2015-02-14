@@ -41,8 +41,12 @@ namespace CounterWeightsDroid
 
 			reflection = ReflectionFeed.data [position];
 			postDate = DateTime.Parse (reflection.created_at);
+			Console.WriteLine ("================");
+			Console.WriteLine (postDate);
+			Console.WriteLine (DateTime.Now);
+			Console.WriteLine ("================");
 			holder.username.Text = reflection.user.full_name;
-			holder.postDate.Text = postDate.Humanize ();// postDate.ToLocalTime ().ToString();//reflection.created_at;
+			holder.postDate.Text = postDate.Humanize (false, DateTime.Now, System.Globalization.CultureInfo.CurrentCulture);// postDate.ToLocalTime ().ToString();//reflection.created_at;
 			holder.comment.Text = reflection.content;
 			holder.comments.Text = string.Format ("{0} comments", reflection.comments.Count);
 			holder.likes.Text = string.Format ("{0} likes", reflection.likes.Count);
