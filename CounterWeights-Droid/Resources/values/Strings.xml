@@ -2,4 +2,6 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">CounterWeights-Droid</string>
+	<string name="loading">Loading&#8230;</string>
+
 </resources>

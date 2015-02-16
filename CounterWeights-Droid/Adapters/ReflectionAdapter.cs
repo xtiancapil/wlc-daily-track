@@ -4,6 +4,7 @@ using Android.Content;
 using Android.Views;
 using Core;
 using Humanizer;
+using Squareup.Picasso;
 
 namespace CounterWeightsDroid
 {
@@ -21,6 +22,7 @@ namespace CounterWeightsDroid
 			ReflectionFeed = new Feed ();
 		}
 
+		XamSvg.PictureBitmapDrawable img;
 		public override View GetView (int position, View convertView, ViewGroup parent)
 		{
 			ViewHolder holder;
@@ -33,18 +35,19 @@ namespace CounterWeightsDroid
 				holder.comment = convertView.FindViewById<TextView> (Resource.Id.reflectionText);
 				holder.comments = convertView.FindViewById<TextView> (Resource.Id.commentText);
 				holder.likes = convertView.FindViewById<TextView> (Resource.Id.likeText);
-
+				holder.thumbnail = convertView.FindViewById<ImageView> (Resource.Id.userImage);
 				convertView.Tag = holder;
 			} else {
 				holder = (ViewHolder)convertView.Tag;
 			}
 
 			reflection = ReflectionFeed.data [position];
+
+			Picasso.With (Context).Load (reflection.user.photo).Into (holder.thumbnail);
+//			img = XamSvg.SvgFactory.GetDrawable (Context.Resources, Resource.Raw.nutrition);
+//			holder.thumbnail.SetImageDrawable (img);
+//			holder.thumbnail.SetBackgroundColor (Android.Graphics.Color.Red);
 			postDate = DateTime.Parse (reflection.created_at);
-			Console.WriteLine ("================");
-			Console.WriteLine (postDate);
-			Console.WriteLine (DateTime.Now);
-			Console.WriteLine ("================");
 			holder.username.Text = reflection.user.full_name;
 			holder.postDate.Text = postDate.Humanize (false, DateTime.Now, System.Globalization.CultureInfo.CurrentCulture);// postDate.ToLocalTime ().ToString();//reflection.created_at;
 			holder.comment.Text = reflection.content;
@@ -66,6 +69,7 @@ namespace CounterWeightsDroid
 			public TextView comment;
 			public TextView likes;
 			public TextView comments;
+			public ImageView thumbnail;
 		}
 	}
 }

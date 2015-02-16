@@ -183,6 +183,7 @@ namespace Core
 		public string email { get; set; }
 		public string photo_medium { get; set; }
 		public string small_square_thumbnail { get; set; }
+		public string thumbnail { get; set; }
 		public PrivacySettings privacy_settings { get; set; }
 	}
 

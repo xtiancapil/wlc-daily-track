@@ -54,7 +54,7 @@ namespace CounterWeightsDroid
 			var myStatsUrl = prefs.GetString ("statsUrl", "");
 			var challengeProfile = prefs.GetString ("challengeProfile", "");
 			csrfToken = prefs.GetString ("csrfToken", "");
-			adapter = new StatsBarAdapter (Activity);
+			adapter = new StatsColorBarAdapter (Activity);
 
 			try {
 				profile = Newtonsoft.Json.JsonConvert.DeserializeObject<ChallengeProfile> (challengeProfile, new Newtonsoft.Json.JsonSerializerSettings() {
@@ -63,7 +63,7 @@ namespace CounterWeightsDroid
 
 				var contentStr = await webService.GetStats(StoredCookies, "/profiles/"+ profile.id.ToString() + "/stats_calendar");
 				myStats = WlcHelpers.GetStats(contentStr);
-				((StatsBarAdapter)adapter).Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
+				((StatsColorBarAdapter)adapter).Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
 //				today = await webService.GetRecord(StoredCookies, "today.json", csrfToken); 
 				if(!Activity.IsFinishing) {
 					UpdateView();
@@ -88,8 +88,7 @@ namespace CounterWeightsDroid
 			refreshView.Refresh += async delegate {
 				var contentStr = await webService.GetStats(StoredCookies, "/profiles/"+ profile.id.ToString() + "/stats_calendar");
 				myStats = WlcHelpers.GetStats(contentStr);
-				((StatsBarAdapter)adapter).Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
-//				today = await webService.GetRecord(StoredCookies, "today.json", csrfToken); 
+				((StatsColorBarAdapter)adapter).Stats = myStats.OrderByDescending(x => x.StatDate).ToList();
 				refreshView.Refreshing = false;
 				UpdateView();
 			};

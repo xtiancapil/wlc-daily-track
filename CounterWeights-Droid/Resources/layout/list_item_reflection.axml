@@ -3,28 +3,35 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp" />
     <TextView
+        android:layout_toRightOf="@id/userImage"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/colorPrimary"
-        android:padding="8dp"
-        android:text="Text"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/username" />
     <TextView
-        android:layout_toRightOf="@id/username"
-        android:text="Text"
+        android:layout_toRightOf="@id/userImage"
+        android:layout_below="@id/username"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/postDate"
-        android:layout_alignBaseline="@id/username" />
+        android:id="@+id/postDate" />
     <TextView
-        android:layout_below="@id/username"
+        android:layout_below="@id/userImage"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:padding="8dp"
-        android:text="Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/reflectionText" />

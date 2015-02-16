@@ -77,6 +77,12 @@
     <Reference Include="GooglePlayServicesLib">
       <HintPath>..\packages\Xamarin.GooglePlayServices.22.0.0.1\lib\MonoAndroid41\GooglePlayServicesLib.dll</HintPath>
     </Reference>
+    <Reference Include="Picasso">
+      <HintPath>..\ext\Picasso.dll</HintPath>
+    </Reference>
+    <Reference Include="XamSvg">
+      <HintPath>..\ext\XamSvg.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -88,6 +94,10 @@
     <Compile Include="OverviewFragment.cs" />
     <Compile Include="DailyPlayFragment.cs" />
     <Compile Include="Adapters\ReflectionAdapter.cs" />
+    <Compile Include="LeaderboardFragment.cs" />
+    <Compile Include="BaseFragment.cs" />
+    <Compile Include="Adapters\LeaderboardAdapter.cs" />
+    <Compile Include="Adapters\StatsColorBarAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -110,6 +120,19 @@
     <AndroidResource Include="Resources\layout\list_header.axml" />
     <AndroidResource Include="Resources\drawable\circle.xml" />
     <AndroidResource Include="Resources\layout\list_item_reflection.axml" />
+    <AndroidResource Include="Resources\layout\list_item_leaderboard.axml" />
+    <AndroidResource Include="Resources\raw\exercise.svg" />
+    <AndroidResource Include="Resources\raw\lifestyle.svg" />
+    <AndroidResource Include="Resources\raw\nutrition.svg" />
+    <AndroidResource Include="Resources\raw\reflections.svg" />
+    <AndroidResource Include="Resources\raw\stretching.svg" />
+    <AndroidResource Include="Resources\raw\water.svg" />
+    <AndroidResource Include="Resources\raw\supplement.svg" />
+    <AndroidResource Include="Resources\layout\loading_view.axml" />
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\layout\list_item_color_bar.axml" />
+    <AndroidResource Include="Resources\layout\list_header_leaderboard.axml" />
+    <AndroidResource Include="Resources\raw\reflection.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -135,5 +158,6 @@
   <ItemGroup>
     <Folder Include="Adapters\" />
     <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\raw\" />
   </ItemGroup>
 </Project>

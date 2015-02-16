@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:weightSum="12">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+    <ImageView
+        android:background="@color/nutrition"
+        android:layout_weight="1"
+        android:id="@+id/nutritionScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" />
+    <ImageView
+        android:background="@color/workout"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/exerciseScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:background="@color/stretch"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/stretchingScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:background="@color/supplement"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/supplementScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:background="@color/water"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/waterScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:background="@color/lifestyle"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/lifestyleScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:background="@color/reflection"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:id="@+id/reflectionScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:gravity="center"
+        android:layout_weight="1"
+        android:id="@+id/totalScore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pointView" />
+    <TextView
+        android:gravity="right"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalView"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:layout_below="@+id/pointView"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <TextView
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:background="@color/nutrition"
+            android:id="@+id/nutritionScore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+        <TextView
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:background="@color/workout"
+            android:id="@+id/exerciseScore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+        <TextView
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:background="@color/stretch"
+            android:id="@+id/stretchingScore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+        <TextView
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:background="@color/supplement"
+            android:id="@+id/supplementScore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+        <TextView
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:background="@color/water"
+            android:id="@+id/waterScore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+        <TextView
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:background="@color/lifestyle"
+            android:id="@+id/lifestyleScore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+        <TextView
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:background="@color/reflection"
+            android:id="@+id/reflectionScore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+        <LinearLayout
+            android:id="@+id/emptyView"
+            android:orientation="horizontal"
+            android:layout_weight="0"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:background="#ddd" />
+    </LinearLayout>
+</RelativeLayout>

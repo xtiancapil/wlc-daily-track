@@ -90,9 +90,11 @@ namespace CounterWeightsDroid
 			{
 				if (position == 0) {
 					return DailyPlayFragment.NewInstance (position);
+				} else if (position == 1) {
+					return OverviewFragment.NewInstance (position);
 				}
 
-				return OverviewFragment.NewInstance (position);
+				return LeaderboardFragment.NewInstance (position);
 			}
 			#endregion
 		}

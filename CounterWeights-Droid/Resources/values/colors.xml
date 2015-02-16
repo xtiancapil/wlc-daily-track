@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <resources>
 	<color name="colorPrimary">#0090bd</color>
-<color name="colorSecondary">#00536F</color>
+	<color name="colorSecondary">#00536F</color>
+	<color name="nutrition">#db2841</color>
+	<color name="workout">#f97b1e</color>
+	<color name="stretch">#f8ba00</color>
+	<color name="supplement">#5da400</color>
+	<color name="water">#58cee6</color>
+	<color name="lifestyle">#18a4ec</color>
+	<color name="reflection">#7045b8</color>
 </resources>
 
 

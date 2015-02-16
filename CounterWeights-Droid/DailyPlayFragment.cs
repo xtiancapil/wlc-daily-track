@@ -21,10 +21,10 @@ using System.Threading.Tasks;
 
 namespace CounterWeightsDroid
 {
-	public class DailyPlayFragment :  Android.Support.V4.App.Fragment
+	public class DailyPlayFragment :  BaseFragment
 	{
-		CookieContainer cookies;
 		ListView reflectionList;
+		View loadingView;
 		View headerView;
 		ChallengeProfile profile;
 		ReflectionAdapter adapter;
@@ -70,12 +70,13 @@ namespace CounterWeightsDroid
 				client = new RestClient ("https://game.wholelifechallenge.com");
 				client.CookieContainer = StoredCookies;
 				client.FollowRedirects = true;
+				//TODO: parametrize the team id!
 				postsReq = new RestRequest("api/frontend/current_user/teams/7569/posts.json", Method.GET);
 				postsReq.AddHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
 				postsReq.AddHeader("X-CSRF-TOKEN", csrfToken);
 				postsReq.AddHeader("Referer", "https://game.wholelifechallenge.com/wlcny15/hub");
 				postsReq.AddParameter("per", 10);
-				var resp = client.Execute(postsReq);
+				var resp = await client.ExecuteGetTaskAsync(postsReq);
 				var content = resp.Content;
 				serializerSettings = new JsonSerializerSettings() {
 					NullValueHandling = NullValueHandling.Ignore,
@@ -100,11 +101,19 @@ namespace CounterWeightsDroid
 
 			var v = inflater.Inflate (Resource.Layout.fragment_overview, container, false);
 			reflectionList = v.FindViewById<ListView> (Resource.Id.stats_list);
+			loadingView = inflater.Inflate (Resource.Layout.loading_view, null, false);
+			reflectionList.AddFooterView(loadingView);
+			loadingView.Visibility = ViewStates.Gone;
 			reflectionList.Adapter = adapter;
-
 			refreshView = v.FindViewById<Android.Support.V4.Widget.SwipeRefreshLayout> (Resource.Id.refreshView);
 
 			refreshView.Refresh += async delegate {
+				postsReq.Parameters.RemoveAll(x => x.Name == "cursor");
+				var resp = await client.ExecuteGetTaskAsync (postsReq);
+				var feed = JsonConvert.DeserializeObject<Feed> (resp.Content, serializerSettings);
+
+				adapter.ReflectionFeed = feed;
+
 //				var feed = await webService.GetReflections(teamId, 0, 10, StoredCookies, csrfToken);
 
 				//((ReflectionAdapter)adapter). = myStats.OrderByDescending(x => x.StatDate).ToList();
@@ -132,8 +141,9 @@ namespace CounterWeightsDroid
 		void HandleScroll (object sender, AbsListView.ScrollEventArgs e)
 		{
 			lastVisibleItem = e.FirstVisibleItem + e.VisibleItemCount;
-			if (!isLoading && (adapter.ReflectionFeed.pagination.next_cursor != null) && (lastVisibleItem == e.TotalItemCount)) {
+			if (!isLoading && adapter.ReflectionFeed.pagination != null && (adapter.ReflectionFeed.pagination.next_cursor != null) && (lastVisibleItem == e.TotalItemCount)) {
 				isLoading = true;
+				loadingView.Visibility = ViewStates.Visible;
 				Task.Run (async delegate {
 					postsReq.Parameters.RemoveAll(x => x.Name == "cursor");
 					postsReq.AddParameter ("cursor", adapter.ReflectionFeed.pagination.next_cursor);
@@ -144,7 +154,10 @@ namespace CounterWeightsDroid
 					adapter.ReflectionFeed.data.AddRange (feed.data);
 					adapter.ReflectionFeed.pagination = feed.pagination;
 					isLoading = false;
-					Activity.RunOnUiThread (UpdateView);					
+					Activity.RunOnUiThread(() => {
+							UpdateView();
+							loadingView.Visibility = ViewStates.Gone;
+					});
 				});
 				// if we're at the bottom of the list, check that there's a next cursor number
 			}
@@ -153,23 +166,6 @@ namespace CounterWeightsDroid
 		public void UpdateView () {
 			if (adapter != null) {
 				adapter.NotifyDataSetChanged ();
-			}
-		}
-
-		CookieContainer StoredCookies {
-			get {
-				if (cookies == null) {
-					var prefs = Activity.GetSharedPreferences ("wlcPrefs", FileCreationMode.Private);
-					var serialized = prefs.GetString ("cookies", null);
-					if (serialized != null) {
-
-						byte[] binData = Convert.FromBase64String(serialized);
-						BinaryFormatter formatter = new BinaryFormatter();
-						MemoryStream ms = new MemoryStream(binData);
-						cookies = (CookieContainer) formatter.Deserialize(ms);
-					}
-				}
-				return cookies ?? (cookies = new CookieContainer ());
 			}
 		}
 	}
