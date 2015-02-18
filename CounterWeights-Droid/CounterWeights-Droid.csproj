@@ -98,6 +98,7 @@
     <Compile Include="BaseFragment.cs" />
     <Compile Include="Adapters\LeaderboardAdapter.cs" />
     <Compile Include="Adapters\StatsColorBarAdapter.cs" />
+    <Compile Include="Helpers\AndroidExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -159,5 +160,6 @@
     <Folder Include="Adapters\" />
     <Folder Include="Resources\menu\" />
     <Folder Include="Resources\raw\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>
