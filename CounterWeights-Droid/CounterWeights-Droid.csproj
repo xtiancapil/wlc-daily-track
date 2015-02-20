@@ -99,6 +99,8 @@
     <Compile Include="Adapters\LeaderboardAdapter.cs" />
     <Compile Include="Adapters\StatsColorBarAdapter.cs" />
     <Compile Include="Helpers\AndroidExtensions.cs" />
+    <Compile Include="HomeActivity.cs" />
+    <Compile Include="Helpers\MyActionBarDrawerToggle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -134,6 +136,8 @@
     <AndroidResource Include="Resources\layout\list_item_color_bar.axml" />
     <AndroidResource Include="Resources\layout\list_header_leaderboard.axml" />
     <AndroidResource Include="Resources\raw\reflection.svg" />
+    <AndroidResource Include="Resources\layout\activity_main.axml" />
+    <AndroidResource Include="Resources\layout\item_menu.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

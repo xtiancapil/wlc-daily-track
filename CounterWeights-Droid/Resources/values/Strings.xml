@@ -3,5 +3,7 @@
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">CounterWeights-Droid</string>
 	<string name="loading">Loading&#8230;</string>
-
+	<string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
+  <string name="menu_refresh">Refresh</string>
 </resources>

@@ -2196,6 +2196,9 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0b002a
 			public const int disabled_alpha_material_light = 2131427370;
 			
+			// aapt resource value: 0x7f0b002e
+			public const int drawer_width = 2131427374;
+			
 			// aapt resource value: 0x7f0b002c
 			public const int loading_view_margin_layout = 2131427372;
 			
@@ -2591,8 +2594,8 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c002b
 			public const int always = 2131492907;
 			
-			// aapt resource value: 0x7f0c0069
-			public const int barView = 2131492969;
+			// aapt resource value: 0x7f0c006c
+			public const int barView = 2131492972;
 			
 			// aapt resource value: 0x7f0c0028
 			public const int beginning = 2131492904;
@@ -2621,8 +2624,11 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c002c
 			public const int collapseActionView = 2131492908;
 			
-			// aapt resource value: 0x7f0c0072
-			public const int commentText = 2131492978;
+			// aapt resource value: 0x7f0c0075
+			public const int commentText = 2131492981;
+			
+			// aapt resource value: 0x7f0c005a
+			public const int content_frame = 2131492954;
 			
 			// aapt resource value: 0x7f0c0045
 			public const int decor_content_parent = 2131492933;
@@ -2639,6 +2645,9 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c001c
 			public const int donate_with_google = 2131492892;
 			
+			// aapt resource value: 0x7f0c0058
+			public const int drawer_layout = 2131492952;
+			
 			// aapt resource value: 0x7f0c0031
 			public const int dropdown = 2131492913;
 			
@@ -2648,14 +2657,14 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c0055
 			public const int emailField = 2131492949;
 			
-			// aapt resource value: 0x7f0c006a
-			public const int emptyView = 2131492970;
+			// aapt resource value: 0x7f0c006d
+			public const int emptyView = 2131492973;
 			
 			// aapt resource value: 0x7f0c0029
 			public const int end = 2131492905;
 			
-			// aapt resource value: 0x7f0c0060
-			public const int exerciseScore = 2131492960;
+			// aapt resource value: 0x7f0c0063
+			public const int exerciseScore = 2131492963;
 			
 			// aapt resource value: 0x7f0c0038
 			public const int expand_activities_button = 2131492920;
@@ -2693,11 +2702,14 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c0033
 			public const int italic = 2131492915;
 			
-			// aapt resource value: 0x7f0c0064
-			public const int lifestyleScore = 2131492964;
+			// aapt resource value: 0x7f0c005b
+			public const int left_drawer = 2131492955;
 			
-			// aapt resource value: 0x7f0c0071
-			public const int likeText = 2131492977;
+			// aapt resource value: 0x7f0c0067
+			public const int lifestyleScore = 2131492967;
+			
+			// aapt resource value: 0x7f0c0074
+			public const int likeText = 2131492980;
 			
 			// aapt resource value: 0x7f0c0020
 			public const int listMode = 2131492896;
@@ -2705,8 +2717,8 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c003b
 			public const int list_item = 2131492923;
 			
-			// aapt resource value: 0x7f0c0073
-			public const int loading_view = 2131492979;
+			// aapt resource value: 0x7f0c0076
+			public const int loading_view = 2131492982;
 			
 			// aapt resource value: 0x7f0c0057
 			public const int loginButton = 2131492951;
@@ -2714,26 +2726,26 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c0017
 			public const int match_parent = 2131492887;
 			
+			// aapt resource value: 0x7f0c007d
+			public const int media_route_control_frame = 2131492989;
+			
+			// aapt resource value: 0x7f0c007e
+			public const int media_route_disconnect_button = 2131492990;
+			
 			// aapt resource value: 0x7f0c007a
-			public const int media_route_control_frame = 2131492986;
+			public const int media_route_list = 2131492986;
 			
 			// aapt resource value: 0x7f0c007b
-			public const int media_route_disconnect_button = 2131492987;
+			public const int media_route_volume_layout = 2131492987;
 			
-			// aapt resource value: 0x7f0c0077
-			public const int media_route_list = 2131492983;
+			// aapt resource value: 0x7f0c007c
+			public const int media_route_volume_slider = 2131492988;
 			
-			// aapt resource value: 0x7f0c0078
-			public const int media_route_volume_layout = 2131492984;
+			// aapt resource value: 0x7f0c006f
+			public const int memberName = 2131492975;
 			
-			// aapt resource value: 0x7f0c0079
-			public const int media_route_volume_slider = 2131492985;
-			
-			// aapt resource value: 0x7f0c006c
-			public const int memberName = 2131492972;
-			
-			// aapt resource value: 0x7f0c007d
-			public const int menu_logout = 2131492989;
+			// aapt resource value: 0x7f0c0080
+			public const int menu_logout = 2131492992;
 			
 			// aapt resource value: 0x7f0c002a
 			public const int middle = 2131492906;
@@ -2741,8 +2753,8 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c001f
 			public const int monochrome = 2131492895;
 			
-			// aapt resource value: 0x7f0c0076
-			public const int myButton = 2131492982;
+			// aapt resource value: 0x7f0c0079
+			public const int myButton = 2131492985;
 			
 			// aapt resource value: 0x7f0c002e
 			public const int never = 2131492910;
@@ -2753,26 +2765,26 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c000d
 			public const int normal = 2131492877;
 			
-			// aapt resource value: 0x7f0c005f
-			public const int nutritionScore = 2131492959;
+			// aapt resource value: 0x7f0c0062
+			public const int nutritionScore = 2131492962;
 			
-			// aapt resource value: 0x7f0c005a
-			public const int pager = 2131492954;
+			// aapt resource value: 0x7f0c005d
+			public const int pager = 2131492957;
 			
 			// aapt resource value: 0x7f0c0056
 			public const int passwordField = 2131492950;
 			
-			// aapt resource value: 0x7f0c0067
-			public const int pointView = 2131492967;
+			// aapt resource value: 0x7f0c006a
+			public const int pointView = 2131492970;
 			
-			// aapt resource value: 0x7f0c006f
-			public const int postDate = 2131492975;
+			// aapt resource value: 0x7f0c0072
+			public const int postDate = 2131492978;
 			
 			// aapt resource value: 0x7f0c0012
 			public const int production = 2131492882;
 			
-			// aapt resource value: 0x7f0c005d
-			public const int progressView = 2131492957;
+			// aapt resource value: 0x7f0c0060
+			public const int progressView = 2131492960;
 			
 			// aapt resource value: 0x7f0c0005
 			public const int progress_circular = 2131492869;
@@ -2783,17 +2795,17 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c0041
 			public const int radio = 2131492929;
 			
-			// aapt resource value: 0x7f0c006b
-			public const int rank = 2131492971;
+			// aapt resource value: 0x7f0c006e
+			public const int rank = 2131492974;
 			
-			// aapt resource value: 0x7f0c0065
-			public const int reflectionScore = 2131492965;
+			// aapt resource value: 0x7f0c0068
+			public const int reflectionScore = 2131492968;
 			
-			// aapt resource value: 0x7f0c0070
-			public const int reflectionText = 2131492976;
+			// aapt resource value: 0x7f0c0073
+			public const int reflectionText = 2131492979;
 			
-			// aapt resource value: 0x7f0c005b
-			public const int refreshView = 2131492955;
+			// aapt resource value: 0x7f0c005e
+			public const int refreshView = 2131492958;
 			
 			// aapt resource value: 0x7f0c0013
 			public const int sandbox = 2131492883;
@@ -2849,11 +2861,11 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c0007
 			public const int split_action_bar = 2131492871;
 			
-			// aapt resource value: 0x7f0c005c
-			public const int stats_list = 2131492956;
+			// aapt resource value: 0x7f0c005f
+			public const int stats_list = 2131492959;
 			
-			// aapt resource value: 0x7f0c0061
-			public const int stretchingScore = 2131492961;
+			// aapt resource value: 0x7f0c0064
+			public const int stretchingScore = 2131492964;
 			
 			// aapt resource value: 0x7f0c0014
 			public const int strict_sandbox = 2131492884;
@@ -2861,17 +2873,17 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c0052
 			public const int submit_area = 2131492946;
 			
-			// aapt resource value: 0x7f0c0062
-			public const int supplementScore = 2131492962;
+			// aapt resource value: 0x7f0c0065
+			public const int supplementScore = 2131492965;
 			
 			// aapt resource value: 0x7f0c0021
 			public const int tabMode = 2131492897;
 			
-			// aapt resource value: 0x7f0c007c
-			public const int tab_title = 2131492988;
+			// aapt resource value: 0x7f0c007f
+			public const int tab_title = 2131492991;
 			
-			// aapt resource value: 0x7f0c0059
-			public const int tabs = 2131492953;
+			// aapt resource value: 0x7f0c005c
+			public const int tabs = 2131492956;
 			
 			// aapt resource value: 0x7f0c000f
 			public const int terrain = 2131492879;
@@ -2879,17 +2891,17 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c003d
 			public const int title = 2131492925;
 			
-			// aapt resource value: 0x7f0c0058
-			public const int toolbar = 2131492952;
+			// aapt resource value: 0x7f0c0059
+			public const int toolbar = 2131492953;
 			
-			// aapt resource value: 0x7f0c0066
-			public const int totalScore = 2131492966;
+			// aapt resource value: 0x7f0c0069
+			public const int totalScore = 2131492969;
 			
-			// aapt resource value: 0x7f0c005e
-			public const int totalScoreView = 2131492958;
+			// aapt resource value: 0x7f0c0061
+			public const int totalScoreView = 2131492961;
 			
-			// aapt resource value: 0x7f0c0068
-			public const int totalView = 2131492968;
+			// aapt resource value: 0x7f0c006b
+			public const int totalView = 2131492971;
 			
 			// aapt resource value: 0x7f0c0008
 			public const int up = 2131492872;
@@ -2897,20 +2909,20 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f0c0027
 			public const int useLogo = 2131492903;
 			
-			// aapt resource value: 0x7f0c006d
-			public const int userImage = 2131492973;
+			// aapt resource value: 0x7f0c0070
+			public const int userImage = 2131492976;
 			
-			// aapt resource value: 0x7f0c006e
-			public const int username = 2131492974;
+			// aapt resource value: 0x7f0c0071
+			public const int username = 2131492977;
 			
-			// aapt resource value: 0x7f0c0074
-			public const int video_item_image = 2131492980;
+			// aapt resource value: 0x7f0c0077
+			public const int video_item_image = 2131492983;
 			
-			// aapt resource value: 0x7f0c0075
-			public const int video_item_label = 2131492981;
+			// aapt resource value: 0x7f0c0078
+			public const int video_item_label = 2131492984;
 			
-			// aapt resource value: 0x7f0c0063
-			public const int waterScore = 2131492963;
+			// aapt resource value: 0x7f0c0066
+			public const int waterScore = 2131492966;
 			
 			// aapt resource value: 0x7f0c002f
 			public const int withText = 2131492911;
@@ -3023,52 +3035,58 @@ namespace CounterWeightsDroid
 			public const int activity_login = 2130903063;
 			
 			// aapt resource value: 0x7f030018
-			public const int actvity_game = 2130903064;
+			public const int activity_main = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int fragment_overview = 2130903065;
+			public const int actvity_game = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int list_header = 2130903066;
+			public const int fragment_overview = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int list_header_leaderboard = 2130903067;
+			public const int item_menu = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int list_item_bar = 2130903068;
+			public const int list_header = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int list_item_color_bar = 2130903069;
+			public const int list_header_leaderboard = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int list_item_leaderboard = 2130903070;
+			public const int list_item_bar = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int list_item_reflection = 2130903071;
+			public const int list_item_color_bar = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int loading_view = 2130903072;
+			public const int list_item_leaderboard = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int Main = 2130903073;
+			public const int list_item_reflection = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int mr_media_route_chooser_dialog = 2130903074;
+			public const int loading_view = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int mr_media_route_controller_dialog = 2130903075;
+			public const int Main = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int mr_media_route_list_item = 2130903076;
+			public const int mr_media_route_chooser_dialog = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int support_simple_spinner_dropdown_item = 2130903077;
+			public const int mr_media_route_controller_dialog = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int tab = 2130903078;
+			public const int mr_media_route_list_item = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int toolbar = 2130903079;
+			public const int support_simple_spinner_dropdown_item = 2130903079;
+			
+			// aapt resource value: 0x7f030028
+			public const int tab = 2130903080;
+			
+			// aapt resource value: 0x7f030029
+			public const int toolbar = 2130903081;
 			
 			static Layout()
 			{
@@ -3286,6 +3304,12 @@ namespace CounterWeightsDroid
 			// aapt resource value: 0x7f070003
 			public const int decline = 2131165187;
 			
+			// aapt resource value: 0x7f07003e
+			public const int drawer_close = 2131165246;
+			
+			// aapt resource value: 0x7f07003d
+			public const int drawer_open = 2131165245;
+			
 			// aapt resource value: 0x7f07003a
 			public const int hello = 2131165242;
 			
@@ -3294,6 +3318,9 @@ namespace CounterWeightsDroid
 			
 			// aapt resource value: 0x7f07003c
 			public const int loading = 2131165244;
+			
+			// aapt resource value: 0x7f07003f
+			public const int menu_refresh = 2131165247;
 			
 			// aapt resource value: 0x7f070023
 			public const int mr_media_route_button_content_description = 2131165219;

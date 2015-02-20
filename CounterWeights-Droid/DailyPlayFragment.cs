@@ -141,7 +141,8 @@ namespace CounterWeightsDroid
 		void HandleScroll (object sender, AbsListView.ScrollEventArgs e)
 		{
 			lastVisibleItem = e.FirstVisibleItem + e.VisibleItemCount;
-			if (!isLoading && adapter.ReflectionFeed.pagination != null && (adapter.ReflectionFeed.pagination.next_cursor != null) && (lastVisibleItem == e.TotalItemCount)) {
+
+			if (!isLoading && adapter.ReflectionFeed.pagination != null && (adapter.ReflectionFeed.pagination.next_cursor > 0) && (lastVisibleItem == e.TotalItemCount)) {
 				isLoading = true;
 				loadingView.Visibility = ViewStates.Visible;
 				Task.Run (async delegate {

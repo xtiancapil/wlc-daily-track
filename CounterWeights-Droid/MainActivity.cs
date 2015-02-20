@@ -25,7 +25,7 @@ namespace CounterWeightsDroid
 			var pass = prefs.GetString ("wlcPass", null);
 
 			if (!string.IsNullOrEmpty(serialized) && !string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(pass) ) {
-				StartActivity (new Intent (this, typeof(GameActivity)));
+				StartActivity (new Intent (this, typeof(HomeActivity)));
 			} else {
 				//Start an intent for the logged out activity
 				StartActivity (new Intent (this, typeof(SignInActivity)));
