@@ -89,7 +89,7 @@ namespace CounterWeightsDroid
 			public override Android.Support.V4.App.Fragment GetItem (int position)
 			{
 				if (position == 0) {
-					return DailyPlayFragment.NewInstance (position);
+					return ReflectionFeedFragment.NewInstance (position);
 				} else if (position == 1) {
 					return OverviewFragment.NewInstance (position);
 				}

@@ -21,7 +21,7 @@ namespace CounterWeightsDroid
 		private DrawerLayout drawerLayout;
 		private ListView drawerListView;
 		private static readonly string[] Sections = new[] {
-			"Daily Play", "Leaderboard", "Profile", "Sign Out"
+			"Reflections", "Leaderboard", "My Progress", "Sign Out"
 		};
 
 		public Android.Support.V7.Widget.Toolbar Toolbar { get; set; }
