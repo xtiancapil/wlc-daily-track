@@ -8,6 +8,7 @@ using Android.Widget;
 
 using Android.Support.V7.App;
 using NavBar.Helpers;
+using Android.Content;
 
 namespace CounterWeightsDroid
 {
@@ -87,6 +88,17 @@ namespace CounterWeightsDroid
 				break;
 			case 2:
 				fragment = OverviewFragment.NewInstance (position);
+				break;
+			case 3:
+				var prefs = this.GetSharedPreferences ("wlcPrefs", FileCreationMode.Private);
+				var editor = prefs.Edit ();
+				editor.Clear ();
+				editor.Commit ();
+
+				var intent = new Intent (this, typeof(MainActivity));
+				intent.AddFlags (ActivityFlags.ClearTask | ActivityFlags.NewTask);
+				StartActivity (intent);
+				return;
 				break;
 			}
 

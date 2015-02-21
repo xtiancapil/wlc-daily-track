@@ -36,9 +36,14 @@ namespace CounterWeightsDroid
 		RestRequest postsReq;
 		ChallengeProfile profile;
 		List<Android.Support.V4.Widget.SwipeRefreshLayout> reflections;
-
+		List<ListView> reflectionsList;
+		List<ReflectionAdapter> reflectionsAdapter;
 		bool isLoading, hasMoreItems;
 		int lastVisibleItem;
+
+		const string TeamResourceUrl = "api/frontend/current_user/teams/{0}/posts.json";
+		const string UserResourceUrl = "api/frontend/current_user/posts.json";
+		const string WorldResourceUrl = "api/frontend/challenges/8/posts.json";
 
 		public static DailyPlayFragment NewInstance (int position) {
 			var f = new DailyPlayFragment ();
@@ -63,9 +68,15 @@ namespace CounterWeightsDroid
 				currentList.Scroll -= HandleScroll;
 			}
 			currentLayout = reflections [position];
-			currentList = currentLayout.GetChildAt (0) as ListView;
-			currentAdapter = currentList.Adapter as ReflectionAdapter;
+			currentList = reflectionsList [position];
+			currentAdapter = reflectionsAdapter [position];
 			currentList.Scroll += HandleScroll;
+
+			if (currentAdapter.ReflectionFeed.data.Count > 0) {
+				SetFeedResourceUrl ();
+			} else {
+				Task.Run (async () => await GetInitialFeed());
+			}
 		}
 
 		public override void OnCreate (Bundle savedInstanceState)
@@ -109,11 +120,14 @@ namespace CounterWeightsDroid
 			var v = inflater.Inflate (Resource.Layout.fragment_tabstrip, container, false);
 			loadingView = inflater.Inflate (Resource.Layout.loading_view, null, false);
 			reflections = new List<Android.Support.V4.Widget.SwipeRefreshLayout>();
+			reflectionsList = new List<ListView> ();
+			reflectionsAdapter = new List<ReflectionAdapter> ();
 			if(profile.teams.Count > 0) {
 				foreach(var team in profile.teams) {
 					var rv = new Android.Support.V4.Widget.SwipeRefreshLayout(Activity);
 					var lv = new ListView(Activity);
-					lv.Adapter = new ReflectionAdapter (Activity);
+					var adp = new ReflectionAdapter (Activity);
+					lv.Adapter = adp;
 					rv.AddView (lv);
 					TeamHolder th = new TeamHolder();
 					th.id = team.id;
@@ -121,12 +135,41 @@ namespace CounterWeightsDroid
 					Console.WriteLine(team.slug);
 					rv.Tag = th;
 					reflections.Add(rv);
+					reflectionsList.Add (lv);
+					reflectionsAdapter.Add (adp);
 				}
 			}
 
+			var uv = new Android.Support.V4.Widget.SwipeRefreshLayout(Activity);
+			var ulv = new ListView(Activity);
+			var ula = new ReflectionAdapter (Activity);
+			ulv.Adapter = ula;
+			uv.AddView (ulv);
+			TeamHolder userTeam = new TeamHolder();
+			userTeam.id = -1;
+			userTeam.name = "Me";
+			uv.Tag = userTeam;
+			reflections.Add(uv);
+			reflectionsList.Add (ulv);
+			reflectionsAdapter.Add (ula);
+
+			var wv = new Android.Support.V4.Widget.SwipeRefreshLayout(Activity);
+			var wlv = new ListView(Activity);
+			var wla = new ReflectionAdapter (Activity);
+			wlv.Adapter = wla;
+			wv.AddView (wlv);
+			TeamHolder worldTeam = new TeamHolder();
+			worldTeam.id = -2;
+			worldTeam.name = "World";
+			wv.Tag = worldTeam;
+			reflections.Add(wv);
+			reflectionsList.Add (wlv);
+			reflectionsAdapter.Add (wla);
+
+
 			currentLayout = reflections [0];
-			currentList = currentLayout.GetChildAt (1) as ListView;
-			currentAdapter = currentList.Adapter as ReflectionAdapter;
+			currentList = reflectionsList [0];
+			currentAdapter = reflectionsAdapter [0];
 			currentList.Scroll += HandleScroll;
 			adapter = new MyPagerAdapter(reflections);
 
@@ -144,29 +187,47 @@ namespace CounterWeightsDroid
 		public override void OnViewCreated (View view, Bundle savedInstanceState)
 		{
 			base.OnViewCreated (view, savedInstanceState);
+			Task.Run (async () => await GetInitialFeed());
+		}
 
-			Task.Run (async delegate {					
-				client = new RestClient ("https://game.wholelifechallenge.com");
-				client.CookieContainer = StoredCookies;
-				client.FollowRedirects = true;
+		async Task GetInitialFeed () {
+			client = new RestClient ("https://game.wholelifechallenge.com");
+			client.CookieContainer = StoredCookies;
+			client.FollowRedirects = true;
 
-				string id = ((TeamHolder)currentLayout.Tag).id.ToString ();
 
-				postsReq = new RestRequest ("api/frontend/current_user/teams/" + id + "/posts.json", Method.GET);
-				postsReq.AddHeader ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
-				postsReq.AddHeader ("X-CSRF-TOKEN", CSRFToken);
-				postsReq.AddHeader ("Referer", "https://game.wholelifechallenge.com/wlcny15/hub");
-				postsReq.AddParameter ("per", 10);
-				var resp = await client.ExecuteGetTaskAsync (postsReq);
-				var content = resp.Content;
-				serializerSettings = new JsonSerializerSettings () {
-					NullValueHandling = NullValueHandling.Ignore,
-					DateParseHandling = DateParseHandling.None
-				};
+			postsReq = new RestRequest(Method.GET);
+			postsReq.AddHeader ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
+			postsReq.AddHeader ("X-CSRF-TOKEN", CSRFToken);
+			postsReq.AddHeader ("Referer", "https://game.wholelifechallenge.com/wlcny15/hub");
+			postsReq.AddParameter ("per", 10);
+			SetFeedResourceUrl ();
 
-				currentAdapter.ReflectionFeed = JsonConvert.DeserializeObject<Feed> (content, serializerSettings);
-				Activity.RunOnUiThread(UpdateView);
-			});
+			var resp = await client.ExecuteGetTaskAsync (postsReq);
+			var content = resp.Content;
+			serializerSettings = new JsonSerializerSettings () {
+				NullValueHandling = NullValueHandling.Ignore,
+				DateParseHandling = DateParseHandling.None
+			};
+
+			currentAdapter.ReflectionFeed = JsonConvert.DeserializeObject<Feed> (content, serializerSettings);
+			Activity.RunOnUiThread(UpdateView);
+		}
+
+		void SetFeedResourceUrl () {
+
+			if (postsReq != null) {
+				var id = ((TeamHolder)currentLayout.Tag).id;
+
+				//TODO: convert to enums; -1 = User, -2 = World
+				if (id == -1) {
+					postsReq.Resource = UserResourceUrl;
+				} else if (id == -2) {
+					postsReq.Resource = string.Format (WorldResourceUrl, profile.id);
+				} else {
+					postsReq.Resource = string.Format (TeamResourceUrl, id);
+				}
+			}
 		}
 
 		void UpdateView () {
