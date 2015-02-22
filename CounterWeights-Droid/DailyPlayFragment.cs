@@ -27,10 +27,9 @@ namespace CounterWeightsDroid
 		MyPagerAdapter adapter;
 
 		View loadingView;
-		ListView reflectionList, progressList, currentList;
-		ReflectionAdapter reflectionAdapter, currentAdapter;
-		StatsColorBarAdapter progressAdapter;
-		Android.Support.V4.Widget.SwipeRefreshLayout reflectionRefresh, progressRefresh, currentLayout;
+		ListView currentList;
+		ReflectionAdapter currentAdapter;
+		Android.Support.V4.Widget.SwipeRefreshLayout currentLayout;
 
 		RestClient client;
 		RestRequest postsReq;
@@ -38,6 +37,8 @@ namespace CounterWeightsDroid
 		List<Android.Support.V4.Widget.SwipeRefreshLayout> reflections;
 		List<ListView> reflectionsList;
 		List<ReflectionAdapter> reflectionsAdapter;
+		JsonSerializerSettings serializerSettings;
+
 		bool isLoading, hasMoreItems;
 		int lastVisibleItem;
 
@@ -67,9 +68,14 @@ namespace CounterWeightsDroid
 			if (currentList != null) {
 				currentList.Scroll -= HandleScroll;
 			}
+
+			if (currentLayout != null) {
+				currentLayout.Refresh -= HandleRefresh;
+			}
 			currentLayout = reflections [position];
 			currentList = reflectionsList [position];
 			currentAdapter = reflectionsAdapter [position];
+			currentLayout.Refresh += HandleRefresh;
 			currentList.Scroll += HandleScroll;
 
 			if (currentAdapter.ReflectionFeed.data.Count > 0) {
@@ -83,22 +89,6 @@ namespace CounterWeightsDroid
 		{
 			base.OnCreate (savedInstanceState);
 
-			reflectionList = new ListView (this.Activity);
-			reflectionList.SetBackgroundColor (Android.Graphics.Color.Fuchsia);
-			progressList = new ListView (this.Activity);
-
-			reflectionRefresh = new Android.Support.V4.Widget.SwipeRefreshLayout (this.Activity);
-			reflectionRefresh.LayoutParameters = new ViewGroup.LayoutParams (ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
-			reflectionRefresh.AddView (reflectionList);
-
-			progressRefresh = new Android.Support.V4.Widget.SwipeRefreshLayout (this.Activity);
-			progressRefresh.LayoutParameters = new ViewGroup.LayoutParams (ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent);
-			progressRefresh.AddView (progressList);
-
-		//	adapter = new MyPagerAdapter (new [] {reflectionRefresh, progressRefresh});
-			reflectionAdapter = new ReflectionAdapter (Activity);
-			progressAdapter = new StatsColorBarAdapter (Activity);
-//
 			try {
 
 				profile = JsonConvert.DeserializeObject<ChallengeProfile> (ChallengeProfileStr, new JsonSerializerSettings() {
@@ -106,8 +96,8 @@ namespace CounterWeightsDroid
 				});
 
 			} catch (Exception ex) {
+
 			}
-//
 		}
 
 		class TeamHolder : Java.Lang.Object {
@@ -171,6 +161,7 @@ namespace CounterWeightsDroid
 			currentList = reflectionsList [0];
 			currentAdapter = reflectionsAdapter [0];
 			currentList.Scroll += HandleScroll;
+			currentLayout.Refresh += HandleRefresh;
 			adapter = new MyPagerAdapter(reflections);
 
 			pager = v.FindViewById<ViewPager> (Resource.Id.pager);
@@ -183,7 +174,12 @@ namespace CounterWeightsDroid
 
 			return v;	
 		}
-		JsonSerializerSettings serializerSettings;
+
+		void HandleRefresh (object sender, EventArgs e)
+		{
+			Task.Run (async () => await RefreshFeed ());
+		}
+
 		public override void OnViewCreated (View view, Bundle savedInstanceState)
 		{
 			base.OnViewCreated (view, savedInstanceState);
@@ -210,8 +206,38 @@ namespace CounterWeightsDroid
 				DateParseHandling = DateParseHandling.None
 			};
 
-			currentAdapter.ReflectionFeed = JsonConvert.DeserializeObject<Feed> (content, serializerSettings);
-			Activity.RunOnUiThread(UpdateView);
+			Activity.RunOnUiThread(() => {
+				currentAdapter.ReflectionFeed = JsonConvert.DeserializeObject<Feed> (content, serializerSettings);
+				UpdateView();
+			});
+		}
+
+		async Task GetMoreFeeds () {
+			postsReq.Parameters.RemoveAll(x => x.Name == "cursor");
+			postsReq.AddParameter ("cursor", currentAdapter.ReflectionFeed.pagination.next_cursor);
+
+			var resp = await client.ExecuteGetTaskAsync (postsReq);
+			var feed = JsonConvert.DeserializeObject<Feed> (resp.Content, serializerSettings);
+
+			Activity.RunOnUiThread(() => {
+				currentAdapter.ReflectionFeed.data.AddRange (feed.data);
+				currentAdapter.ReflectionFeed.pagination = feed.pagination;
+				isLoading = false;
+				UpdateView();
+				currentList.RemoveFooterView(loadingView);
+			});
+		}
+
+		async Task RefreshFeed () {
+			postsReq.Parameters.RemoveAll(x => x.Name == "cursor");
+			var resp = await client.ExecuteGetTaskAsync (postsReq);
+			var feed = JsonConvert.DeserializeObject<Feed> (resp.Content, serializerSettings);
+
+			Activity.RunOnUiThread (() => {
+				currentAdapter.ReflectionFeed = feed;
+				currentLayout.Refreshing = false;
+				UpdateView();
+			});
 		}
 
 		void SetFeedResourceUrl () {
@@ -231,17 +257,8 @@ namespace CounterWeightsDroid
 		}
 
 		void UpdateView () {
-
 			if (currentAdapter != null) {
 				currentAdapter.NotifyDataSetChanged ();
-			}
-
-			if (reflectionAdapter != null) {
-				reflectionAdapter.NotifyDataSetChanged ();
-			}
-
-			if (progressAdapter != null) {
-				progressAdapter.NotifyDataSetChanged ();
 			}
 		}
 
@@ -253,28 +270,11 @@ namespace CounterWeightsDroid
 				isLoading = true;
 				currentList.AddFooterView (loadingView);
 //				loadingView.Visibility = ViewStates.Visible;
-				Task.Run (async delegate {
-					postsReq.Parameters.RemoveAll(x => x.Name == "cursor");
-					postsReq.AddParameter ("cursor", currentAdapter.ReflectionFeed.pagination.next_cursor);
-
-					var resp = client.Execute (postsReq);
-					var feed = JsonConvert.DeserializeObject<Feed> (resp.Content, serializerSettings);
-
-					currentAdapter.ReflectionFeed.data.AddRange (feed.data);
-					currentAdapter.ReflectionFeed.pagination = feed.pagination;
-					isLoading = false;
-					Activity.RunOnUiThread(() => {
-						UpdateView();
-						currentList.RemoveFooterView(loadingView);
-						//loadingView.Visibility = ViewStates.Gone;
-					});
-				});
-				// if we're at the bottom of the list, check that there's a next cursor number
+				Task.Run (async () => GetMoreFeeds ());
 			}
 		}
 
 		class MyPagerAdapter : PagerAdapter {
-			string[] Titles = { "Reflections", "My Progress" };
 
 			public ReflectionAdapter[] adapters { get; set; }
 			List<Android.Support.V4.Widget.SwipeRefreshLayout> items;
