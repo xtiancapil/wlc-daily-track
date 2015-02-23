@@ -12,6 +12,7 @@
         android:layout_height="match_parent" />
     <TextView
         android:layout_toRightOf="@id/rank"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/colorPrimary"
         android:padding="4dp"
         android:id="@+id/memberName"
