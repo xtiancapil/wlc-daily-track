@@ -74,14 +74,14 @@
     <Reference Include="Humanizer">
       <HintPath>..\packages\Humanizer.1.33.7\lib\portable-win+net40+sl50+wp8+wpa81\Humanizer.dll</HintPath>
     </Reference>
-    <Reference Include="GooglePlayServicesLib">
-      <HintPath>..\packages\Xamarin.GooglePlayServices.22.0.0.1\lib\MonoAndroid41\GooglePlayServicesLib.dll</HintPath>
-    </Reference>
     <Reference Include="Picasso">
       <HintPath>..\ext\Picasso.dll</HintPath>
     </Reference>
     <Reference Include="XamSvg">
       <HintPath>..\ext\XamSvg.dll</HintPath>
+    </Reference>
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\packages\Xamarin.GooglePlayServices.22.0.0.2\lib\MonoAndroid41\GooglePlayServicesLib.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +140,8 @@
     <AndroidResource Include="Resources\layout\activity_main.axml" />
     <AndroidResource Include="Resources\layout\item_menu.axml" />
     <AndroidResource Include="Resources\layout\fragment_tabstrip.axml" />
+    <AndroidResource Include="Resources\layout\list_item_leaderboard_rank.axml" />
+    <AndroidResource Include="Resources\drawable-nodpi\VeniceZoom.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -167,5 +169,6 @@
     <Folder Include="Resources\menu\" />
     <Folder Include="Resources\raw\" />
     <Folder Include="Helpers\" />
+    <Folder Include="Resources\drawable-nodpi\" />
   </ItemGroup>
 </Project>

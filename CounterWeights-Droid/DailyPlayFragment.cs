@@ -175,11 +175,6 @@ namespace CounterWeightsDroid
 			return v;	
 		}
 
-		void HandleRefresh (object sender, EventArgs e)
-		{
-			Task.Run (async () => await RefreshFeed ());
-		}
-
 		public override void OnViewCreated (View view, Bundle savedInstanceState)
 		{
 			base.OnViewCreated (view, savedInstanceState);
@@ -272,6 +267,11 @@ namespace CounterWeightsDroid
 //				loadingView.Visibility = ViewStates.Visible;
 				Task.Run (async () => GetMoreFeeds ());
 			}
+		}
+
+		void HandleRefresh (object sender, EventArgs e)
+		{
+			Task.Run (async () => await RefreshFeed ());
 		}
 
 		class MyPagerAdapter : PagerAdapter {

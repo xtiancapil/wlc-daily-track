@@ -65,9 +65,7 @@ namespace CounterWeightsDroid
 //			if (currentList != null) {
 //				currentList.Scroll -= HandleScroll;
 //			}
-			currentLayout = refreshViews [position];
-			currentList = leaderboardListViews [position];
-			currentAdapter = leaderboardAdapters [position];
+			SetCurrentItems (position);
 //			currentList.Scroll += HandleScroll;
 
 			if (currentAdapter.Leaderboard.leaderboards.Count > 0) {
@@ -115,33 +113,8 @@ namespace CounterWeightsDroid
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
 			var v = inflater.Inflate (Resource.Layout.fragment_tabstrip, container, false);
-			var h = inflater.Inflate (Resource.Layout.list_header_leaderboard, null);
+
 			loadingView = inflater.Inflate (Resource.Layout.loading_view, null, false);
-
-//			leaderboardListView = v.FindViewById<ListView> (Resource.Id.stats_list);
-//			leaderboardListView.AddHeaderView (h);
-//			leaderboardListView.Adapter = adapter;
-//
-			var bmp = SvgFactory.GetBitmap (Activity.Resources, Resource.Raw.nutrition, 48, 48);
-			h.FindViewById <ImageView> (Resource.Id.nutritionScore).SetImageBitmap (bmp);
-
-			bmp = SvgFactory.GetBitmap (Activity.Resources, Resource.Raw.exercise, 48, 48);
-			h.FindViewById <ImageView> (Resource.Id.exerciseScore).SetImageBitmap (bmp);
-
-			bmp = SvgFactory.GetBitmap (Activity.Resources, Resource.Raw.stretching, 48, 48);
-			h.FindViewById <ImageView> (Resource.Id.stretchingScore).SetImageBitmap (bmp);
-
-			bmp = SvgFactory.GetBitmap (Activity.Resources, Resource.Raw.supplement, 48, 48);
-			h.FindViewById <ImageView> (Resource.Id.supplementScore).SetImageBitmap (bmp);
-
-			bmp = SvgFactory.GetBitmap (Activity.Resources, Resource.Raw.water, 48, 48);
-			h.FindViewById <ImageView> (Resource.Id.waterScore).SetImageBitmap (bmp);
-
-			bmp = SvgFactory.GetBitmap (Activity.Resources, Resource.Raw.lifestyle, 48, 48);
-			h.FindViewById <ImageView> (Resource.Id.lifestyleScore).SetImageBitmap (bmp);
-
-			bmp = SvgFactory.GetBitmap (Activity.Resources, Resource.Raw.reflection, 48, 48);
-			h.FindViewById <ImageView> (Resource.Id.reflectionScore).SetImageBitmap (bmp);
 
 			refreshViews = new List<Android.Support.V4.Widget.SwipeRefreshLayout> ();
 			leaderboardAdapters = new List<LeaderboardAdapter> ();
@@ -152,7 +125,6 @@ namespace CounterWeightsDroid
 					var leaderboardRefreshView = new Android.Support.V4.Widget.SwipeRefreshLayout(Activity);
 					var leaderboardListView = new ListView(Activity);
 					var leaderboardAdapter = new LeaderboardAdapter (Activity);
-					leaderboardListView.AddHeaderView (h);
 					leaderboardListView.Adapter = leaderboardAdapter;
 					leaderboardRefreshView.AddView (leaderboardListView);
 					TeamHolder th = new TeamHolder();
@@ -165,10 +137,21 @@ namespace CounterWeightsDroid
 				}
 			}
 
+			var lrv = new Android.Support.V4.Widget.SwipeRefreshLayout(Activity);
+			var llv = new ListView(Activity);
+			var lda = new LeaderboardAdapter (Activity);
+			llv.Adapter = lda;
+			lrv.AddView (llv);
+			TeamHolder wth = new TeamHolder();
+			wth.id = -1;
+			wth.name = "World";
+			lrv.Tag = wth;
+			refreshViews.Add(lrv);
+			leaderboardListViews.Add (llv);
+			leaderboardAdapters.Add (lda);
 
-			currentLayout = refreshViews [0];
-			currentList = leaderboardListViews [0];
-			currentAdapter = leaderboardAdapters [0];
+			SetCurrentItems (0);
+
 			adapter = new MyPagerAdapter (refreshViews);
 
 			pager = v.FindViewById<ViewPager> (Resource.Id.pager);
@@ -219,8 +202,44 @@ namespace CounterWeightsDroid
 				NullValueHandling = NullValueHandling.Ignore,
 				DateParseHandling = DateParseHandling.None
 			};
-			currentAdapter.Leaderboard = JsonConvert.DeserializeObject<Core.Leaderboard.Leaderboard>(content, serializerSettings);
-			Activity.RunOnUiThread (UpdateView);
+
+			Activity.RunOnUiThread ( () => {
+				currentAdapter.Leaderboard = JsonConvert.DeserializeObject<Core.Leaderboard.Leaderboard>(content, serializerSettings);
+				UpdateView();
+			});
+		}
+
+		async Task RefreshLeaderboard () {
+			var resp = await client.ExecuteGetTaskAsync(request);
+			var content = resp.Content;
+			var serializerSettings = new JsonSerializerSettings() {
+				NullValueHandling = NullValueHandling.Ignore,
+				DateParseHandling = DateParseHandling.None
+			};
+
+			Activity.RunOnUiThread (() => {
+				currentAdapter.Leaderboard = JsonConvert.DeserializeObject<Core.Leaderboard.Leaderboard> (content, serializerSettings);
+				currentLayout.Refreshing = false;
+				UpdateView ();
+			});
+		}
+
+		void SetCurrentItems (int position) {
+
+			if (currentLayout != null) {
+				currentLayout.Refresh -= HandleRefresh;
+			}
+
+			currentLayout = refreshViews [position];
+			currentList = leaderboardListViews [position];
+			currentAdapter = leaderboardAdapters [position];
+
+			currentLayout.Refresh += HandleRefresh;
+		}
+
+		void HandleRefresh (object sender, EventArgs e)
+		{
+			Task.Run (async () => await RefreshLeaderboard ());
 		}
 
 		void SetLeaderboardRourceUrl () {
