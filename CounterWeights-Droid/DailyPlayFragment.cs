@@ -43,8 +43,8 @@ namespace CounterWeightsDroid
 		int lastVisibleItem;
 
 		const string TeamResourceUrl = "api/frontend/current_user/teams/{0}/posts.json";
-		const string UserResourceUrl = "api/frontend/current_user/posts.json";
-		const string WorldResourceUrl = "api/frontend/challenges/8/posts.json";
+		const string UserResourceUrl = "api/frontend/current_user/challenges/9/posts.json";
+		const string WorldResourceUrl = "api/frontend/challenges/9/posts.json"; // number is the challenge id
 
 		public static DailyPlayFragment NewInstance (int position) {
 			var f = new DailyPlayFragment ();

@@ -8,7 +8,8 @@ namespace Core
 {
 	public class WlcWebService
 	{
-		private const string challengeUrl = "https://game.wholelifechallenge.com/wlcny15";
+		//TODO: Put this somewhere that gets called out
+		private const string challengeUrl = "https://game.wholelifechallenge.com/wlcmay15";
 		const string apiUrl = "https://game.wholelifechallenge.com/api/frontend/";
 		public WlcWebService ()
 		{

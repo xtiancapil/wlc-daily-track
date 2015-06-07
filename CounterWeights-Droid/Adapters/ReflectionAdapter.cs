@@ -5,6 +5,7 @@ using Android.Views;
 using Core;
 using Humanizer;
 using Squareup.Picasso;
+using System.Globalization;
 
 namespace CounterWeightsDroid
 {
@@ -47,9 +48,24 @@ namespace CounterWeightsDroid
 //			img = XamSvg.SvgFactory.GetDrawable (Context.Resources, Resource.Raw.nutrition);
 //			holder.thumbnail.SetImageDrawable (img);
 //			holder.thumbnail.SetBackgroundColor (Android.Graphics.Color.Red);
-			postDate = DateTime.Parse (reflection.created_at);
+			Console.WriteLine("{0} - {1}",reflection.user.full_name, reflection.created_at);
+
+			try {
+
+			// sample date time 2015-06-06T06:26:04-07:00
+				Console.WriteLine(reflection.created_at);
+
+				var zoned = NodaTime.ZonedDateTime.FromDateTimeOffset(DateTimeOffset.Parse(reflection.created_at));
+				var dto = zoned.LocalDateTime.ToDateTimeUnspecified();
+				Console.WriteLine("datetiime {0}", dto);
+				Console.WriteLine("nodattime {0}", zoned.LocalDateTime);
+
+				holder.postDate.Text =  dto.Humanize(false, null, null);//postDate.Humanize(false,null ,null );
+			} catch (Exception ex) {
+				Console.WriteLine(ex.Message);
+			}
 			holder.username.Text = reflection.user.full_name;
-			holder.postDate.Text = postDate.Humanize (false, DateTime.Now, System.Globalization.CultureInfo.CurrentCulture);// postDate.ToLocalTime ().ToString();//reflection.created_at;
+			// (false, DateTime.Now, System.Globalization.CultureInfo.CurrentCulture);// postDate.ToLocalTime ().ToString();//reflection.created_at;
 			holder.comment.Text = reflection.content;
 			holder.comments.Text = string.Format ("{0} comments", reflection.comments.Count);
 			holder.likes.Text = string.Format ("{0} likes", reflection.likes.Count);

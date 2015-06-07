@@ -74,7 +74,7 @@ namespace CounterWeightsDroid
 				postsReq = new RestRequest("api/frontend/current_user/teams/7569/posts.json", Method.GET);
 				postsReq.AddHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
 				postsReq.AddHeader("X-CSRF-TOKEN", csrfToken);
-				postsReq.AddHeader("Referer", "https://game.wholelifechallenge.com/wlcny15/hub");
+				postsReq.AddHeader("Referer", "https://game.wholelifechallenge.com/wlcmay15/hub");
 				postsReq.AddParameter("per", 10);
 				var resp = await client.ExecuteGetTaskAsync(postsReq);
 				var content = resp.Content;

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterWeights-Droid", "CounterWeights-Droid\CounterWeights-Droid.csproj", "{921EDE0F-B0E4-47F6-ADF8-EDFFE80F9CBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamSvg", "..\xamsvg\XamSvg.csproj", "{B70EDB4C-A85E-45BE-A180-5B0462020C6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,13 @@ Global
 		{921EDE0F-B0E4-47F6-ADF8-EDFFE80F9CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{921EDE0F-B0E4-47F6-ADF8-EDFFE80F9CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{921EDE0F-B0E4-47F6-ADF8-EDFFE80F9CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70EDB4C-A85E-45BE-A180-5B0462020C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70EDB4C-A85E-45BE-A180-5B0462020C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70EDB4C-A85E-45BE-A180-5B0462020C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70EDB4C-A85E-45BE-A180-5B0462020C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CE9D4763-D939-4B0E-A164-54D276D9D7E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE9D4763-D939-4B0E-A164-54D276D9D7E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE9D4763-D939-4B0E-A164-54D276D9D7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE9D4763-D939-4B0E-A164-54D276D9D7E9}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = CounterWeights-Droid\CounterWeights-Droid.csproj
 	EndGlobalSection
 EndGlobal

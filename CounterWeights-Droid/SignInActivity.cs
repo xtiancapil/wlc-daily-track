@@ -217,7 +217,7 @@ namespace CounterWeightsDroid
 
 					// Get the initial hub page to get the stats , leaderboard, and reflection urls
 //					var hubReq = new RestRequest("wlcfall14/hub", Method.GET);
-					var hubReq = new RestRequest("wlcny15/hub", Method.GET);
+					var hubReq = new RestRequest("wlcmay15/hub", Method.GET);
 					hubReq.AddHeader("Accept", "text/html");
 
 					var hubResp = (RestResponse) client.Execute(hubReq);
