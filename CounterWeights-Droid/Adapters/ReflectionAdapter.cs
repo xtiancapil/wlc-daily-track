@@ -23,7 +23,7 @@ namespace CounterWeightsDroid
 			ReflectionFeed = new Feed ();
 		}
 
-		XamSvg.PictureBitmapDrawable img;
+		//XamSvg.PictureBitmapDrawable img;
 		public override View GetView (int position, View convertView, ViewGroup parent)
 		{
 			ViewHolder holder;

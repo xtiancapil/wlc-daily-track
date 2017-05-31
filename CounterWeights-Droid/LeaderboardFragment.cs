@@ -14,7 +14,7 @@ using Android.Widget;
 using RestSharp;
 using Core;
 using Newtonsoft.Json;
-using XamSvg;
+//using XamSvg;
 using Android.Support.V4.View;
 using com.refractored;
 using System.Threading.Tasks;

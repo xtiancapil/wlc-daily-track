@@ -182,7 +182,7 @@ namespace CounterWeightsDroid
 		}
 
 		async Task GetInitialFeed () {
-			client = new RestClient ("https://game.wholelifechallenge.com");
+			client = new RestClient ("https://game.wholelifechallenge.com/wlcny15/hub/#/daily-play");
 			client.CookieContainer = StoredCookies;
 			client.FollowRedirects = true;
 
@@ -190,7 +190,7 @@ namespace CounterWeightsDroid
 			postsReq = new RestRequest(Method.GET);
 			postsReq.AddHeader ("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
 			postsReq.AddHeader ("X-CSRF-TOKEN", CSRFToken);
-			postsReq.AddHeader ("Referer", "https://game.wholelifechallenge.com/wlcny15/hub");
+			postsReq.AddHeader ("Referer", "https://game.wholelifechallenge.com/wlcny15/hub/#/daily-play");
 			postsReq.AddParameter ("per", 10);
 			SetFeedResourceUrl ();
 
@@ -201,10 +201,10 @@ namespace CounterWeightsDroid
 				DateParseHandling = DateParseHandling.None
 			};
 
-			Activity.RunOnUiThread(() => {
-				currentAdapter.ReflectionFeed = JsonConvert.DeserializeObject<Feed> (content, serializerSettings);
-				UpdateView();
-			});
+			//Activity.RunOnUiThread(() => {
+			//	currentAdapter.ReflectionFeed = JsonConvert.DeserializeObject<Feed> (content, serializerSettings);
+			//	UpdateView();
+			//});
 		}
 
 		async Task GetMoreFeeds () {

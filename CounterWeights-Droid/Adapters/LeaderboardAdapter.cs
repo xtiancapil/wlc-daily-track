@@ -3,7 +3,7 @@ using Android.Widget;
 using Core.Leaderboard;
 using Android.Views;
 using Android.Content;
-using XamSvg;
+//using XamSvg;
 using Android.Graphics.Drawables;
 
 namespace CounterWeightsDroid
@@ -45,40 +45,40 @@ namespace CounterWeightsDroid
 				int objectToDrawHeight = 96 * (int) density;
 
 
-				var svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.nutrition, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
-					return convertView.Resources.GetColor (Resource.Color.nutrition);
-				}));
-				holder.nutrition.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
+				//var svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.nutrition, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
+				//	return convertView.Resources.GetColor (Resource.Color.nutrition);
+				//}));
+				//holder.nutrition.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
 
-				svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.exercise, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
-					return convertView.Resources.GetColor (Resource.Color.workout);
-				}));
-				holder.exercise.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
+				//svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.exercise, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
+				//	return convertView.Resources.GetColor (Resource.Color.workout);
+				//}));
+				//holder.exercise.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
 
-				svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.stretching, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
-					return convertView.Resources.GetColor (Resource.Color.stretch);
-				}));
-				holder.stretching.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
+				//svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.stretching, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
+				//	return convertView.Resources.GetColor (Resource.Color.stretch);
+				//}));
+				//holder.stretching.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
 
-				svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.lifestyle, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
-					return convertView.Resources.GetColor (Resource.Color.lifestyle);
-				}));
-				holder.lifestyle.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
+				//svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.lifestyle, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
+				//	return convertView.Resources.GetColor (Resource.Color.lifestyle);
+				//}));
+				//holder.lifestyle.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
 
-				svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.reflection, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
-					return convertView.Resources.GetColor (Resource.Color.reflection);
-				}));
-				holder.reflection.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
+				//svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.reflection, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
+				//	return convertView.Resources.GetColor (Resource.Color.reflection);
+				//}));
+				//holder.reflection.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
 
-				svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.water, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
-					return convertView.Resources.GetColor (Resource.Color.water);
-				}));
-				holder.water.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
+				//svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.water, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
+				//	return convertView.Resources.GetColor (Resource.Color.water);
+				//}));
+				//holder.water.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
 
-				svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.supplement, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
-					return convertView.Resources.GetColor (Resource.Color.supplement);
-				}));
-				holder.supplement.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
+				//svg = SvgFactory.GetBitmap (convertView.Context.Resources, Resource.Raw.supplement, objectToDrawHeight, objectToDrawHeight, XamSvg.SvgColorMapperFactory.FromFunc ((g) => {
+				//	return convertView.Resources.GetColor (Resource.Color.supplement);
+				//}));
+				//holder.supplement.SetCompoundDrawablesRelativeWithIntrinsicBounds (null, new BitmapDrawable (svg), null, null);
 				convertView.Tag = holder;
 			} else {
 				holder = (ViewHolder) convertView.Tag;
